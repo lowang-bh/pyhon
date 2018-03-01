@@ -1,0 +1,107 @@
+[
+   {
+      "Category": "OTC", 
+      "BackupName": "OTC Chassis", 
+      "Flag": "OTC", 
+      "Boards": [
+         {
+            "board_spec_name": "OMM_NC", 
+            "slot_num": "1A", 
+            "slot_id": "1A", 
+            "is_mandatory": "True", 
+            "aid": "A-1A"
+         }, 
+         {
+            "board_spec_name": "OMM_SC", 
+            "slot_num": "1A", 
+            "slot_id": "1A", 
+            "is_mandatory": "True", 
+            "aid": "A-1A"
+         }, 
+         {
+            "board_spec_name": "OMM_NC", 
+            "slot_num": "1B", 
+            "slot_id": "1B", 
+            "aid": "A-1B"
+         }, 
+         {
+            "board_spec_name": "OMM_SC", 
+            "slot_num": "1B", 
+            "slot_id": "1B", 
+            "aid": "A-1B"
+         }, 
+         {
+            "board_spec_name": "OAM", 
+            "slot_num": "2", 
+            "slot_id": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "ORM", 
+            "slot_num": "2", 
+            "slot_id": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "DSE", 
+            "slot_num": "2", 
+            "slot_id": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "BMM2C", 
+            "slot_num": "2", 
+            "slot_id": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "SCM", 
+            "slot_num": "2", 
+            "slot_id": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "RAM", 
+            "slot_num": "2", 
+            "slot_id": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "OAM", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "ORM", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "DSE", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "BMM2C", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "SCM", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "RAM", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }
+      ]
+   }
+]

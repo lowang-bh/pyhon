@@ -1,0 +1,150 @@
+[
+    {
+        "majorType":"XFP",
+        "majorValue":"0x17",
+        "subTypes":
+        [
+            {
+                "TOM-10G-SR1":["XFP_SR_1", "0x01"],
+                "TOM-10G-IR2": ["XFP_IR_2", "0x02"],
+                "TOM-10G-LR2": ["XFP_LR_2", "0x03"],
+                "TOM-10G-SR2": ["XFP_SR_2", "0x04"],
+                "TOM-10G-SR0": ["XFP_SR_0", "0x05"],
+                "TOM-10G": ["XFP_10G", "0x06"],
+                "TOM-10G-WDM": ["XFP_10G_WDM", "0x07"],
+                "XFP_10GDL48_LR2":["XFP_10GDL48_LR2","0x08"],
+                "XFP_10GDQ48_LR2":["XFP_10GDQ48_LR2","0x09"],
+                "XFP_10GDL00_LR2":["XFP_10GDL00_LR2","0x0A"],
+                "XFP_10GDQ00_LR2":["XFP_10GDQ00_LR2","0x0B"],
+                "XFP_10GDC01_LR2":["XFP_10GDC01_LR2","0x0C"],
+                "XFP_10GDH01_LR2":["XFP_10GDH01_LR2","0x0E"],
+                "XFP_10GDH61_LR2":["XFP_10GDH61_LR2","0x0F"],
+                "TOM-10G-DWDM-LR2": ["XFP_10GDWDM_LR2", "0x10"],
+                "TOM-10G-DWA-LR2": ["XFP_10G_DWA_LR2", "0x11"],
+                "TOM-10G-CWDM-LR2": ["XFP_10GCWDM_LR2", "0x12"],
+                "XFP_8G": ["XFP_8G", "0x13"], 
+                "XFP_10G_DT_LR2":["XFP_10G_DT_LR2", "0x15"],
+                "XFP_10G_DT_LR2E":["XFP_10G_DT_LR2E","0X16"]
+            }
+        ]
+    }, 
+    {
+        "majorType":"SFP",
+        "majorValue":"0x18",
+        "subTypes":
+        [
+            {
+                "TOM-25G-SR1": ["SFP_2_5G_SR_1", "0x01"], 
+                "TOM-25G-IR1": ["SFP_2_5G_IR_1", "0x02"],
+                "TOM-25G-IR2": ["SFP_2_5G_IR_2", "0x03"],
+                "TOM-25G-LR2": ["SFP_2_5G_LR_2", "0x04"],
+                "TOM-1G-SX": ["SFP_1000BaseSX", "0x05"],
+                "TOM-1G-LX": ["SFP_1000BaseLX", "0x06"],
+                "SFP_155M_LR_2":["SFP_155M_LR_2", "0x09"],
+                "SFP_622M_LR_2": ["SFP_622M_LR_2", "0x0a"],
+                "TOM-25GMR-IR1": ["SFP_2_5G_MR_IR_1", "0x0b"],
+                "TOM-1G-ZX":     ["SFP_1G_ZX", "0x0c"],
+                "SFP_2_5G_MRC47_LR2": ["SFP_2_5G_MRC47_LR2", "0x0D"],
+                "SFP_2_5G_MRC49_LR2": ["SFP_2_5G_MRC49_LR2", "0x0E"],
+                "SFP_2_5G_MRC51_LR2": ["SFP_2_5G_MRC51_LR2", "0x0F"],
+                "SFP_2_5G_MRC53_LR2": ["SFP_2_5G_MRC53_LR2", "0x10"],
+                "SFP_2_5G_MRC55_LR2": ["SFP_2_5G_MRC55_LR2", "0x11"],
+                "SFP_2_5G_MRC57_LR2": ["SFP_2_5G_MRC57_LR2", "0x12"],
+                "SFP_2_5G_MRC59_LR2": ["SFP_2_5G_MRC59_LR2", "0x13"],
+                "SFP_2_5G_MRC61_LR2": ["SFP_2_5G_MRC61_LR2", "0x14"],
+                "TOM_25G":      ["SFP_2_5G", "0x15"],
+                "TOM-25GMR":    ["SFP_2_5G_MR", "0x16"],
+                "SFP_1G":       ["SFP_1G     ", "0X17"],
+                "SFP_622M":     ["SFP_622M   ", "0X18"],
+                "SFP_622M155":  ["SFP_622M155", "0X19"],
+                "SFP_155M":     ["SFP_155M   ", "0X1A"],
+                "TOM-MR-DWDM-LR2": ["SFP_MR_DWDM_LR2", "0x1B"],
+                "TOM-MR-CWDM-LR2": ["SFP_MR_CWDM_LR2", "0x1C"],
+                "TOM-25GMR-SR1": ["SFP_2_5_GMR_SR1", "0x1E"],
+                "TOM-8G-SM-LC-L": ["SFP_8G_SM_LC_L", "0x1F"],
+                "TOM-1485HD-RX": ["SFP_1485HD_RX", "0x20"],
+                "TOM-1485HD-TX": ["SFP_1485HD_TX", "0x21"],
+                "TOM-14835HD-RX": ["SFP_14835HD_RX", "0x22"],
+                "TOM-14835HD-TX": ["SFP_14835HD_TX", "0x23"],
+                "TOM-8G": ["SFP_8G", "0x24"],
+                "TOM-4G": ["SFP_4G", "0x25"], 
+                "TOM-10G-SFPP-SR1": ["TOM_10G_SFPP_SR1", "0x27"], 
+                "TOM-10G-SFPP-IR2": ["TOM_10G_SFPP_IR2", "0x2a"], 
+                "TOM-10G-SFPP-LR2": ["TOM_10G_SFPP_LR2", "0x2b"],
+                "TOM-2.5GMR-LR1" : ["TOM-2.5GMR-LR1", "0x2C"],
+                "TOM-10G-SFPP-DT": ["TOM_10G_SFPP_DT", "0x2D"],
+                "TOM-10G-SFPP-SR0": ["TOM_10G_SFPP_SR0", "0x2e"], 
+                "TOM-10GE-LRL": ["TOM-10GE-LRL", "0x2f"]
+            }
+        ]
+    },
+    {
+        "majorType":"CFP",
+        "majorValue":"0x34",
+        "subTypes":  
+        [
+            {
+                "CFP_40G_SR4": ["CFP40GSR4", "0x01"],
+                "CFP_40G_LR4": ["CFP40GLR4", "0x02"],
+                "CFP_100G_LR4": ["CFP100GLR4", "0x03"],
+                "CFP_100G_SR10": ["CFP100GSR10", "0x04"],
+                "CFP_100G_LR10": ["CFP100GL10X", "0x05"],
+                "TOM-100G-S10X": ["CFP100GS10X", "0x06"],
+                "TOM-100G"     : ["TOM-100G", "0x08"],
+                "TOM_40GMR_FR":  ["TOM_40GMR_FR", "0x09"],
+                "TOM_100GMR_LR4": ["TOM_100GMR_LR4", "0x0A"],
+                "TOM_100GMR_L10X": ["TOM_100GMR_L10X", "0x0B"],
+                "TOM_40GMR_LR4": ["TOM_40GMR_LR4", "0x0C"],
+                "TOM_40GMR_ER4": ["TOM_40GMR_ER4", "0x0D"],
+                "TOM_100GMR_ER4": ["TOM_100GMR_ER4", "0x0E"],
+                "TOM2-100G-LR4" : ["TOM2_100G_LR4", "0x0F"],
+                "TOM2-100G-SR4" : ["TOM2_100G_SR4", "0x10"],
+                "TOM-100G-CFP-DT":["TOM_100G_CFP_DT","0x12"]
+            }
+        ]
+    },
+    {
+        "majorType":"QSFP+",
+        "majorValue":"0x56",
+        "subTypes":  
+        [
+            {
+                "TOM-40G-Q-LR4": ["TOM_40G_Q_LR4", "0x01"],
+                "TOM-40G-Q-SR4": ["TOM_40G_Q_SR4", "0x02"],
+                "TOM-40G-Q-SR4E":["TOM_40G_Q_SR4E", "0x03"],
+                "TOM-40G-Q-LRL": ["TOM_40G_Q_LRL", "0x04"],
+                "TOM-40G": ["TOM_40G", "0x05"]
+            }
+        ]
+    },
+    {
+        "majorType":"QSFP28",
+        "majorValue":"0x84",
+        "subTypes":  
+        [
+             {
+                "TOM-100G-Q": ["TOM_100G_Q", "0x01"],
+                "TOM-100G-Q-SR4": ["TOM_100G_Q_SR4", "0x02"],
+                "TOM-100G-Q-LR4": ["TOM_100G_Q_LR4", "0x03"],
+                "TOM-100G-Q-LR4L": ["TOM_100G_Q_LR4L", "0x04"],
+                "TOM-100G-Q-CLR4": ["TOM_100G_Q_CLR4", "0x05"],
+                "TOM-100GMR-Q-LR4": ["TOM-100GMR-Q-LR4", "0x06"],
+                "TOM-100GMR-Q-SR4": ["TOM-100GMR-Q-SR4", "0x07"],
+                "TOM-100G-Q-CWDM4": ["TOM-100G-Q-CWDM4", "0x08"],
+                "XP2-C-CBLA-Q-078": ["XP2-C-CBLA-Q-078", "0x09"]
+
+            }
+        ]
+    },
+    {
+        "majorType":"CFP2",
+        "majorValue":"0xA2",
+        "subTypes":  
+        [
+             {
+                "TOM-200G-A-CFP2": ["TOM-200G-A-CFP2", "0x03"]
+            }
+        ]
+    }
+
+]

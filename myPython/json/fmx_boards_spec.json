@@ -1,0 +1,911 @@
+[
+{
+	"Category":"XMM",
+	"BackupName":"XMM_NC",
+	"Flag":"CM",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"1024",
+	"MemRsv":"512",
+	"MemLimit":"1024",	
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "AuthenticationPolicy",
+			"Editable": "False",
+			"DefaultValue": "LOCAL",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackplaneId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0xa",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "ChassisBoardType",
+			"Editable": "True",
+			"DefaultValue": "0x71",
+			"Values":["0x71", "0x82", "0x86", "0x8E"],
+			"ValueNames":["CX_500S", "CX_100E_500S", "XT_500F_100", "CX_100E_500F"],
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "ChassisBoardSubType",
+			"Editable": "True",
+			"Values":[
+                "0x1","0x2","0x3","0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf", "0x10", 
+                "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20",
+                "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28", "0x29", "0x2a", "0x2b", "0x2c", "0x2d", "0x2e", "0x2f", "0x30",
+                "0x31", "0x32", "0x33", "0x34"
+                ],
+			"ValueNames":[
+                "CX-40E-500S-1C2 / CX-100E-500S-1C2 / XT-500F-100-1C3 / CX-100E-500F-1C1",
+                "CX-40E-500S-3C2 / CX-100E-500S-3C2 / XT-500F-100-5C3 / CX-100E-500F-5C1",
+                "CX-40E-500S-5C2 / CX-100E-500S-5C2 / XT-500F-100-9C3 / CX-100E-500F-9C1",
+                "CX-40E-500S-7C2 / CX-100E-500S-7C2 / XT-500F-100-13C3 / CX-100E-500F-13C1",
+                "CX-40E-500SB-1C2 / CX-100E-500SB-1C2 / XT-500F-100-1C5 / CX-100E-500F-17C1",
+                "CX-40E-500SB-3C2 / CX-100E-500SB-3C2 / XT-500F-100-5C5 / CX-100E-500F-1C2",
+                "CX-40E-500SB-5C2 / CX-100E-500SB-5C2 / XT-500F-100-9C5 / CX-100E-500F-5C2",
+                "CX-40E-500SB-7C2 / CX-100E-500SB-7C2 / XT-500F-100-13C5 / CX-100E-500F-9C2",
+                "CX-10E-500S-1C2 / CX-100E-500S-1C3 / XT-500F-100-1C6 / CX-100E-500F-13C2",
+                "CX-10E-500S-3C2 / CX-100E-500S-3C3 / XT-500F-100-5C6 / CX-100E-500F-17C2",
+                "CX-10E-500S-5C2 / CX-100E-500S-5C3 / XT-500F-100-9C6 / CX-100E-500F-1C3",
+                "CX-10E-500S-7C2 / CX-100E-500S-7C3 / XT-500F-100-13C6 / CX-100E-500F-5C3",
+                "CX-10E-500SB-1C2 / CX-100E-500SB-1C3 / XT-500F-100-1C8 / CX-100E-500F-9C3",
+                "CX-10E-500SB-3C2 / CX-100E-500SB-3C3 / XT-500F-100-5C8 / CX-100E-500F-13C3",
+                "CX-10E-500SB-5C2 / CX-100E-500SB-5C3 / XT-500F-100-9C8 / CX-100E-500F-17C3",
+                "CX-10E-500SB-7C2 / CX-100E-500SB-7C3 / XT-500F-100-13C8 / CX-100E-500FB-1C1",
+                "CX-10E-500S-1C3 / XT-500S-100-1C3 / XT-500F-100-17C3 / CX-100E-500FB-5C1",
+                "CX-10E-500S-3C3 / XT-500S-100-3C3 / XT-500F-100-17C5 / CX-100E-500FB-9C1",
+                "CX-10E-500S-5C3 / XT-500S-100-5C3 / XT-500F-100-17C6 / CX-100E-500FB-13C1",
+                "CX-10E-500S-7C3 / XT-500S-100-7C3 / XT-500F-100-17C8 / CX-100E-500FB-17C1",
+                "CX-10E-500SB-1C3 / XT-500S-100-1C5 / XT-500FB-100-1C3 / CX-100E-500FB-1C2",
+                "CX-10E-500SB-3C3 / XT-500S-100-3C5 / XT-500FB-100-1C5 / CX-100E-500FB-5C2",
+                "CX-10E-500SB-5C3 / XT-500S-100-5C5 / XT-500FB-100-1C6 / CX-100E-500FB-9C2",
+                "CX-10E-500SB-7C3 / XT-500S-100-7C5 / XT-500FB-100-1C8 / CX-100E-500FB-13C2",
+                "XT-500S-10-1C3 / XT-500S-100-1C6 / XT-500FB-100-5C3 / CX-100E-500FB-17C2",
+                "XT-500S-10-3C3 / XT-500S-100-3C6 / XT-500FB-100-5C5 / CX-100E-500FB-1C3",
+                "XT-500S-10-5C3 / XT-500S-100-5C6 / XT-500FB-100-5C6 / CX-100E-500FB-5C3",
+                "XT-500S-10-7C3 / XT-500S-100-7C6 / XT-500FB-100-5C8 / CX-100E-500FB-9C3",
+                "XT-500SB-10-1C3 / XT-500S-100-1C8 / XT-500FB-100-9C3 / CX-100E-500FB-13C3",
+                "XT-500SB-10-3C3 / XT-500S-100-3C8 / XT-500FB-100-9C5 / CX-100E-500FB-17C3",
+                "XT-500SB-10-5C3 / XT-500S-100-5C8 / XT-500FB-100-9C6",
+                "XT-500SB-10-7C3 / XT-500S-100-7C8 / XT-500FB-100-9C8",
+                "XT-500SB-100-1C3 / XT-500FB-100-13C3",
+                "XT-500SB-100-3C3 / XT-500FB-100-13C5",
+                "XT-500SB-100-5C3 / XT-500FB-100-13C6",
+                "XT-500SB-100-7C3 / XT-500FB-100-13C8",
+                "XT-500SB-100-1C5 / XT-500FB-100-17C3",
+                "XT-500SB-100-3C5 / XT-500FB-100-17C5",
+                "XT-500SB-100-5C5 / XT-500FB-100-17C6",
+                "XT-500SB-100-7C5 / XT-500FB-100-17C8",
+                "XT-500SB-100-1C6",
+                "XT-500SB-100-3C6",
+                "XT-500SB-100-5C6",
+                "XT-500SB-100-7C6",
+                "XT-500SB-100-1C8",
+                "XT-500SB-100-3C8",
+                "XT-500SB-100-5C8",
+                "XT-500SB-100-7C8",
+                "CX-100E-500S-1C1",
+                "CX-100E-500S-3C1",
+                "CX-100E-500S-5C1",
+                "CX-100E-500S-7C1"
+			],		
+			"DefaultValue": "0x01",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x70" ],
+			"ValueNames":["XMM"],
+			"DefaultValue": "0x70",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "False",
+			"DefaultValue": "0x70",
+			"Values":["0x70"],
+			"ValueNames":["FCM"],
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "DcnDestination",
+			"Editable": "False",
+			"DefaultValue": "10.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a36",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BottomDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BottomPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "False",
+			"DefaultValue": "XMM",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ChassisType",
+			"Editable": "True",
+			"Values": ["FMX"], 
+			"DefaultValue": "CX-40E-500S-1C2",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "InternalMasterIP",
+			"Editable": "False",
+			"DefaultValue": "127.1.1.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ActiveEmac",
+			"Editable": "False",
+			"DefaultValue": "1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "DcnGateway",
+			"Editable": "True",
+			"DefaultValue": "0.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIf",
+			"Editable": "False",
+			"DefaultValue": "eth0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIp",
+			"Editable": "True",
+			"DefaultValue": "0.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIpNetMask",
+			"Editable": "True",
+			"DefaultValue": "255.255.255.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnPrefixLen",
+			"Editable": "False",
+			"DefaultValue": "0x8",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "DefaultRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "gatewayProxyEnabled",
+			"Editable": "False",
+			"DefaultValue": "True",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "IoPanelId",
+			"Editable": "False",
+			"DefaultValue": "IOP123456789",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmActive",
+			"Editable": "False",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SimMode",
+			"Editable": "False",
+			"DefaultValue": "0xf",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "McmBrand",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "............",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyPeerIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f04017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NeType",
+			"Editable": "False",
+			"DefaultValue": "XT",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeCtrl",
+			"Editable": "True",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OscIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PeerMcmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PrimaryDb",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "RouterId",
+			"Editable": "True",
+			"DefaultValue": "100.10.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x7a",
+			"Flag": "NR.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "TelnetSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TL1SecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TopDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "TopPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "VmChassisNum",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmChassisPrefix",
+			"Editable": "False",
+			"DefaultValue": "1-A-",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmSupervisorIP",
+			"Editable": "False",
+			"DefaultValue": "127.11.254.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XFRSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XMLSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ZiplBldInfo",
+			"Editable": "False",
+			"DefaultValue": "Z",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "ZtpMode",
+			"Editable": "True",
+			"DefaultValue": "false",
+			"Flag": "R.I",
+			"Type": "str"
+		}
+	]
+},
+{
+	"Category":"XMM",
+	"BackupName":"XMM_SC",
+	"Flag":"CM",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"1024",
+	"MemRsv":"512",
+	"MemLimit":"1024",	
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "AuthenticationPolicy",
+			"Editable": "False",
+			"DefaultValue": "LOCAL",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackplaneId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0xa",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x70"],
+			"ValueNames":["XMM"],
+			"DefaultValue": "0x70",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "False",
+			"DefaultValue": "0x70",
+			"Values":["0x70"],
+			"ValueNames":["FCM"],
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "ChassisBoardType",
+			"Editable": "True",
+			"DefaultValue": "0x71",
+			"Values":["0x71", "0x82", "0x86", "0x8E"],
+			"ValueNames":["CX_500S", "CX_100E_500S", "XT_500F_100", "CX_100E_500F"],
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "ChassisBoardSubType",
+			"Editable": "True",
+			"Values":[
+                "0x1","0x2","0x3","0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf", "0x10", 
+                "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20",
+                "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28", "0x29", "0x2a", "0x2b", "0x2c", "0x2d", "0x2e", "0x2f", "0x30",
+                "0x31", "0x32", "0x33", "0x34"
+                ],
+			"ValueNames":[
+                "CX-40E-500S-1C2 / CX-100E-500S-1C2 / XT-500F-100-1C3 / CX-100E-500F-1C1",
+                "CX-40E-500S-3C2 / CX-100E-500S-3C2 / XT-500F-100-5C3 / CX-100E-500F-5C1",
+                "CX-40E-500S-5C2 / CX-100E-500S-5C2 / XT-500F-100-9C3 / CX-100E-500F-9C1",
+                "CX-40E-500S-7C2 / CX-100E-500S-7C2 / XT-500F-100-13C3 / CX-100E-500F-13C1",
+                "CX-40E-500SB-1C2 / CX-100E-500SB-1C2 / XT-500F-100-1C5 / CX-100E-500F-17C1",
+                "CX-40E-500SB-3C2 / CX-100E-500SB-3C2 / XT-500F-100-5C5 / CX-100E-500F-1C2",
+                "CX-40E-500SB-5C2 / CX-100E-500SB-5C2 / XT-500F-100-9C5 / CX-100E-500F-5C2",
+                "CX-40E-500SB-7C2 / CX-100E-500SB-7C2 / XT-500F-100-13C5 / CX-100E-500F-9C2",
+                "CX-10E-500S-1C2 / CX-100E-500S-1C3 / XT-500F-100-1C6 / CX-100E-500F-13C2",
+                "CX-10E-500S-3C2 / CX-100E-500S-3C3 / XT-500F-100-5C6 / CX-100E-500F-17C2",
+                "CX-10E-500S-5C2 / CX-100E-500S-5C3 / XT-500F-100-9C6 / CX-100E-500F-1C3",
+                "CX-10E-500S-7C2 / CX-100E-500S-7C3 / XT-500F-100-13C6 / CX-100E-500F-5C3",
+                "CX-10E-500SB-1C2 / CX-100E-500SB-1C3 / XT-500F-100-1C8 / CX-100E-500F-9C3",
+                "CX-10E-500SB-3C2 / CX-100E-500SB-3C3 / XT-500F-100-5C8 / CX-100E-500F-13C3",
+                "CX-10E-500SB-5C2 / CX-100E-500SB-5C3 / XT-500F-100-9C8 / CX-100E-500F-17C3",
+                "CX-10E-500SB-7C2 / CX-100E-500SB-7C3 / XT-500F-100-13C8 / CX-100E-500FB-1C1",
+                "CX-10E-500S-1C3 / XT-500S-100-1C3 / XT-500F-100-17C3 / CX-100E-500FB-5C1",
+                "CX-10E-500S-3C3 / XT-500S-100-3C3 / XT-500F-100-17C5 / CX-100E-500FB-9C1",
+                "CX-10E-500S-5C3 / XT-500S-100-5C3 / XT-500F-100-17C6 / CX-100E-500FB-13C1",
+                "CX-10E-500S-7C3 / XT-500S-100-7C3 / XT-500F-100-17C8 / CX-100E-500FB-17C1",
+                "CX-10E-500SB-1C3 / XT-500S-100-1C5 / XT-500FB-100-1C3 / CX-100E-500FB-1C2",
+                "CX-10E-500SB-3C3 / XT-500S-100-3C5 / XT-500FB-100-1C5 / CX-100E-500FB-5C2",
+                "CX-10E-500SB-5C3 / XT-500S-100-5C5 / XT-500FB-100-1C6 / CX-100E-500FB-9C2",
+                "CX-10E-500SB-7C3 / XT-500S-100-7C5 / XT-500FB-100-1C8 / CX-100E-500FB-13C2",
+                "XT-500S-10-1C3 / XT-500S-100-1C6 / XT-500FB-100-5C3 / CX-100E-500FB-17C2",
+                "XT-500S-10-3C3 / XT-500S-100-3C6 / XT-500FB-100-5C5 / CX-100E-500FB-1C3",
+                "XT-500S-10-5C3 / XT-500S-100-5C6 / XT-500FB-100-5C6 / CX-100E-500FB-5C3",
+                "XT-500S-10-7C3 / XT-500S-100-7C6 / XT-500FB-100-5C8 / CX-100E-500FB-9C3",
+                "XT-500SB-10-1C3 / XT-500S-100-1C8 / XT-500FB-100-9C3 / CX-100E-500FB-13C3",
+                "XT-500SB-10-3C3 / XT-500S-100-3C8 / XT-500FB-100-9C5 / CX-100E-500FB-17C3",
+                "XT-500SB-10-5C3 / XT-500S-100-5C8 / XT-500FB-100-9C6",
+                "XT-500SB-10-7C3 / XT-500S-100-7C8 / XT-500FB-100-9C8",
+                "XT-500SB-100-1C3 / XT-500FB-100-13C3",
+                "XT-500SB-100-3C3 / XT-500FB-100-13C5",
+                "XT-500SB-100-5C3 / XT-500FB-100-13C6",
+                "XT-500SB-100-7C3 / XT-500FB-100-13C8",
+                "XT-500SB-100-1C5 / XT-500FB-100-17C3",
+                "XT-500SB-100-3C5 / XT-500FB-100-17C5",
+                "XT-500SB-100-5C5 / XT-500FB-100-17C6",
+                "XT-500SB-100-7C5 / XT-500FB-100-17C8",
+                "XT-500SB-100-1C6",
+                "XT-500SB-100-3C6",
+                "XT-500SB-100-5C6",
+                "XT-500SB-100-7C6",
+                "XT-500SB-100-1C8",
+                "XT-500SB-100-3C8",
+                "XT-500SB-100-5C8",
+                "XT-500SB-100-7C8",
+                "CX-100E-500S-1C1",
+                "CX-100E-500S-3C1",
+                "CX-100E-500S-5C1",
+                "CX-100E-500S-7C1"
+			],		
+			"DefaultValue": "0x01",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "DcnDestination",
+			"Editable": "False",
+			"DefaultValue": "10.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},	
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a36",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BottomDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BottomPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "False",
+			"DefaultValue": "XMM",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ChassisType",
+			"Editable": "True",
+			"Values": ["FMX" ],
+			"DefaultValue": "CX-40E-500S-1C2",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "InternalMasterIP",
+			"Editable": "False",
+			"DefaultValue": "127.1.1.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "DcnIf",
+			"Editable": "False",
+			"DefaultValue": "eth0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DefaultRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "gatewayProxyEnabled",
+			"Editable": "False",
+			"DefaultValue": "True",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "IoPanelId",
+			"Editable": "False",
+			"DefaultValue": "IOP123456789",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmActive",
+			"Editable": "False",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SimMode",
+			"Editable": "False",
+			"DefaultValue": "0xf",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "McmBrand",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "............",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyPeerIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f04017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeCtrl",
+			"Editable": "False",
+			"DefaultValue": "no",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OscIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PeerMcmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PrimaryDb",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x7a",
+			"Flag": "NR.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "TelnetSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TL1SecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TopDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "TopPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "VmChassisNum",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmChassisPrefix",
+			"Editable": "False",
+			"DefaultValue": "1-A-",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmSupervisorIP",
+			"Editable": "False",
+			"DefaultValue": "127.11.254.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XFRSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XMLSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ZiplBldInfo",
+			"Editable": "False",
+			"DefaultValue": "Z",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "ZtpMode",
+			"Editable": "True",
+			"DefaultValue": "false",
+			"Flag": "R.I",
+			"Type": "str"
+		}
+	]
+}
+]
+

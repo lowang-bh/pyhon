@@ -1,0 +1,802 @@
+[
+    {
+        "boardSpec":"XMM_NC",
+        "shelf":["A"],
+        "cxChsType":"CX_500S",
+        "cxChsTypeValue":"0x71",
+        "cxChsSubType":
+        [   
+            {
+                "subName": ["CX-40E-500S-1C2", "CX-40E-500S-3C2", "CX-40E-500S-5C2", "CX-40E-500S-7C2"],
+                "subValue":["0x1","0x2","0x3","0x4"],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP+": ["1", "12"]
+                }
+
+            },
+            {   
+                "subName": ["CX-40E-500SB-1C2", "CX-40E-500SB-3C2", "CX-40E-500SB-5C2", "CX-40E-500SB-7C2"],
+                "subValue":["0x5", "0x6", "0x7", "0x8"],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP+":["1", "12"]
+                }
+            },
+            {
+                "subName": ["CX-10E-500S-1C2", "CX-10E-500S-3C2", "CX-10E-500S-5C2", "CX-10E-500S-7C2", 
+                            "CX-10E-500S-1C3", "CX-10E-500S-3C3", "CX-10E-500S-5C3", "CX-10E-500S-7C3"],
+                "subValue":["0x9", "0xa", "0xb", "0xc", "0x11", "0x12", "0x13", "0x14"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"]
+                }                
+            },
+            {
+                "subName": ["CX-10E-500SB-1C2", "CX-10E-500SB-3C2", "CX-10E-500SB-5C2", "CX-10E-500SB-7C2",
+                            "CX-10E-500SB-1C3", "CX-10E-500SB-3C3", "CX-10E-500SB-5C3", "CX-10E-500SB-7C3"],
+                "subValue":["0xd", "0xe", "0xf", "0x10", "0x15", "0x16", "0x17", "0x18"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"]
+                }                 
+            },
+            {
+                "subName": ["XT-500S-10-1C3",  "XT-500S-10-3C3",  "XT-500S-10-5C3",  "XT-500S-10-7C3"],
+                "subValue":["0x19", "0x1a", "0x1b", "0x1c"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"],
+                    "CFP":["1", "48"]
+                }
+            },
+            {
+                "subName": ["XT-500SB-10-1C3", "XT-500SB-10-3C3", "XT-500SB-10-5C3", "XT-500SB-10-7C3"],
+                "subValue":["0x1d", "0x1e", "0x1f", "0x20"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"],
+                    "CFP":["1", "48"]
+                }
+            }
+        ]
+    },
+    {
+        "boardSpec":"XMM_NC",
+        "shelf":["A"],        
+        "cxChsType":"CX_100E_500S",
+        "cxChsTypeValue":"0x82",  
+        "cxChsSubType":
+        [
+            {
+                "subName": ["CX-100E-500S-1C1", "CX-100E-500S-3C1", "CX-100E-500S-5C1", "CX-100E-500S-7C1"],
+                "subValue":["0x31", "0x32", "0x33", "0x34"],
+                "slotNums":"21"
+            },
+            {
+                "subName": ["CX-100E-500S-1C2", "CX-100E-500S-3C2", "CX-100E-500S-5C2", "CX-100E-500S-7C2",
+                            "CX-100E-500S-1C3", "CX-100E-500S-3C3", "CX-100E-500S-5C3", "CX-100E-500S-7C3"],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x9", "0xa", "0xb", "0xc"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            },
+            {
+                "subName": ["CX-100E-500SB-1C2", "CX-100E-500SB-3C2", "CX-100E-500SB-5C2", "CX-100E-500SB-7C2", 
+                            "CX-100E-500SB-1C3", "CX-100E-500SB-3C3", "CX-100E-500SB-5C3", "CX-100E-500SB-7C3"],
+                "subValue":["0x5", "0x6", "0x7", "0x8", "0xd", "0xe", "0xf", "0x10"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            },
+            {
+                "subName": ["XT-500S-100-1C3", "XT-500S-100-3C3", "XT-500S-100-5C3", "XT-500S-100-7C3", 
+                            "XT-500S-100-1C5", "XT-500S-100-3C5", "XT-500S-100-5C5", "XT-500S-100-7C5", 
+                            "XT-500S-100-1C6", "XT-500S-100-3C6", "XT-500S-100-5C6", "XT-500S-100-7C6", 
+                            "XT-500S-100-1C8", "XT-500S-100-3C8", "XT-500S-100-5C8", "XT-500S-100-7C8"],
+                "subValue":["0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18",
+                            "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            },
+            {
+                "subName": ["XT-500SB-100-1C3", "XT-500SB-100-3C3", "XT-500SB-100-5C3", "XT-500SB-100-7C3",
+                            "XT-500SB-100-1C5", "XT-500SB-100-3C5", "XT-500SB-100-5C5", "XT-500SB-100-7C5", 
+                            "XT-500SB-100-1C6", "XT-500SB-100-3C6", "XT-500SB-100-5C6", "XT-500SB-100-7C6", 
+                            "XT-500SB-100-1C8", "XT-500SB-100-3C8", "XT-500SB-100-5C8", "XT-500SB-100-7C8"],
+                "subValue":["0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28",
+                            "0x29", "0x2a", "0x2b", "0x2c", "0x2d", "0x2e", "0x2f", "0x30"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            }
+            
+        ]       
+    },
+    {
+        "boardSpec":"XMM_NC",  
+        "shelf":["A"],        
+        "cxChsType":"XT_500F_100",
+        "cxChsTypeValue":"0x86",
+        "cxChsSubType":
+        [
+            {
+                "subName": ["XT-500F-100-17C3","XT-500F-100-17C5","XT-500F-100-17C6","XT-500F-100-17C8"],
+                "subValue":["0x11", "0x12", "0x13", "0x14"],
+                "slotNums":"21"
+            },
+            {
+                "subName": ["XT-500F-100-1C3", "XT-500F-100-5C3", "XT-500F-100-9C3", "XT-500F-100-13C3", 
+                            "XT-500F-100-1C5", "XT-500F-100-5C5", "XT-500F-100-9C5", "XT-500F-100-13C5",
+                            "XT-500F-100-1C6", "XT-500F-100-5C6", "XT-500F-100-9C6", "XT-500F-100-13C6",
+                            "XT-500F-100-1C8", "XT-500F-100-5C8", "XT-500F-100-9C8", "XT-500F-100-13C8"],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa",
+                            "0xb", "0xc", "0xd", "0xe", "0xf", "0x10"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+": ["1", "13"]
+                }
+            },
+            {
+                "subName": ["XT-500FB-100-1C3", "XT-500FB-100-1C5", "XT-500FB-100-1C6", "XT-500FB-100-1C8", 
+                            "XT-500FB-100-5C3", "XT-500FB-100-5C5", "XT-500FB-100-5C6", "XT-500FB-100-5C8",
+                            "XT-500FB-100-9C3", "XT-500FB-100-9C5", "XT-500FB-100-9C6", "XT-500FB-100-9C8", 
+                            "XT-500FB-100-13C3","XT-500FB-100-13C5","XT-500FB-100-13C6","XT-500FB-100-13C8", 
+                            "XT-500FB-100-17C3","XT-500FB-100-17C5","XT-500FB-100-17C6","XT-500FB-100-17C8"],
+                "subValue":["0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", 
+                            "0x1f", "0x20", "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28"],
+                "slotNums": "21"
+            }
+        ]        
+    },
+    {
+        "boardSpec":"XMM_NC",  
+        "shelf":["A"],        
+        "cxChsType":"CX_100E_500F",
+        "cxChsTypeValue":"0x8E",
+        "cxChsSubType":
+        [
+            {
+                "subName": ["CX-100E-500F-1C1", "CX-100E-500F-5C1", "CX-100E-500F-9C1", "CX-100E-500F-13C1", "CX-100E-500F-17C1",
+                            "CX-100E-500F-1C2", "CX-100E-500F-5C2", "CX-100E-500F-9C2", "CX-100E-500F-13C2", "CX-100E-500F-17C2", 
+                            "CX-100E-500F-1C3", "CX-100E-500F-5C3", "CX-100E-500F-9C3", "CX-100E-500F-13C3", "CX-100E-500F-17C3"],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf"],
+                "slotNums": "13",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+": ["1", "13"]
+                }
+            },
+            {
+                "subName": ["CX-100E-500FB-1C1", "CX-100E-500FB-5C1", "CX-100E-500FB-9C1", "CX-100E-500FB-13C1", "CX-100E-500FB-17C1", 
+                            "CX-100E-500FB-1C2", "CX-100E-500FB-5C2", "CX-100E-500FB-9C2", "CX-100E-500FB-13C2", "CX-100E-500FB-17C2",
+                            "CX-100E-500FB-1C3", "CX-100E-500FB-5C3", "CX-100E-500FB-9C3", "CX-100E-500FB-13C3", "CX-100E-500FB-17C3"], 
+                "subValue":["0x10", "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e"],
+                "slotNums": "13",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+": ["1", "13"]
+                }                
+            }
+        ]        
+    },
+    {
+        "boardSpec":"XMM_SC",
+        "shelf":["A"],
+        "cxChsType":"CX_500S",
+        "cxChsTypeValue":"0x71",
+        "cxChsSubType":
+        [   
+            {
+                "subName": ["CX-40E-500S-1C2", "CX-40E-500S-3C2", "CX-40E-500S-5C2", "CX-40E-500S-7C2"],
+                "subValue":["0x1","0x2","0x3","0x4"],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP+": ["1", "12"]
+                }
+
+            },
+            {   
+                "subName": ["CX-40E-500SB-1C2", "CX-40E-500SB-3C2", "CX-40E-500SB-5C2", "CX-40E-500SB-7C2"],
+                "subValue":["0x5", "0x6", "0x7", "0x8"],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP+":["1", "12"]
+                }
+            },
+            {
+                "subName": ["CX-10E-500S-1C2", "CX-10E-500S-3C2", "CX-10E-500S-5C2", "CX-10E-500S-7C2", 
+                            "CX-10E-500S-1C3", "CX-10E-500S-3C3", "CX-10E-500S-5C3", "CX-10E-500S-7C3"],
+                "subValue":["0x9", "0xa", "0xb", "0xc", "0x11", "0x12", "0x13", "0x14"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"]
+                }                
+            },
+            {
+                "subName": ["CX-10E-500SB-1C2", "CX-10E-500SB-3C2", "CX-10E-500SB-5C2", "CX-10E-500SB-7C2",
+                            "CX-10E-500SB-1C3", "CX-10E-500SB-3C3", "CX-10E-500SB-5C3", "CX-10E-500SB-7C3"],
+                "subValue":["0xd", "0xe", "0xf", "0x10", "0x15", "0x16", "0x17", "0x18"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"]
+                }                 
+            },
+            {
+                "subName": ["XT-500S-10-1C3",  "XT-500S-10-3C3",  "XT-500S-10-5C3",  "XT-500S-10-7C3"],
+                "subValue":["0x19", "0x1a", "0x1b", "0x1c"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"],
+                    "CFP":["1", "48"]
+                }
+            },
+            {
+                "subName": ["XT-500SB-10-1C3", "XT-500SB-10-3C3", "XT-500SB-10-5C3", "XT-500SB-10-7C3"],
+                "subValue":["0x1d", "0x1e", "0x1f", "0x20"],
+                "slotNums": "48",
+                "slotMap":
+                {
+                    "SFP":["1", "48"],
+                    "CFP":["1", "48"]
+                }
+            }
+        ]
+    },
+    {
+        "boardSpec":"XMM_SC",
+        "shelf":["A"],        
+        "cxChsType":"CX_100E_500S",
+        "cxChsTypeValue":"0x82",  
+        "cxChsSubType":
+        [
+            {
+                "subName": ["CX-100E-500S-1C1", "CX-100E-500S-3C1", "CX-100E-500S-5C1", "CX-100E-500S-7C1"],
+                "subValue":["0x31", "0x32", "0x33", "0x34"],
+                "slotNums":"21"
+            },
+            {
+                "subName": ["CX-100E-500S-1C2", "CX-100E-500S-3C2", "CX-100E-500S-5C2", "CX-100E-500S-7C2",
+                            "CX-100E-500S-1C3", "CX-100E-500S-3C3", "CX-100E-500S-5C3", "CX-100E-500S-7C3"],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x9", "0xa", "0xb", "0xc"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            },
+            {
+                "subName": ["CX-100E-500SB-1C2", "CX-100E-500SB-3C2", "CX-100E-500SB-5C2", "CX-100E-500SB-7C2", 
+                            "CX-100E-500SB-1C3", "CX-100E-500SB-3C3", "CX-100E-500SB-5C3", "CX-100E-500SB-7C3"],
+                "subValue":["0x5", "0x6", "0x7", "0x8", "0xd", "0xe", "0xf", "0x10"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            },
+            {
+                "subName": ["XT-500S-100-1C3", "XT-500S-100-3C3", "XT-500S-100-5C3", "XT-500S-100-7C3", 
+                            "XT-500S-100-1C5", "XT-500S-100-3C5", "XT-500S-100-5C5", "XT-500S-100-7C5", 
+                            "XT-500S-100-1C6", "XT-500S-100-3C6", "XT-500S-100-5C6", "XT-500S-100-7C6", 
+                            "XT-500S-100-1C8", "XT-500S-100-3C8", "XT-500S-100-5C8", "XT-500S-100-7C8"],
+                "subValue":["0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18",
+                            "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            },
+            {
+                "subName": ["XT-500SB-100-1C3", "XT-500SB-100-3C3", "XT-500SB-100-5C3", "XT-500SB-100-7C3",
+                            "XT-500SB-100-1C5", "XT-500SB-100-3C5", "XT-500SB-100-5C5", "XT-500SB-100-7C5", 
+                            "XT-500SB-100-1C6", "XT-500SB-100-3C6", "XT-500SB-100-5C6", "XT-500SB-100-7C6", 
+                            "XT-500SB-100-1C8", "XT-500SB-100-3C8", "XT-500SB-100-5C8", "XT-500SB-100-7C8"],
+                "subValue":["0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28",
+                            "0x29", "0x2a", "0x2b", "0x2c", "0x2d", "0x2e", "0x2f", "0x30"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+" :["4", "5"],
+                    "SFP":["6", "21"]
+                }                
+            }
+            
+        ]       
+    },
+    {
+        "boardSpec":"XMM_SC",  
+        "shelf":["A"],        
+        "cxChsType":"XT_500F_100",
+        "cxChsTypeValue":"0x86",
+        "cxChsSubType":
+        [
+            {
+                "subName": ["XT-500F-100-17C3","XT-500F-100-17C5","XT-500F-100-17C6","XT-500F-100-17C8"],
+                "subValue":["0x11", "0x12", "0x13", "0x14"],
+                "slotNums":"21"
+            },
+            {
+                "subName": ["XT-500F-100-1C3", "XT-500F-100-5C3", "XT-500F-100-9C3", "XT-500F-100-13C3", 
+                            "XT-500F-100-1C5", "XT-500F-100-5C5", "XT-500F-100-9C5", "XT-500F-100-13C5",
+                            "XT-500F-100-1C6", "XT-500F-100-5C6", "XT-500F-100-9C6", "XT-500F-100-13C6",
+                            "XT-500F-100-1C8", "XT-500F-100-5C8", "XT-500F-100-9C8", "XT-500F-100-13C8"],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa",
+                            "0xb", "0xc", "0xd", "0xe", "0xf", "0x10"],
+                "slotNums": "21",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+": ["1", "13"]
+                }
+            },
+            {
+                "subName": ["XT-500FB-100-1C3", "XT-500FB-100-1C5", "XT-500FB-100-1C6", "XT-500FB-100-1C8", 
+                            "XT-500FB-100-5C3", "XT-500FB-100-5C5", "XT-500FB-100-5C6", "XT-500FB-100-5C8",
+                            "XT-500FB-100-9C3", "XT-500FB-100-9C5", "XT-500FB-100-9C6", "XT-500FB-100-9C8", 
+                            "XT-500FB-100-13C3","XT-500FB-100-13C5","XT-500FB-100-13C6","XT-500FB-100-13C8", 
+                            "XT-500FB-100-17C3","XT-500FB-100-17C5","XT-500FB-100-17C6","XT-500FB-100-17C8"],
+                "subValue":["0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", 
+                            "0x1f", "0x20", "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28"],
+                "slotNums": "21"
+            }
+        ]        
+    },
+    {
+        "boardSpec":"XMM_SC",  
+        "shelf":["A"],        
+        "cxChsType":"CX_100E_500F",
+        "cxChsTypeValue":"0x8E",
+        "cxChsSubType":
+        [
+            {
+                "subName": ["CX-100E-500F-1C1", "CX-100E-500F-5C1", "CX-100E-500F-9C1", "CX-100E-500F-13C1", "CX-100E-500F-17C1",
+                            "CX-100E-500F-1C2", "CX-100E-500F-5C2", "CX-100E-500F-9C2", "CX-100E-500F-13C2", "CX-100E-500F-17C2", 
+                            "CX-100E-500F-1C3", "CX-100E-500F-5C3", "CX-100E-500F-9C3", "CX-100E-500F-13C3", "CX-100E-500F-17C3"],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf"],
+                "slotNums": "13",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+": ["1", "13"]
+                }                
+            },
+            {
+                "subName": ["CX-100E-500FB-1C1", "CX-100E-500FB-5C1", "CX-100E-500FB-9C1", "CX-100E-500FB-13C1", "CX-100E-500FB-17C1", 
+                            "CX-100E-500FB-1C2", "CX-100E-500FB-5C2", "CX-100E-500FB-9C2", "CX-100E-500FB-13C2", "CX-100E-500FB-17C2",
+                            "CX-100E-500FB-1C3", "CX-100E-500FB-5C3", "CX-100E-500FB-9C3", "CX-100E-500FB-13C3", "CX-100E-500FB-17C3"], 
+                "subValue":["0x10", "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e"],
+                "slotNums": "13",
+                "slotMap":
+                {
+                    "QSFP28":["1", "5"],
+                    "QSFP+": ["1", "13"]
+                }                
+            }
+        ]        
+    },
+    
+    {
+        "boardSpec":"XMM2_NC",
+        "shelf":["A"],
+        "cxChsType":"CX_100E_1200F",
+        "cxChsTypeValue":"0x87",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["CX-100E-1200F-C0", "CX-100E-1200F-C1", "CX-100E-1200F-C2", "CX-100E-1200F-C3", "CX-100E-1200FB-C1",
+                            "CX-100E-1200FB-C2",  "CX-100E-1200FB-C3",  "CX-100E-1200FB-C0",  "CX-100E-1200F-S-C2",  "CX-100E-1200F-S-C3"],
+                "subValue":["0x1","0x2","0x3","0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xA"],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP28":["1", "12"],
+                    "QSFP+":["1", "12"]
+                }
+            }           
+        ]
+    },
+    {
+        "boardSpec":"XMM2_SC",
+        "shelf":["A"],
+        "cxChsType":"CX_100E_1200F",
+        "cxChsTypeValue":"0x87",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["CX-100E-1200F-C0", "CX-100E-1200F-C1", "CX-100E-1200F-C2", "CX-100E-1200F-C3", "CX-100E-1200FB-C1",
+                            "CX-100E-1200FB-C2",  "CX-100E-1200FB-C3",  "CX-100E-1200FB-C0",  "CX-100E-1200F-S-C2",  "CX-100E-1200F-S-C3"],
+                "subValue":["0x1","0x2","0x3","0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xA"],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP28":["1", "12"],
+                    "QSFP+":["1", "12"]
+                }
+            }            
+        ]
+    },    
+    {
+        "boardSpec":"CLMM_NC",
+        "shelf":["A"],
+        "cxChsType":"CLS-T",
+        "cxChsTypeValue":"0x96",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["CLS-T-ECXH1-A", "CLS-T-ECXH1-D", "CLS-T-ECXH2-A", "CLS-T-ECXH2-D"],
+                "subValue":["0x1","0x2","0x3","0x4"],
+                "slotNums": "2",
+                "slotMap":
+                {
+                     "QSFP+":["1","2"]
+                }
+            }           
+        ]
+    },
+    {
+        "boardSpec":"CLMM_SC",
+        "shelf":["A"],
+        "cxChsType":"CLS-T",
+        "cxChsTypeValue":"0x96",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["CLS-T-ECXH1-A", "CLS-T-ECXH1-D", "CLS-T-ECXH2-A", "CLS-T-ECXH2-D"],
+                "subValue":["0x1","0x2","0x3","0x4"],
+                "slotNums": "2",
+                "slotMap":
+                {
+                     "QSFP+":["1","2"]
+                }
+            }           
+        ]
+    },    
+    {
+        "boardSpec":"XTMM_NC",
+        "shelf":["A"],
+        "cxChsType":"XT3612",
+        "cxChsTypeValue":"0x88",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XT3612-YP-EQC5", "XT3612-YP-EQC6", "XT3612-YP-EQC8", "XTS3612-YN-EQC13", "XTS3612-YN-EQC14", "XTS3612-YB-EQC13", 
+                            "XT3612-YN-EQC5", "XT3612-YB-EQC5", "XT3612-YN-EQC6", "XT3612-YB-EQC6", "XT3612-YN-EQC8", "XT3612-YB-EQC8", 
+                            "XTS3612-YB-EQC14", "XTS3612-YP-EQC13", "XTS3612-YP-EQC14"
+                            ],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "12"],
+                    "QSFP+":["11", "15"]
+                }
+            }            
+        ]
+    },
+    {
+        "boardSpec":"XTMM_SC",
+        "shelf":["A"],
+        "cxChsType":"XT3612",
+        "cxChsTypeValue":"0x88",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XT3612-YP-EQC5", "XT3612-YP-EQC6", "XT3612-YP-EQC8", "XTS3612-YN-EQC13", "XTS3612-YN-EQC14", "XTS3612-YB-EQC13", 
+                            "XT3612-YN-EQC5", "XT3612-YB-EQC5", "XT3612-YN-EQC6", "XT3612-YB-EQC6", "XT3612-YN-EQC8", "XT3612-YB-EQC8", 
+                            "XTS3612-YB-EQC14", "XTS3612-YP-EQC13", "XTS3612-YP-EQC14"
+                            ],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "12"],
+                    "QSFP+":["11", "15"]
+                }
+            }            
+        ]
+    },    
+    {
+        "boardSpec":"XTMM_NC",
+        "shelf":["A"],
+        "cxChsType":"XT3618",
+        "cxChsTypeValue":"0x89",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XT3618-YP-EEC5", "XT3618-YP-EEC6", "XT3618-YP-EEC8", "XTS3618-YN-EEC13", "XTS3618-YN-EEC14", "XTS3618-YB-EEC13", 
+                            "XT3618-YN-EEC5", "XT3618-YB-EEC5", "XT3618-YN-EEC6", "XT3618-YB-EEC6", "XT3618-YN-EEC8", "XT3618-YB-EEC8", 
+                            "XTS3618-YB-EEC14", "XTS3618-YP-EEC13", "XTS3618-YP-EEC14"
+                            ],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "18"],
+                    "QSFP+":["15", "24"]
+                }
+            }
+        ]
+    },
+    {
+        "boardSpec":"XTMM_SC",
+        "shelf":["A"],
+        "cxChsType":"XT3618",
+        "cxChsTypeValue":"0x89",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XT3618-YP-EEC5", "XT3618-YP-EEC6", "XT3618-YP-EEC8", "XTS3618-YN-EEC13", "XTS3618-YN-EEC14", "XTS3618-YB-EEC13", 
+                            "XT3618-YN-EEC5", "XT3618-YB-EEC5", "XT3618-YN-EEC6", "XT3618-YB-EEC6", "XT3618-YN-EEC8", "XT3618-YB-EEC8", 
+                            "XTS3618-YB-EEC14", "XTS3618-YP-EEC13", "XTS3618-YP-EEC14"
+                            ],
+                "subValue":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "18"],
+                    "QSFP+":["15", "24"]
+                }
+            }
+        ]
+    },    
+    {
+        "boardSpec":"XTMM_NC",
+        "shelf":["A"],
+        "cxChsType":"XT3624",
+        "cxChsTypeValue":"0x8A",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XT3624-YP-ESC5",  "XT3624-YP-ESC6", "XT3624-YP-ESC8", "XT3624-YP-EZC5", "XT3624-YP-EZC6", "XT3624-YP-EZC8", 
+                            "XTS3624-YN-ESC13", "XTS3624-YN-ESC14", "XTS3624-YB-ESC13", "XT3624-YN-ESC5", "XT3624-YB-ESC5", "XT3624-YN-EZC5", 
+                            "XT3624-YB-EZC5", "XT3624-YN-ESC6", "XT3624-YB-ESC6", "XT3624-YN-EZC6", "XT3624-YB-EZC6", "XT3624-YN-ESC8", 
+                            "XT3624-YB-ESC8", "XT3624-YN-EZC8", "XT3624-YB-EZC8", "XTS3624-YB-ESC14", "XTS3624-YP-ESC13", "XTS3624-YP-ESC14", 
+                            "XTS3624-YP-EZC13", "XTS3624-YN-EZC13", "XTS3624-YB-EZC13", "XTS3624-YN-EZC14", "XTS3624-YB-EZC14", "XTS3624-YP-EZC14"
+                            ],
+                "subValue":[
+                            "0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf",
+                            "0x10", "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e"
+                            ],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "24"],
+                    "QSFP+":["21", "30"]
+                }              
+            }            
+        ]
+    },
+    {
+        "boardSpec":"XTMM_SC",
+        "shelf":["A"],
+        "cxChsType":"XT3624",
+        "cxChsTypeValue":"0x8A",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XT3624-YP-ESC5",  "XT3624-YP-ESC6", "XT3624-YP-ESC8", "XT3624-YP-EZC5", "XT3624-YP-EZC6", "XT3624-YP-EZC8", 
+                            "XTS3624-YN-ESC13", "XTS3624-YN-ESC14", "XTS3624-YB-ESC13", "XT3624-YN-ESC5", "XT3624-YB-ESC5", "XT3624-YN-EZC5", 
+                            "XT3624-YB-EZC5", "XT3624-YN-ESC6", "XT3624-YB-ESC6", "XT3624-YN-EZC6", "XT3624-YB-EZC6", "XT3624-YN-ESC8", 
+                            "XT3624-YB-ESC8", "XT3624-YN-EZC8", "XT3624-YB-EZC8", "XTS3624-YB-ESC14", "XTS3624-YP-ESC13", "XTS3624-YP-ESC14", 
+                            "XTS3624-YP-EZC13", "XTS3624-YN-EZC13", "XTS3624-YB-EZC13", "XTS3624-YN-EZC14", "XTS3624-YB-EZC14", "XTS3624-YP-EZC14"
+                            ],
+                "subValue":[
+                            "0x1", "0x2", "0x3", "0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", "0xd", "0xe", "0xf",
+                            "0x10", "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e"
+                            ],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "24"],
+                    "QSFP+":["21", "30"]
+                }                
+            }            
+        ]
+    },       
+
+    {
+        "boardSpec":"XTMM_NC",
+        "shelf":["A"],
+        "cxChsType":"XT3300",
+        "cxChsTypeValue":"0x93",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XTS3303-YB-EBC13", "XTS3303-YB-EBC14", "XTS3303-YN-EBC13", "XTS3303-YN-EBC14", "XT3306-YN-EQC2", "XT3306-YN-EQC5", 
+                            "XT3306-YN-EQC6", "XT3306-YN-EQC8", "XT3306-YB-EQC2", "XT3306-YB-EQC5", "XT3306-YB-EQC6", "XT3306-YB-EQC8", 
+                            "XTS3306-YB-EQC13", "XTS3306-YB-EQC14", "XTS3306-YN-EQC13", "XTS3306-YN-EQC14", "XT3309-YN-EEC2", "XT3309-YN-EEC5", 
+                            "XT3309-YN-EEC6", "XT3309-YN-EEC8", "XT3309-YB-EEC2", "XT3309-YB-EEC5", "XT3309-YB-EEC6", "XT3309-YB-EEC8", 
+                            "XTS3309-YB-EEC13", "XTS3309-YB-EEC14", "XTS3309-YN-EEC13", "XTS3309-YN-EEC14", "XT3312-YN-ESC2", "XT3312-YN-ESC5", 
+                            "XT3312-YN-ESC6", "XT3312-YN-ESC8", "XT3312-YN-EZC2", "XT3312-YN-EZC5", "XT3312-YN-EZC6", "XT3312-YN-EZC8", 
+                            "XT3312-YB-ESC2", "XT3312-YB-ESC5", "XT3312-YB-ESC6", "XT3312-YB-ESC8", "XT3312-YB-EZC2", "XT3312-YB-EZC5", 
+                            "XT3312-YB-EZC6", "XT3312-YB-EZC8", "XTS3312-YB-EZC13", "XTS3312-YB-ESC13", "XTS3312-YB-EZC14", "XTS3312-YB-ESC14", 
+                            "XTS3312-YN-EZC13", "XTS3312-YN-ESC13", "XTS3312-YN-EZC14", "XTS3312-YN-ESC14", "XTS3303-YP-EBC13", "XTS3303-YP-EBC14", 
+                            "XT3306-YP-EQC2", "XT3306-YP-EQC5", "XT3306-YP-EQC6", "XT3306-YP-EQC8", "XTS3306-YP-EQC13", "XTS3306-YP-EQC14", 
+                            "XT3309-YP-EEC2", "XT3309-YP-EEC5", "XT3309-YP-EEC6", "XT3309-YP-EEC8", "XTS3309-YP-EEC13", "XTS3309-YP-EEC14", 
+                            "XT3312-YP-ESC2", "XT3312-YP-ESC5", "XT3312-YP-ESC6", "XT3312-YP-ESC8", "XTS3312-YP-ESC13", "XTS3312-YP-ESC14", 
+                            "XT3312-YP-EZC2", "XT3312-YP-EZC5", "XT3312-YP-EZC6", "XT3312-YP-EZC8", "XTS3312-YP-EZC13", "XTS3312-YP-EZC14",
+                            "XT3312-YBI-EZC2", "XT3312-YBI-EZC5", "XT3312-YBI-EZC6", "XT3312-YBI-EZC8", "XT3312-YNS-EZC8"
+                            ],
+                "subValue":[
+                            "0x1", "0x2", "0x3", "0x4", "0x5", "0x7", "0x8", "0x9", "0xa", "0xc", "0xd", "0xe", "0xf",
+                            "0x10", "0x11", "0x12", "0x13", "0x15", "0x16", "0x17", "0x18", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f",
+                            "0x20", "0x21", "0x23", "0x24", "0x25", "0x26", "0x28", "0x29", "0x2a", "0x2b", "0x2d", "0x2e", "0x2f",
+                            "0x30", "0x32", "0x33", "0x34", "0x35", "0x36", "0x37", "0x38", "0x39", "0x3a", "0x3b", "0x3c", "0x3d", "0x3e", "0x3f",
+                            "0x40", "0x41", "0x42", "0x43", "0x44", "0x45", "0x46", "0x47", "0x48", "0x49", "0x4a", "0x4b", "0x4c", "0x4d", "0x4e", "0x4f",
+                            "0x50", "0x51", "0x52", "0x53", "0x54", "0x55", "0x56", "0x57", "0x58", "0x59", "0x5a", "0x5b"
+							],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP28":["1", "12"],
+					"QSFP+":["1", "12"]
+                }
+            }       
+        ]
+    },
+    {
+        "boardSpec":"XTMM_SC",
+        "shelf":["A"],
+        "cxChsType":"XT3300",
+        "cxChsTypeValue":"0x93",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": [
+                            "XTS3303-YB-EBC13", "XTS3303-YB-EBC14", "XTS3303-YN-EBC13", "XTS3303-YN-EBC14", "XT3306-YN-EQC2", "XT3306-YN-EQC5", 
+                            "XT3306-YN-EQC6", "XT3306-YN-EQC8", "XT3306-YB-EQC2", "XT3306-YB-EQC5", "XT3306-YB-EQC6", "XT3306-YB-EQC8", 
+                            "XTS3306-YB-EQC13", "XTS3306-YB-EQC14", "XTS3306-YN-EQC13", "XTS3306-YN-EQC14", "XT3309-YN-EEC2", "XT3309-YN-EEC5", 
+                            "XT3309-YN-EEC6", "XT3309-YN-EEC8", "XT3309-YB-EEC2", "XT3309-YB-EEC5", "XT3309-YB-EEC6", "XT3309-YB-EEC8", 
+                            "XTS3309-YB-EEC13", "XTS3309-YB-EEC14", "XTS3309-YN-EEC13", "XTS3309-YN-EEC14", "XT3312-YN-ESC2", "XT3312-YN-ESC5", 
+                            "XT3312-YN-ESC6", "XT3312-YN-ESC8", "XT3312-YN-EZC2", "XT3312-YN-EZC5", "XT3312-YN-EZC6", "XT3312-YN-EZC8", 
+                            "XT3312-YB-ESC2", "XT3312-YB-ESC5", "XT3312-YB-ESC6", "XT3312-YB-ESC8", "XT3312-YB-EZC2", "XT3312-YB-EZC5", 
+                            "XT3312-YB-EZC6", "XT3312-YB-EZC8", "XTS3312-YB-EZC13", "XTS3312-YB-ESC13", "XTS3312-YB-EZC14", "XTS3312-YB-ESC14", 
+                            "XTS3312-YN-EZC13", "XTS3312-YN-ESC13", "XTS3312-YN-EZC14", "XTS3312-YN-ESC14", "XTS3303-YP-EBC13", "XTS3303-YP-EBC14", 
+                            "XT3306-YP-EQC2", "XT3306-YP-EQC5", "XT3306-YP-EQC6", "XT3306-YP-EQC8", "XTS3306-YP-EQC13", "XTS3306-YP-EQC14", 
+                            "XT3309-YP-EEC2", "XT3309-YP-EEC5", "XT3309-YP-EEC6", "XT3309-YP-EEC8", "XTS3309-YP-EEC13", "XTS3309-YP-EEC14", 
+                            "XT3312-YP-ESC2", "XT3312-YP-ESC5", "XT3312-YP-ESC6", "XT3312-YP-ESC8", "XTS3312-YP-ESC13", "XTS3312-YP-ESC14", 
+                            "XT3312-YP-EZC2", "XT3312-YP-EZC5", "XT3312-YP-EZC6", "XT3312-YP-EZC8", "XTS3312-YP-EZC13", "XTS3312-YP-EZC14",
+                            "XT3312-YBI-EZC2", "XT3312-YBI-EZC5", "XT3312-YBI-EZC6", "XT3312-YBI-EZC8", "XT3312-YNS-EZC8"
+                            ],
+                "subValue":[
+                            "0x1", "0x2", "0x3", "0x4", "0x5", "0x7", "0x8", "0x9", "0xa", "0xc", "0xd", "0xe", "0xf",
+                            "0x10", "0x11", "0x12", "0x13", "0x15", "0x16", "0x17", "0x18", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f",
+                            "0x20", "0x21", "0x23", "0x24", "0x25", "0x26", "0x28", "0x29", "0x2a", "0x2b", "0x2d", "0x2e", "0x2f",
+                            "0x30", "0x32", "0x33", "0x34", "0x35", "0x36", "0x37", "0x38", "0x39", "0x3a", "0x3b", "0x3c", "0x3d", "0x3e", "0x3f",
+                            "0x40", "0x41", "0x42", "0x43", "0x44", "0x45", "0x46", "0x47", "0x48", "0x49", "0x4a", "0x4b", "0x4c", "0x4d", "0x4e", "0x4f",
+                            "0x50", "0x51", "0x52", "0x53", "0x54", "0x55", "0x56", "0x57", "0x58", "0x59", "0x5a", "0x5b"
+							],
+                "slotNums": "12",
+                "slotMap":
+                {
+                    "QSFP28":["1", "12"],
+					"QSFP+":["1", "12"]
+                }
+            }           
+        ]
+    },  
+    {
+        "boardSpec":"XTMM_NC",
+        "shelf":["A"],
+        "cxChsType":"XT3606",
+        "cxChsTypeValue":"0x94",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["XTS3606-YN-EBC13", "XTS3606-YN-EBC14", "XTS3606-YB-EBC13", "XTS3606-YB-EBC14", "XTS3606-YP-EBC13", "XTS3606-YP-EBC14"],
+                "subValue":["0x1","0x2","0x3","0x4", "0x5", "0x6"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "6"],
+                    "QSFP+":["1", "30"]
+                }
+            }            
+        ]
+    },
+    {
+        "boardSpec":"XTMM_SC",
+        "shelf":["A"],
+        "cxChsType":"XT3606",
+        "cxChsTypeValue":"0x94",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["XTS3606-YN-EBC13", "XTS3606-YN-EBC14", "XTS3606-YB-EBC13", "XTS3606-YB-EBC14", "XTS3606-YP-EBC13", "XTS3606-YP-EBC14"],
+                "subValue":["0x1","0x2","0x3","0x4", "0x5", "0x6"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "6"],
+                    "QSFP+":["1", "30"]
+                }
+            }            
+        ]
+    },
+    {
+        "boardSpec":"XTMM_NC",
+        "shelf":["A"],
+        "cxChsType":"XT3609",
+        "cxChsTypeValue":"0x95",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["XTS3609-YN-ETC13", "XTS3609-YN-ETC14", "XTS3609-YB-ETC13", "XTS3609-YB-ETC14", "XTS3609-YP-ETC13", "XTS3609-YP-ETC14"],
+                "subValue":["0x1","0x2","0x3","0x4", "0x5", "0x6"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "9"],
+                    "QSFP+":["1", "30"]
+                }
+            }            
+        ]
+    },
+    {
+        "boardSpec":"XTMM_SC",
+        "shelf":["A"],
+        "cxChsType":"XT3609",
+        "cxChsTypeValue":"0x95",
+        "cxChsSubType":
+        [   
+            {   
+                "subName": ["XTS3609-YN-ETC13", "XTS3609-YN-ETC14", "XTS3609-YB-ETC13", "XTS3609-YB-ETC14", "XTS3609-YP-ETC13", "XTS3609-YP-ETC14"],
+                "subValue":["0x1","0x2","0x3","0x4", "0x5", "0x6"],
+                "slotNums": "30",
+                "slotMap":
+                {
+                    "QSFP28":["1", "9"],
+                    "QSFP+":["1", "30"]
+                }
+            }            
+        ]
+    }    
+]

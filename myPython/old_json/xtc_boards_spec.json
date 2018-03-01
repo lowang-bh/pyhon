@@ -1,0 +1,2227 @@
+[
+{
+    "Category":"OTM",
+    "BackupName":"OTM",
+    "Flag":"Template",
+    "CpuRsv":"64",
+    "CpuLimit":"512",
+    "MemSize":"1024",
+    "MemRsv":"512",
+    "MemLimit":"1024",    
+    "OS" : "QNX",
+    "Entries":[
+        {
+            "EntryName":"BackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneVid",
+            "Editable":"False",
+            "DefaultValue":"0x0a",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardSubType",
+            "Editable":"True",
+            "DefaultValue":"0x0",
+            "BoardSubType":{"OTM":{"Values":    ["0x0", "0x1"],
+                                   "ValueNames":["OTM-E1 / OTM2-E1", "OTM-P1 / OTM2-P1"]
+                                  },
+                            "OTM1200":{"Values":    ["0x0"],
+                                       "ValueNames":["OTM-1200"]
+                                      }
+                            },
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardType",
+            "Editable":"True",
+            "DefaultValue":"0x41",
+            "Values":["0x41", "0x4D"],
+            "ValueNames":["OTM","OTM1200"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"OsType",
+            "Editable":"False",
+            "DefaultValue":"QNX",
+            "Values":["0x4D"],
+            "ValueNames":["LINUX"],
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BootpBoardType",
+            "Editable":"False",
+            "DefaultValue":"0x99",
+            "Values":["0x99","0x4D"],
+            "ValueNames":["OTM","OTM1200"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a90",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"CardType",
+            "Editable":"False",
+            "DefaultValue":"OTM",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"ChassisType",
+            "Editable":"False",
+            "DefaultValue":"XTC_10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CurrentRls",
+            "Editable":"False",
+            "DefaultValue":"NOTSET",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"HostId",
+            "Editable":"False",
+            "DefaultValue":"0x12345678",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName":"Sim_TIM1",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM2",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM3",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM4",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM5",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM6",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM7",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM8",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM9",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM10",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TIM1_TOM1",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName":"SlotId",
+            "Editable":"False",
+            "DefaultValue":"0x1",
+            "Flag":"I",
+            "Type":"uint32",
+            "AllowOverride":"False"
+        },
+        {
+            "EntryName": "PonDescription",
+            "Editable": "True",
+            "Values":["OTM-E1"],
+            "DefaultValue": "OTM-E1",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "SerialNo",
+            "Editable": "False",
+            "DefaultValue": "SN0123456789",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "FeatureBits",
+            "Editable": "False",
+            "DefaultValue": "0x00000000",
+            "Flag": "R.I",
+            "Type": "str"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+        }
+    ]
+},
+
+{
+    "Category":"OLM",
+    "BackupName":"OLM",
+    "Flag":"Template",
+    "CpuRsv":"64",
+    "CpuLimit":"512",
+    "MemSize":"1024",
+    "MemRsv":"128",
+    "MemLimit":"1024",    
+    "OS" : "QNX",
+    "Entries":[
+        {
+            "EntryName":"BackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneVid",
+            "Editable":"False",
+            "DefaultValue":"0x0a",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardSubType",
+            "Editable":"True",
+            "DefaultValue":"0x01",
+            "BoardSubType":{"OLM":{"Values":    ["0x01", "0x02", "0x03", "0x04", "0x05", "0x06", "0x07", "0x08", "0x09", "0x0a", "0x0b", "0x0c", "0x0d", "0x0e", "0x0f", "0x10",
+                                                 "0x11", "0x12", "0x13", "0x14", "0x1d", "0x1e", "0x1f", "0x20", 
+                                                 "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28"],
+                                   "ValueNames":["AOLX_500_T4_1_C5 / AOLX_500B_T4_1_C5 / AOLX-500P-T4-1-C5",
+                                                 "AOLX_500_T4_3_C5 / AOLX_500B_T4_3_C5 / AOLX-500P-T4-3-C5",
+                                                 "AOLX_500_T4_5_C5 / AOLX_500B_T4_5_C5 / AOLX-500P-T4-5-C5",
+                                                 "AOLX_500_T4_7_C5 / AOLX_500B_T4_7_C5 / AOLX-500P-T4-7-C5",
+                                                 "AOLX_500_T4_1_C6 / AOLX_500B_T4_1_C6 / AOLX-500P-T4-1-C6",
+                                                 "AOLX_500_T4_3_C6 / AOLX_500B_T4_3_C6 / AOLX-500P-T4-3-C6",
+                                                 "AOLX_500_T4_5_C6 / AOLX_500B_T4_5_C6 / AOLX-500P-T4-5-C6",
+                                                 "AOLX_500_T4_7_C6 / AOLX_500B_T4_7_C6 / AOLX-500P-T4-7-C6",
+                                                 "AOLM_500_T4_1_C5 / AOLM_500B_T4_1_C5 / AOLM-500P-T4-1-C5",
+                                                 "AOLM_500_T4_3_C5 / AOLM_500B_T4_3_C5 / AOLM-500P-T4-3-C5",
+                                                 "AOLM_500_T4_5_C5 / AOLM_500B_T4_5_C5 / AOLM-500P-T4-5-C5",
+                                                 "AOLM_500_T4_7_C5 / AOLM_500B_T4_7_C5 / AOLM-500P-T4-7-C5",
+                                                 "AOLM_500_T4_1_C6 / AOLM_500B_T4_1_C6 / AOLM-500P-T4-1-C6",
+                                                 "AOLM_500_T4_3_C6 / AOLM_500B_T4_3_C6 / AOLM-500P-T4-3-C6",
+                                                 "AOLM_500_T4_5_C6 / AOLM_500B_T4_5_C6 / AOLM-500P-T4-5-C6",
+                                                 "AOLM_500_T4_7_C6 / AOLM_500B_T4_7_C6 / AOLM-500P-T4-7-C6",
+                                                 "SOLM_500_T4_1_C11",
+                                                 "SOLM_500_T4_3_C11",
+                                                 "SOLM_500_T4_5_C11",
+                                                 "SOLM_500_T4_7_C11",
+                                                 "AOLM_200_T4_1_C5 ",
+                                                 "AOLM_200_T4_3_C5 ",
+                                                 "AOLM_200_T4_5_C5 ",
+                                                 "AOLM_200_T4_7_C5 ",
+                                                 "AOLM_200_T4_1_C6 ",
+                                                 "AOLM_200_T4_3_C6 ",
+                                                 "AOLM_200_T4_5_C6 ",
+                                                 "AOLM_200_T4_7_C6 ",
+                                                 "SOLX-500-T4-1-C11",
+                                                 "SOLX-500-T4-3-C11",
+                                                 "SOLX-500-T4-5-C11",
+                                                 "SOLX-500-T4-7-C11"
+                                                ]
+                                    },
+                            "AOLM2":{"Values":    ["0x01", "0x02", "0x03", "0x04", "0x05", "0x06", "0x07", "0x08", "0x09", "0x0a", "0x0b", "0x0c", "0x0d", "0x0e", "0x0f", "0x10",
+                                                   "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20", 
+                                                   "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28"],
+                                     "ValueNames":["AOLX2_500_T4_1_C5  / AOLX2_500B_T4_1_C5  / AOLX2-500P-T4-1-C5",
+                                                   "AOLX2_500_T4_3_C5  / AOLX2_500B_T4_3_C5  / AOLX2-500P-T4-3-C5",
+                                                   "AOLX2_500_T4_5_C5  / AOLX2_500B_T4_5_C5  / AOLX2-500P-T4-5-C5",
+                                                   "AOLX2_500_T4_7_C5  / AOLX2_500B_T4_7_C5  / AOLX2-500P-T4-7-C5",
+                                                   "AOLX2_500_T4_1_C6  / AOLX2_500B_T4_1_C6  / AOLX2-500P-T4-1-C6",
+                                                   "AOLX2_500_T4_3_C6  / AOLX2_500B_T4_3_C6  / AOLX2-500P-T4-3-C6",
+                                                   "AOLX2_500_T4_5_C6  / AOLX2_500B_T4_5_C6  / AOLX2-500P-T4-5-C6",
+                                                   "AOLX2_500_T4_7_C6  / AOLX2_500B_T4_7_C6  / AOLX2-500P-T4-7-C6",
+                                                   "AOLX2_500_T4_1_C8  / AOLX2_500B_T4_1_C8  / AOLX2-500P-T4-1-C8",
+                                                   "AOLX2_500_T4_3_C8  / AOLX2_500B_T4_3_C8  / AOLX2-500P-T4-3-C8",
+                                                   "AOLX2_500_T4_5_C8  / AOLX2_500B_T4_5_C8  / AOLX2-500P-T4-5-C8",
+                                                   "AOLX2_500_T4_7_C8  / AOLX2_500B_T4_7_C8  / AOLX2-500P-T4-7-C8",
+                                                   "AOLM2_500_T4_1_C5  / AOLM2_500B_T4_1_C5  / AOLM2-500P-T4-1-C5",
+                                                   "AOLM2_500_T4_3_C5  / AOLM2_500B_T4_3_C5  / AOLM2-500P-T4-3-C5",
+                                                   "AOLM2_500_T4_5_C5  / AOLM2_500B_T4_5_C5  / AOLM2-500P-T4-5-C5",
+                                                   "AOLM2_500_T4_7_C5  / AOLM2_500B_T4_7_C5  / AOLM2-500P-T4-7-C5",
+                                                   "AOLM2_500_T4_1_C6  / AOLM2_500B_T4_1_C6  / AOLM2-500P-T4-1-C6",
+                                                   "AOLM2_500_T4_3_C6  / AOLM2_500B_T4_3_C6  / AOLM2-500P-T4-3-C6",
+                                                   "AOLM2_500_T4_5_C6  / AOLM2_500B_T4_5_C6  / AOLM2-500P-T4-5-C6",
+                                                   "AOLM2_500_T4_7_C6  / AOLM2_500B_T4_7_C6  / AOLM2-500P-T4-7-C6",
+                                                   "AOLM2-500-T4-1-C8  / AOLM2-500B-T4-1-C8  / AOLM2-500P-T4-1-C8",  
+                                                   "AOLM2-500-T4-3-C8  / AOLM2-500B-T4-3-C8  / AOLM2-500P-T4-3-C8", 
+                                                   "AOLM2-500-T4-5-C8  / AOLM2-500B-T4-5-C8  / AOLM2-500P-T4-5-C8", 
+                                                   "AOLM2-500-T4-7-C8  / AOLM2-500B-T4-7-C8  / AOLM2-500P-T4-7-C8", 
+                                                   "SOLM2-500-T4-1-C12 / SOLM2-500B-T4-1-C12 / SOLM2-500P-T4-1-C12",
+                                                   "SOLM2-500-T4-3-C12 / SOLM2-500B-T4-3-C12 / SOLM2-500P-T4-3-C12",
+                                                   "SOLM2-500-T4-5-C12 / SOLM2-500B-T4-5-C12 / SOLM2-500P-T4-5-C12",
+                                                   "SOLM2-500-T4-7-C12 / SOLM2-500B-T4-7-C12 / SOLM2-500P-T4-7-C12",
+                                                   "SOLM2-500-T4-1-C13 / SOLM2-500B-T4-1-C13 / SOLM2-500P-T4-1-C13",
+                                                   "SOLM2-500-T4-3-C13 / SOLM2-500B-T4-3-C13 / SOLM2-500P-T4-3-C13",
+                                                   "SOLM2-500-T4-5-C13 / SOLM2-500B-T4-5-C13 / SOLM2-500P-T4-5-C13",
+                                                   "SOLM2-500-T4-7-C13 / SOLM2-500B-T4-7-C13 / SOLM2-500P-T4-7-C13",
+                                                   "SOLX2-500-T4-1-C12 / SOLX2-500B-T4-1-C12 / SOLX2-500P-T4-1-C12",
+                                                   "SOLX2-500-T4-3-C12 / SOLX2-500B-T4-3-C12 / SOLX2-500P-T4-3-C12",
+                                                   "SOLX2-500-T4-5-C12 / SOLX2-500B-T4-5-C12 / SOLX2-500P-T4-5-C12",
+                                                   "SOLX2-500-T4-7-C12 / SOLX2-500B-T4-7-C12 / SOLX2-500P-T4-7-C12",
+                                                   "SOLX2-500-T4-1-C13 / SOLX2-500B-T4-1-C13 / SOLX2-500P-T4-1-C13",
+                                                   "SOLX2-500-T4-3-C13 / SOLX2-500B-T4-3-C13 / SOLX2-500P-T4-3-C13",
+                                                   "SOLX2-500-T4-5-C13 / SOLX2-500B-T4-5-C13 / SOLX2-500P-T4-5-C13",
+                                                   "SOLX2-500-T4-7-C13 / SOLX2-500B-T4-7-C13 / SOLX2-500P-T4-7-C13"
+                                                  ]  
+                                    },
+                            "AOFX":{"Values":    ["0x01", "0x02", "0x03", "0x04", "0x05", "0x06", "0x07", "0x08", "0x09", "0x0a", "0x0b", "0x0c", "0x0d", "0x0e", "0x0f", "0x10",
+                                                  "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20", 
+                                                  "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28", "0x29", "0x2A", "0x2B", "0x2C", "0x2D", "0x2E", "0x2F", "0x30", 
+                                                  "0x31", "0x32", "0x33", "0x34", "0x35", "0x36", "0x37", "0x38", "0x39", "0x3A", "0x3B", "0x3C", "0x3D", "0x3E", "0x3F", "0x40", 
+                                                  "0x41", "0x42", "0x43", "0x44", "0x45", "0x46"],
+                                    "ValueNames":["AOFX-500-T4-1-C5  / AOFX-500B-T4-1-C5  /  AOFX-500P-T4-1-C5",
+                                                  "AOFX-500-T4-5-C5  / AOFX-500B-T4-5-C5  /  AOFX-500P-T4-5-C5",
+                                                  "AOFX-500-T4-9-C5  / AOFX-500B-T4-9-C5  /  AOFX-500P-T4-9-C5",
+                                                  "AOFX-500-T4-13-C5 / AOFX-500B-T4-13-C5 / AOFX-500P-T4-13-C5",
+                                                  "AOFX-500-T4-17-C5 / AOFX-500B-T4-17-C5 / AOFX-500P-T4-17-C5",
+                                                  "AOFM-500-T4-1-C5  / AOFM-500B-T4-1-C5  /  AOFM-500P-T4-1-C5",
+                                                  "AOFM-500-T4-5-C5  / AOFM-500B-T4-5-C5  /  AOFM-500P-T4-5-C5",
+                                                  "AOFM-500-T4-9-C5  / AOFM-500B-T4-9-C5  /  AOFM-500P-T4-9-C5",
+                                                  "AOFM-500-T4-13-C5 / AOFM-500B-T4-13-C5 / AOFM-500P-T4-13-C5",
+                                                  "AOFM-500-T4-17-C5 / AOFM-500B-T4-17-C5 / AOFM-500P-T4-17-C5",
+                                                  "AOFX-500-T4-1-C6  / AOFX-500B-T4-1-C6  /  AOFX-500P-T4-1-C6",
+                                                  "AOFX-500-T4-5-C6  / AOFX-500B-T4-5-C6  /  AOFX-500P-T4-5-C6",
+                                                  "AOFX-500-T4-9-C6  / AOFX-500B-T4-9-C6  /  AOFX-500P-T4-9-C6",
+                                                  "AOFX-500-T4-13-C6 / AOFX-500B-T4-13-C6 / AOFX-500P-T4-13-C6",
+                                                  "AOFX-500-T4-17-C6 / AOFX-500B-T4-17-C6 / AOFX-500P-T4-17-C6",
+                                                  "AOFM-500-T4-1-C6  / AOFM-500B-T4-1-C6  /  AOFM-500P-T4-1-C6",
+                                                  "AOFM-500-T4-5-C6  / AOFM-500B-T4-5-C6  / AOFM-500P-T4-5-C6",
+                                                  "AOFM-500-T4-9-C6  / AOFM-500B-T4-9-C6  / AOFM-500P-T4-9-C6",
+                                                  "AOFM-500-T4-13-C6 / AOFM-500B-T4-13-C6 / AOFM-500P-T4-13-C6",
+                                                  "AOFM-500-T4-17-C6 / AOFM-500B-T4-17-C6 / AOFM-500P-T4-17-C6",
+                                                  "AOFX-500-T4-1-C7  / AOFX-500B-T4-1-C7",
+                                                  "AOFX-500-T4-5-C7  / AOFX-500B-T4-5-C7",
+                                                  "AOFX-500-T4-9-C7  / AOFX-500B-T4-9-C7",
+                                                  "AOFX-500-T4-13-C7 / AOFX-500B-T4-13-C7",
+                                                  "AOFX-500-T4-17-C7 / AOFX-500B-T4-17-C7",
+                                                  "AOFM-500-T4-1-C7  / AOFM-500B-T4-1-C7",
+                                                  "AOFM-500-T4-5-C7  / AOFM-500B-T4-5-C7",
+                                                  "AOFM-500-T4-9-C7  / AOFM-500B-T4-9-C7",
+                                                  "AOFM-500-T4-13-C7 / AOFM-500B-T4-13-C7",
+                                                  "AOFM-500-T4-17-C7 / AOFM-500B-T4-17-C7",
+                                                  "AOFX-500-T4-1-C8  / AOFX-500B-T4-1-C8  / AOFX-500P-T4-1-C8",
+                                                  "AOFX-500-T4-5-C8  / AOFX-500B-T4-5-C8  / AOFX-500P-T4-5-C8",
+                                                  "AOFX-500-T4-9-C8  / AOFX-500B-T4-9-C8  / AOFX-500P-T4-9-C8",
+                                                  "AOFX-500-T4-13-C8 / AOFX-500B-T4-13-C8 / AOFX-500P-T4-13-C8",
+                                                  "AOFX-500-T4-17-C8 / AOFX-500B-T4-17-C8 / AOFX-500P-T4-17-C8",
+                                                  "AOFM-500-T4-1-C8  / AOFM-500B-T4-1-C8  / AOFM-500P-T4-1-C8",
+                                                  "AOFM-500-T4-5-C8  / AOFM-500B-T4-5-C8  / AOFM-500P-T4-5-C8",
+                                                  "AOFM-500-T4-9-C8  / AOFM-500B-T4-9-C8  / AOFM-500P-T4-9-C8",
+                                                  "AOFM-500-T4-13-C8 / AOFM-500B-T4-13-C8 / AOFM-500P-T4-13-C8",
+                                                  "AOFM-500-T4-17-C8 / AOFM-500B-T4-17-C8 / AOFM-500P-T4-17-C8",
+                                                  "AOFX-500-T4-1-C9  / AOFX-500B-T4-1-C9 ",
+                                                  "AOFX-500-T4-5-C9  / AOFX-500B-T4-5-C9 ",
+                                                  "AOFX-500-T4-9-C9  / AOFX-500B-T4-9-C9", 
+                                                  "AOFX-500-T4-13-C9 / AOFX-500B-T4-13-C9", 
+                                                  "AOFX-500-T4-17-C9 / AOFX-500B-T4-17-C9", 
+                                                  "AOFM-500-T4-1-C9  / AOFM-500B-T4-1-C9", 
+                                                  "AOFM-500-T4-5-C9  / AOFM-500B-T4-5-C9 ",
+                                                  "AOFM-500-T4-9-C9  / AOFM-500B-T4-9-C9 ",
+                                                  "AOFM-500-T4-13-C9 / AOFM-500B-T4-13-C9 ",
+                                                  "AOFM-500-T4-17-C9 / AOFM-500B-T4-17-C9 ",
+                                                  "SOFX-500-T4-1-C12 / SOFX-500B-T4-1-C12  / SOFX-500P-T4-1-C12 ",
+                                                  "SOFX-500-T4-5-C12 / SOFX-500B-T4-5-C12  / SOFX-500P-T4-5-C12 ",
+                                                  "SOFX-500-T4-9-C12 / SOFX-500B-T4-9-C12  / SOFX-500P-T4-9-C12 ",
+                                                  "SOFX-500-T4-13-C12/ SOFX-500B-T4-13-C12 / SOFX-500P-T4-13-C12",
+                                                  "SOFX-500-T4-17-C12/ SOFX-500B-T4-17-C12 / SOFX-500P-T4-17-C12",
+                                                  "SOFM-500-T4-1-C12 / SOFM-500B-T4-1-C12  / SOFM-500P-T4-1-C12 ",
+                                                  "SOFM-500-T4-5-C12 / SOFM-500B-T4-5-C12  / SOFM-500P-T4-5-C12 ",
+                                                  "SOFM-500-T4-9-C12 / SOFM-500B-T4-9-C12  / SOFM-500P-T4-9-C12 ",
+                                                  "SOFM-500-T4-13-C12/ SOFM-500B-T4-13-C12 / SOFM-500P-T4-13-C12",
+                                                  "SOFM-500-T4-17-C12/ SOFM-500B-T4-17-C12 / SOFM-500P-T4-17-C12",
+                                                  "SOFX-500-T4-1-C13 / SOFX-500B-T4-1-C13  / SOFX-500P-T4-1-C13 ",
+                                                  "SOFX-500-T4-5-C13 / SOFX-500B-T4-5-C13  / SOFX-500P-T4-5-C13 ",
+                                                  "SOFX-500-T4-9-C13 / SOFX-500B-T4-9-C13  / SOFX-500P-T4-9-C13 ",
+                                                  "SOFX-500-T4-13-C13/ SOFX-500B-T4-13-C13 / SOFX-500P-T4-13-C13",
+                                                  "SOFX-500-T4-17-C13/ SOFX-500B-T4-17-C13 / SOFX-500P-T4-17-C13",
+                                                  "SOFM-500-T4-1-C13 / SOFM-500B-T4-1-C13  / SOFM-500P-T4-1-C13 ",
+                                                  "SOFM-500-T4-5-C13 / SOFM-500B-T4-5-C13  / SOFM-500P-T4-5-C13 ",
+                                                  "SOFM-500-T4-9-C13 / SOFM-500B-T4-9-C13  / SOFM-500P-T4-9-C13 ",
+                                                  "SOFM-500-T4-13-C13/ SOFM-500B-T4-13-C13 / SOFM-500P-T4-13-C13",
+                                                  "SOFM-500-T4-17-C13/ SOFM-500B-T4-17-C13 / SOFM-500P-T4-17-C13"
+                                                 ]
+                                    },
+                            "AOFX1200":{"Values": ["0x01", "0x02", "0x03", "0x04", "0x05", "0x06", "0x07", "0x08", "0x09", "0x0a", "0x0b", "0x0c", "0x0d", "0x0e", "0x0f", "0x10",
+                                                   "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20",
+                                                   "0x21", "0x22", "0x23", "0x24", "0x25", "0x26", "0x27", "0x28", "0x29", "0x2A", "0x2B", "0x2C", "0x2D", "0x2E", "0x2F", "0x30", 
+                                                   "0x31", "0x32", "0x33", "0x34", "0x35", "0x36" ],
+                                        "ValueNames":[
+                                                      "AOFM-1200Y-QC5 / AOFM-1200YP-QC5 / AOFM-1200YB-QC5",
+                                                      "AOFM-1200Y-QC6 / AOFM-1200YP-QC6 / AOFM-1200YB-QC6",
+                                                      "AOFM-1200Y-QC8 / AOFM-1200YP-QC8 / AOFM-1200YB-QC8",
+                                                      "AOFM-1200Y-EC5 / AOFM-1200YP-EC5 / AOFM-1200YB-EC5",
+                                                      "AOFM-1200Y-EC6 / AOFM-1200YP-EC6 / AOFM-1200YB-EC6",
+                                                      "AOFM-1200Y-EC8 / AOFM-1200YP-EC8 / AOFM-1200YB-EC8",
+                                                      "AOFM-1200Y-SC5 / AOFM-1200YP-SC5 / AOFM-1200YB-SC5",
+                                                      "AOFM-1200Y-SC6 / AOFM-1200YP-SC6 / AOFM-1200YB-SC6",
+                                                      "AOFM-1200Y-SC8 / AOFM-1200YP-SC8 / AOFM-1200YB-SC8",
+                                                      "AOFM-1200Y-ZC5 / AOFM-1200YP-ZC5 / AOFM-1200YB-ZC5",
+                                                      "AOFM-1200Y-ZC6 / AOFM-1200YP-ZC6 / AOFM-1200YB-ZC6",
+                                                      "AOFM-1200Y-ZC8 / AOFM-1200YP-ZC8 / AOFM-1200YB-ZC8",
+                                                      "AOFM-1200Y-DC5 / AOFM-1200YP-DC5 / AOFM-1200YB-DC5",
+                                                      "AOFM-1200Y-DC6 / AOFM-1200YP-DC6 / AOFM-1200YB-DC6",
+                                                      "AOFM-1200Y-DC8 / AOFM-1200YP-DC8 / AOFM-1200YB-DC8",
+                                                      "AOFX-1200Y-QC5 / AOFX-1200YP-QC5 / AOFX-1200YB-QC5",
+                                                      "AOFX-1200Y-QC6 / AOFX-1200YP-QC6 / AOFX-1200YB-QC6",
+                                                      "AOFX-1200Y-QC8 / AOFX-1200YP-QC8 / AOFX-1200YB-QC8",
+                                                      "AOFX-1200Y-EC5 / AOFX-1200YP-EC5 / AOFX-1200YB-EC5",
+                                                      "AOFX-1200Y-EC6 / AOFX-1200YP-EC6 / AOFX-1200YB-EC6",
+                                                      "AOFX-1200Y-EC8 / AOFX-1200YP-EC8 / AOFX-1200YB-EC8",
+                                                      "AOFX-1200Y-SC5 / AOFX-1200YP-SC5 / AOFX-1200YB-SC5",
+                                                      "AOFX-1200Y-SC6 / AOFX-1200YP-SC6 / AOFX-1200YB-SC6",
+                                                      "AOFX-1200Y-SC8 / AOFX-1200YP-SC8 / AOFX-1200YB-SC8",
+                                                      "AOFX-1200Y-ZC5 / AOFX-1200YP-ZC5 / AOFX-1200YB-ZC5",
+                                                      "AOFX-1200Y-ZC6 / AOFX-1200YP-ZC6 / AOFX-1200YB-ZC6",
+                                                      "AOFX-1200Y-ZC8 / AOFX-1200YP-ZC8 / AOFX-1200YB-ZC8",
+                                                      "AOFX-1200Y-DC5 / AOFX-1200YP-DC5 / AOFX-1200YB-DC5",
+                                                      "AOFX-1200Y-DC6 / AOFX-1200YP-DC6 / AOFX-1200YB-DC6",
+                                                      "AOFX-1200Y-DC8 / AOFX-1200YP-DC8 / AOFX-1200YB-DC8",
+                                                      "SOFM-1200Y-ZC13 / SOFM-1200YP-ZC13 / SOFM-1200YB-ZC13",
+                                                      "SOFM-1200Y-BC13 / SOFM-1200YP-BC13 / SOFM-1200YB-BC13",
+                                                      "SOFM-1200Y-TC13 / SOFM-1200YP-TC13 / SOFM-1200YB-TC13",
+                                                      "SOFM-1200Y-QC13 / SOFM-1200YP-QC13 / SOFM-1200YB-QC13",
+                                                      "SOFM-1200Y-EC13 / SOFM-1200YP-EC13 / SOFM-1200YB-EC13",
+                                                      "SOFM-1200Y-SC13 / SOFM-1200YP-SC13 / SOFM-1200YB-SC13",
+                                                      "SOFM-1200Y-ZC14 / SOFM-1200YP-ZC14 / SOFM-1200YB-ZC14",
+                                                      "SOFM-1200Y-BC14 / SOFM-1200YP-BC14 / SOFM-1200YB-BC14",
+                                                      "SOFM-1200Y-TC14 / SOFM-1200YP-TC14 / SOFM-1200YB-TC14",
+                                                      "SOFM-1200Y-QC14 / SOFM-1200YP-QC14 / SOFM-1200YB-QC14",
+                                                      "SOFM-1200Y-EC14 / SOFM-1200YP-EC14 / SOFM-1200YB-EC14",
+                                                      "SOFM-1200Y-SC14 / SOFM-1200YP-SC14 / SOFM-1200YB-SC14",
+                                                      "SOFX-1200Y-ZC13 / SOFX-1200YP-ZC13 / SOFX-1200YB-ZC13",
+                                                      "SOFX-1200Y-BC13 / SOFX-1200YP-BC13 / SOFX-1200YB-BC13",
+                                                      "SOFX-1200Y-TC13 / SOFX-1200YP-TC13 / SOFX-1200YB-TC13",
+                                                      "SOFX-1200Y-QC13 / SOFX-1200YP-QC13 / SOFX-1200YB-QC13",
+                                                      "SOFX-1200Y-EC13 / SOFX-1200YP-EC13 / SOFX-1200YB-EC13",
+                                                      "SOFX-1200Y-SC13 / SOFX-1200YP-SC13 / SOFX-1200YB-SC13",
+                                                      "SOFX-1200Y-ZC14 / SOFX-1200YP-ZC14 / SOFX-1200YB-ZC14",
+                                                      "SOFX-1200Y-BC14 / SOFX-1200YP-BC14 / SOFX-1200YB-BC14",
+                                                      "SOFX-1200Y-TC14 / SOFX-1200YP-TC14 / SOFX-1200YB-TC14",
+                                                      "SOFX-1200Y-QC14 / SOFX-1200YP-QC14 / SOFX-1200YB-QC14",
+                                                      "SOFX-1200Y-EC14 / SOFX-1200YP-EC14 / SOFX-1200YB-EC14",
+                                                      "SOFX-1200Y-SC14 / SOFX-1200YP-SC14 / SOFX-1200YB-SC14"
+                                                     ]
+                                        }
+                           },           
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardType",
+            "Editable":"True",
+            "DefaultValue":"0x42",
+            "Values":["0x42", "0x4A", "0x48", "0x8B"],
+            "ValueNames":["OLM", "AOLM2", "AOFX", "AOFX1200"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"OsType",
+            "Editable":"False",
+            "DefaultValue":"QNX",
+            "Values":["0x8B"],
+            "ValueNames":["LINUX"],
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BootpBoardType",
+            "Editable":"False",
+            "DefaultValue":"0x98",
+            "Values":["0x98", "0x98", "0x98", "0x8B"],
+            "ValueNames":["OLM", "AOLM2", "AOFX", "AOFX1200"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a90",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"CardType",
+            "Editable":"True",
+            "DefaultValue":"OLM",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"ChassisType",
+            "Editable":"False",
+            "DefaultValue":"XTC_10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CurrentRls",
+            "Editable":"False",
+            "DefaultValue":"NOTSET",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"HostId",
+            "Editable":"False",
+            "DefaultValue":"0x12345678",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimMode",
+            "Editable": "False",
+            "DefaultValue": "sim",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName":"SlotId",
+            "Editable":"False",
+            "DefaultValue":"0x1",
+            "Flag":"I",
+            "Type":"uint32",
+            "AllowOverride":"False"
+        },
+        {
+            "EntryName": "PonDescription",
+            "Editable": "True",
+            "Values":["AOLX-500-T4-1-C5"],
+            "DefaultValue": "AOLX-500-T4-1-C5",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "SerialNo",
+            "Editable": "False",
+            "DefaultValue": "SN0123456789",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "FeatureBits",
+            "Editable": "False",
+            "DefaultValue": "0x00000000",
+            "Flag": "R.I", 
+            "Type": "str"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I",
+            "Type": "str"
+        }
+    ]
+},
+{
+    "Category":"XSM",
+    "BackupName":"XSM",
+    "Flag":"Template",
+    "CpuRsv":"64",
+    "CpuLimit":"1024",
+    "MemSize":"256",
+    "MemRsv":"128",
+    "MemLimit":"256",    
+    "OS" : "QNX",
+    "Entries":[
+        {
+            "EntryName":"BackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneVid",
+            "Editable":"False",
+            "DefaultValue":"0x0a",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardSubType",
+            "Editable":"True",
+            "DefaultValue":"0x0",
+            "Values":["0x0"],
+            "ValueNames":["XSM-P1"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardType",
+            "Editable":"False",
+            "DefaultValue":"0x9B",
+            "Values":["0x9B"],
+            "ValueNames":["XSM"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BootpBoardType",
+            "Editable":"False",
+            "DefaultValue":"0x9B",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a90",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"CardType",
+            "Editable":"False",
+            "DefaultValue":"XSM",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"ChassisType",
+            "Editable":"False",
+            "DefaultValue":"XTC_10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CurrentRls",
+            "Editable":"False",
+            "DefaultValue":"NOTSET",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"HostId",
+            "Editable":"False",
+            "DefaultValue":"0x12345678",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName":"SlotId",
+            "Editable":"False",
+            "DefaultValue":"0x64",
+            "Flag":"I",
+            "Type":"uint32",
+            "AllowOverride":"False"
+        },
+        {
+            "EntryName":"Oxm2BoardSubType",
+            "Editable":"False",
+            "DefaultValue":"0x3",
+            "Flag":"R.I",
+            "Type":"uint32",
+            "AllowOverride":"False"
+        },
+        {
+            "EntryName":"Oxm2PonDescription",
+            "Editable":"False",
+            "DefaultValue":"OXM2-X10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"Sim_XM_S1",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S2",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S3",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S4",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S5",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S6",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S7",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S8",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S9",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S10",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TSM1",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["TSM"],
+            "ValueNames":["TSM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TSM2",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["TSM"],
+            "ValueNames":["TSM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM1",
+            "Editable":"True",
+            "DefaultValue":"XTC10_PEM",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM2",
+            "Editable":"True",
+            "DefaultValue":"XTC10_PEM",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM3",
+            "Editable":"True",
+            "DefaultValue":"XTC10_PEM",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM4",
+            "Editable":"True",
+            "DefaultValue":"XTC10_PEM",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM5",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM6",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_FAN_TRAY1",
+            "Editable":"True",
+            "DefaultValue":"XTC10_FAN",
+            "Values":["XTC10_FAN"],
+            "ValueNames":["XTC10_FAN"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_FAN_TRAY2",
+            "Editable":"True",
+            "DefaultValue":"XTC10_FAN",
+            "Values":["XTC10_FAN"],
+            "ValueNames":["XTC10_FAN"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_FAN_TRAY3",
+            "Editable":"True",
+            "DefaultValue":"XTC10_FAN",
+            "Values":["XTC10_FAN"],
+            "ValueNames":["XTC10_FAN"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_FAN_TRAY4",
+            "Editable":"True",
+            "DefaultValue":"XTC10_FAN",
+            "Values":["XTC10_FAN"],
+            "ValueNames":["XTC10_FAN"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+        }
+    ]
+},
+{
+    "Category":"XSM4",
+    "BackupName":"XSM4",
+    "Flag":"Template",
+    "CpuRsv":"64",
+    "CpuLimit":"1024",
+    "MemSize":"256",
+    "MemRsv":"128",
+    "MemLimit":"256",
+    "OS" : "QNX",
+    "Entries":[
+        {
+            "EntryName":"BackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneVid",
+            "Editable":"False",
+            "DefaultValue":"0x0a",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardSubType",
+            "Editable":"True",
+            "DefaultValue":"0x0",
+            "Values":["0x0"],
+            "ValueNames":["XSM-P1"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardType",
+            "Editable":"False",
+            "DefaultValue":"0x9B",
+            "Values":["0x9B"],
+            "ValueNames":["XSM4"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BootpBoardType",
+            "Editable":"False",
+            "DefaultValue":"0x9B",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a90",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"CardType",
+            "Editable":"False",
+            "DefaultValue":"XSM4",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"ChassisType",
+            "Editable":"False",
+            "DefaultValue":"XTC_10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CurrentRls",
+            "Editable":"False",
+            "DefaultValue":"NOTSET",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"HostId",
+            "Editable":"False",
+            "DefaultValue":"0x12345678",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName":"SlotId",
+            "Editable":"False",
+            "DefaultValue":"0x64",
+            "Flag":"I",
+            "Type":"uint32",
+            "AllowOverride":"False"
+        },
+        {
+            "EntryName":"Oxm2BoardSubType",
+            "Editable":"False",
+            "DefaultValue":"0x4",
+            "Flag":"R.I",
+            "Type":"uint32",
+            "AllowOverride":"False"
+        },
+        {
+            "EntryName":"Oxm2PonDescription",
+            "Editable":"False",
+            "DefaultValue":"OXM2-X4",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"Sim_XM_S1",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S2",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S3",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S4",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_XM_S5",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["OXM", "OXM2"],
+            "ValueNames":["OXM", "OXM2"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_TSM1",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["TSM"],
+            "ValueNames":["TSM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM1",
+            "Editable":"True",
+            "DefaultValue":"XTC10_PEM",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM2",
+            "Editable":"True",
+            "DefaultValue":"XTC10_PEM",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM3",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_PEM4",
+            "Editable":"True",
+            "DefaultValue":"None",
+            "Values":["XTC10_PEM"],
+            "ValueNames":["XTC10_PEM"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_FAN_TRAY1",
+            "Editable":"True",
+            "DefaultValue":"XTC10_FAN",
+            "Values":["XTC10_FAN"],
+            "ValueNames":["XTC10_FAN"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+        },
+        {
+            "EntryName":"Sim_FAN_TRAY2",
+            "Editable":"True",
+            "DefaultValue":"XTC10_FAN",
+            "Values":["XTC10_FAN"],
+            "ValueNames":["XTC10_FAN"],
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride":"True"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+        }
+    ]
+},
+{
+    "Category":"XCM",
+    "BackupName":"XCM_NC",
+    "Flag":"CM",
+    "CpuRsv":"64",
+    "CpuLimit":"1024",
+    "MemSize":"1024",
+    "MemRsv":"512",
+    "MemLimit":"1024",    
+    "OS" : "QNX",
+    "Entries":[
+        {
+            "EntryName":"AuthenticationPolicy",
+            "Editable":"False",
+            "DefaultValue":"LOCAL",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en1",
+            "Flag":"NR.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneVid",
+            "Editable":"False",
+            "DefaultValue":"0xa",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardSubType",
+            "Editable":"True",
+            "DefaultValue":"0x0",
+            "Values":["0x0", "0x1", "0x2", "0x3"],
+            "ValueNames":["XCM-E1", "XCM-E2", "XCM-P1", "XCM-P2"],
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardType",
+            "Editable":"False",
+            "DefaultValue":"0x97",
+            "Values":["0x97"],
+            "ValueNames":["XCM"],
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a90",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"BottomDcnVid",
+            "Editable":"False",
+            "DefaultValue":"0x0",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BottomPeerMcmIf",
+            "Editable":"False",
+            "DefaultValue":"en3",
+            "Flag":"NR.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CardType",
+            "Editable":"False",
+            "DefaultValue":"XCM",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"ChassisType",
+            "Editable":"False",
+            "DefaultValue":"XTC_10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CraftIf",
+            "Editable":"False",
+            "DefaultValue":"en1",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CurrentRls",
+            "Editable":"False",
+            "DefaultValue":"M6.0.0.1201",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"DcnDestination",
+            "Editable":"False",
+            "DefaultValue":"10.0.0.0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"DcnGateway",
+            "Editable":"True",
+            "DefaultValue":"0.0.0.0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"DcnIf",
+            "Editable":"False",
+            "DefaultValue":"en0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"DcnIp",
+            "Editable":"True",
+            "DefaultValue":"0.0.0.0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"DcnIpNetMask",
+            "Editable":"True",
+            "DefaultValue":"255.255.255.0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"DcnPrefixLen",
+            "Editable":"False",
+            "DefaultValue":"0x8",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"DefaultRls",
+            "Editable":"False",
+            "DefaultValue":"M6.0.0.1201",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"EnableOscOobMode",
+            "Editable":"False",
+            "DefaultValue":"False",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"gatewayProxyEnabled",
+            "Editable":"False",
+            "DefaultValue":"True",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"HostId",
+            "Editable":"False",
+            "DefaultValue":"0x12345678",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"InitialMcmActive",
+            "Editable":"False",
+            "DefaultValue":"yes",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"InitialPeerPresent",
+            "Editable":"False",
+            "DefaultValue":"no",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"IoPanelId",
+            "Editable":"False",
+            "DefaultValue":"IOP123456789",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"McmActive",
+            "Editable":"False",
+            "DefaultValue":"yes",
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"McmBackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en1",
+            "Flag":"NR.I",
+            "Type":"str"
+        },
+        {
+            "EntryName": "McmBrand",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "McmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "............",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName":"MyIpAddr",
+            "Editable":"False",
+            "DefaultValue":"0x7f01017a",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"MyPeerIpAddr",
+            "Editable":"False",
+            "DefaultValue":"0x7f04017a",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NeType",
+            "Editable": "False",
+            "DefaultValue": "DON",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeCtrl",
+            "Editable": "False",
+            "DefaultValue": "yes",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OscIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PeerMcmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "badbadbadbad",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PrimaryDb",
+            "Editable": "False",
+            "DefaultValue": "M6.0.0.1201",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RouterId",
+            "Editable": "True",
+            "DefaultValue": "100.10.0.0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "SlotId",
+            "Editable": "False",
+            "DefaultValue": "0x40",
+            "Flag": "NR.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "TelnetSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TL1SecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TopDcnVid",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "TopPeerMcmIf",
+            "Editable": "False",
+            "DefaultValue": "en3",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "VmChassisNum",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmChassisPrefix",
+            "Editable": "False",
+            "DefaultValue": "1-A-",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmSupervisorIP",
+            "Editable": "False",
+            "DefaultValue": "127.11.254.1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XFRSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XMLSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ZiplBldInfo",
+            "Editable": "False",
+            "DefaultValue": "Z",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+		}
+    ]
+},
+{
+    "Category":"XCM",
+    "BackupName":"XCM_SC",
+    "Flag":"CM",
+    "CpuRsv":"64",
+    "CpuLimit":"1024",
+    "MemSize":"1024",
+    "MemRsv":"512",
+    "MemLimit":"1024",
+    "OS" : "QNX",
+    "Entries":[
+        {
+            "EntryName":"AuthenticationPolicy",
+            "Editable":"False",
+            "DefaultValue":"LOCAL",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en1",
+            "Flag":"NR.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneVid",
+            "Editable":"False",
+            "DefaultValue":"0xa",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardSubType",
+            "Editable":"True",
+            "DefaultValue":"0x0",
+            "Values":["0x0", "0x1", "0x2", "0x3"],
+            "ValueNames":["XCM-E1", "XCM-E2", "XCM-P1", "XCM-P2"],
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardType",
+            "Editable":"False",
+            "DefaultValue":"0x97",
+            "Values":["0x97"],
+            "ValueNames":["XCM"],
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a90",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"BottomDcnVid",
+            "Editable":"False",
+            "DefaultValue":"0x0",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BottomPeerMcmIf",
+            "Editable":"False",
+            "DefaultValue":"en3",
+            "Flag":"NR.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CardType",
+            "Editable":"False",
+            "DefaultValue":"XCM",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"ChassisType",
+            "Editable":"False",
+            "DefaultValue":"XTC_10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CraftIf",
+            "Editable":"False",
+            "DefaultValue":"en1",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CurrentRls",
+            "Editable":"False",
+            "DefaultValue":"M6.0.0.1201",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"DcnIf",
+            "Editable":"False",
+            "DefaultValue":"en0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"DefaultRls",
+            "Editable":"False",
+            "DefaultValue":"M6.0.0.1201",
+            "Flag":"I",
+            "Type":"str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"EnableOscOobMode",
+            "Editable":"False",
+            "DefaultValue":"False",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"gatewayProxyEnabled",
+            "Editable":"False",
+            "DefaultValue":"True",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"HostId",
+            "Editable":"False",
+            "DefaultValue":"0x12345678",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"InitialMcmActive",
+            "Editable":"False",
+            "DefaultValue":"yes",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"InitialPeerPresent",
+            "Editable":"False",
+            "DefaultValue":"no",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"IoPanelId",
+            "Editable":"False",
+            "DefaultValue":"IOP123456789",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"McmActive",
+            "Editable":"False",
+            "DefaultValue":"yes",
+            "Flag":"R.I",
+            "Type":"str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"McmBackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en1",
+            "Flag":"NR.I",
+            "Type":"str"
+        },
+        {
+            "EntryName": "McmBrand",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "McmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "............",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName":"MyIpAddr",
+            "Editable":"False",
+            "DefaultValue":"0x7f01017a",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"MyPeerIpAddr",
+            "Editable":"False",
+            "DefaultValue":"0x7f04017a",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NeType",
+            "Editable": "False",
+            "DefaultValue": "DON",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeCtrl",
+            "Editable": "False",
+            "DefaultValue": "no",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OscIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PeerMcmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "badbadbadbad",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PrimaryDb",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x3f",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "SlotId",
+            "Editable": "False",
+            "DefaultValue": "0x40",
+            "Flag": "NR.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "TelnetSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TL1SecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TopDcnVid",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "TopPeerMcmIf",
+            "Editable": "False",
+            "DefaultValue": "en3",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "VmChassisNum",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmChassisPrefix",
+            "Editable": "False",
+            "DefaultValue": "1-A-",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmSupervisorIP",
+            "Editable": "False",
+            "DefaultValue": "127.11.254.1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XFRSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XMLSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ZiplBldInfo",
+            "Editable": "False",
+            "DefaultValue": "Z",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+		}
+    ]
+},
+{
+    "Category":"PXM",
+    "BackupName":"PXM",
+    "Flag":"Template",
+    "CpuRsv":"64",
+    "CpuLimit":"512",
+    "MemSize":"256",
+    "MemRsv":"128",
+    "MemLimit":"256",    
+    "OS" : "QNX",
+    "Entries":[
+        {
+            "EntryName":"BackPlaneIf",
+            "Editable":"False",
+            "DefaultValue":"en0",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"BackPlaneVid",
+            "Editable":"False",
+            "DefaultValue":"0x0a",
+            "Flag":"R.I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardSubType",
+            "Editable":"True",
+            "DefaultValue":"0x0",
+            "Values":["0x0D", "0x0E"],
+            "ValueNames":["PXM16x10GE", "PXM1x100GE"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BoardType",
+            "Editable":"False",
+            "DefaultValue":"0x45",
+            "Values":["0x45"],
+             "ValueNames":["TIM"],
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName":"BootpBoardType",
+            "Editable":"False",
+            "DefaultValue":"0x9D",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a90",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName":"CardType",
+            "Editable":"False",
+            "DefaultValue":"PXM",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"ChassisType",
+            "Editable":"False",
+            "DefaultValue":"XTC_10",
+            "Flag":"R.I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"CurrentRls",
+            "Editable":"False",
+            "DefaultValue":"NOTSET",
+            "Flag":"I",
+            "Type":"str"
+        },
+        {
+            "EntryName":"HostId",
+            "Editable":"False",
+            "DefaultValue":"0x12345678",
+            "Flag":"I",
+            "Type":"uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },         
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName":"SlotId",
+            "Editable":"False",
+            "DefaultValue":"0x1",
+            "Flag":"I",
+            "Type":"uint32",
+            "AllowOverride":"False"
+        },
+        {
+            "EntryName": "BootpServerIp",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {
+            "EntryName": "MyIpAddrTmp",
+            "Editable": "False",
+            "DefaultValue": "0x00000000",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {    
+            "EntryName": "VmName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {    
+            "EntryName": "TimSlotId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "NR.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BootpSvrIp",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+        }        
+    ]
+}
+]
+

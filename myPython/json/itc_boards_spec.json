@@ -1,0 +1,5772 @@
+[
+{
+	"Category":"FRM",
+	"BackupName":"FRM",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "QNX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01", "0x02"],
+			"ValueNames":["FRM-3D-B-4-EC", "FRM-9D-R-8-EC"],
+			"DefaultValue": "0x02",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x27",
+			"Values":["0x27"],
+			"ValueNames":["FRM"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xCB",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FRM",
+			"Values":["FRM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+                },
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FRM-3D-B-4-EC", "FRM-9D-R-8-EC"],
+			"DefaultValue": "FRM-9D-R-8-EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FRM_3D_B_4_EC", "FRM_9D_R_8_EC"],
+			"DefaultValue": "FRM_9D_R_8_EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"FRM4D",
+	"BackupName":"FRM4D",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["FRM-4D-B-3-EC"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x38",
+			"Values":["0x38"],
+			"ValueNames":["FRM4D"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xD3",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FRM4D",
+			"Values":["FRM4D"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FRM-4D-B-3-EC"],
+			"DefaultValue": "FRM-4D-B-3-EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FRM_4D_B_3_EC"],
+			"DefaultValue": "FRM_4D_B_3_EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"FRM9X",
+	"BackupName":"FRM9X",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",	
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["FRM9X"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x3E",
+			"Values":["0x3E"],
+			"ValueNames":["FRM9X"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x3E",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FRM9X",
+			"Values":["FRM9X"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FRM9X"],
+			"DefaultValue": "FRM9X",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FRM9X"],
+			"DefaultValue": "FRM9X",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"FRM20X",
+	"BackupName":"FRM20X",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",		
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["FRM-20X-R-EC"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x3D",
+			"Values":["0x3D"],
+			"ValueNames":["FRM20X"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x3D",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FRM20X",
+			"Values":["FRM20X"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FRM-20X-R-EC"],
+			"DefaultValue": "FRM-20X-R-EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FRM_20X_R_EC"],
+			"DefaultValue": "FRM_20X_R_EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"ASEM",
+	"BackupName":"ASEM",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",		
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["SI-ASEM"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x5C",
+			"Values":["0x5C"],
+			"ValueNames":["ASEM"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x5C",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "ASEM",
+			"Values":["ASEM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["SI-ASEM"],
+			"DefaultValue": "SI-ASEM",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["SI_ASEM"],
+			"DefaultValue": "SI_ASEM",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"CWM",
+	"BackupName":"CWM",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",		
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["SI-CWM-8"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x5D",
+			"Values":["0x5D"],
+			"ValueNames":["CWM"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x5D",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "CWM",
+			"Values":["CWM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["SI-CWM-8"],
+			"DefaultValue": "SI-CWM-8",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["SI_CWM_4"],
+			"DefaultValue": "SI_CWM_4",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"MFM",
+	"BackupName":"MFM",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",		
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["SI-MFM"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x5E",
+			"Values":["0x5E"],
+			"ValueNames":["MFM"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x5E",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "MFM",
+			"Values":["MFM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["SI-MFM"],
+			"DefaultValue": "SI-MFM",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["SI_MFM"],
+			"DefaultValue": "SI_MFM",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+
+{
+	"Category":"IRM1C",
+	"BackupName":"IRM1C",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["IRM-B-ECH1"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x9F",
+			"Values":["0x9F"],
+			"ValueNames":["IRM1C"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x9F",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IRM1C",
+			"Values":["IRM1C"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IRM-B-ECH1"],
+			"DefaultValue": "IRM-B-ECH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":[" IRM_B_ECH1"],
+			"DefaultValue": "IRM_B_ECH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IAM2C",
+	"BackupName":"IAM2C",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["IAM-B-ECH2"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0xA1",
+			"Values":["0xA1"],
+			"ValueNames":["IAM2C"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xA1",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IAM2C",
+			"Values":["IAM2C"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IAM-B-ECH2"],
+			"DefaultValue": "IAM-B-ECH2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":[" IAM_B_ECH2"],
+			"DefaultValue": "IAM_B_ECH2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IRM1L",
+	"BackupName":"IRM1L",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["IRM-B-LH1"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0xA0",
+			"Values":["0xA0"],
+			"ValueNames":["IRM1L"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xA0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IRM1L",
+			"Values":["IRM1L"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IRM-B-LH1"],
+			"DefaultValue": "IRM-B-LH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":[" IRM_B_LH1"],
+			"DefaultValue": "IRM_B_LH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IAM2L",
+	"BackupName":"IAM2L",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["IAM-B-LH2"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0xA5",
+			"Values":["0xA5"],
+			"ValueNames":["IAM2L"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xA5",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IAM2L",
+			"Values":["IAM2L"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IAM-B-LH2"],
+			"DefaultValue": "IAM-B-LH2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":[" IAM_B_LH2"],
+			"DefaultValue": "IAM_B_LH2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IAM",
+	"BackupName":"IAM",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",
+	"OS" : "QNX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x02"],
+			"ValueNames":["IAM-B-ECXH2"],
+			"DefaultValue": "0x02",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x25"],
+			"ValueNames":["IAM"],
+			"DefaultValue": "0x25",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xCD",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IAM",
+			"Values":["IAM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IAM-B-ECXH1", "IAM-B-ECXH2"],
+			"DefaultValue": "IAM-B-ECXH2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["IAM_B_ECXH1", "IAM_B_ECXH2"],
+			"DefaultValue": "IAM_B_ECXH2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IAM1",
+	"BackupName":"IAM1",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["IAM-B-ECXH1"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x36"],
+			"ValueNames":["IAM1"],
+			"DefaultValue": "0x36",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xD2",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IAM1",
+			"Values":["IAM1"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IAM-B-ECXH1"],
+			"DefaultValue": "IAM-B-ECXH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["IAM_B_ECXH1"],
+			"DefaultValue": "IAM_B_ECXH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IRM",
+	"BackupName":"IRM",
+	"Flag":"OA",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",
+	"OS" : "QNX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01","0x02"],
+			"ValueNames":["IRM-B-ECXH1","IRM-B-ECXH1B"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x26"],
+			"ValueNames":["IRM"],
+			"DefaultValue": "0x26",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xCE",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IRM",
+			"Values":["IRM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IRM-B-ECXH1", "IRM-B-ECXH1B"],
+			"DefaultValue": "IRM-B-ECXH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["IRM_B_ECXH1", "IRM_B_ECXH1B"],
+			"DefaultValue": "IRM_B_ECXH1",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IOMD",
+	"BackupName":"IOMD",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x1"],
+			"ValueNames":["IOMD"],
+			"DefaultValue": "0x1",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x3A"],
+			"ValueNames":["IOMD"],
+			"DefaultValue": "0x3A",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x3A",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "IOMD",
+			"Values":["IOMD"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "N/A",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["IOM-D"],
+			"DefaultValue": "IOM-D",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["IOM_D"],
+			"DefaultValue": "IOM_D",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"FMMC5",
+	"BackupName":"FMMC5",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",
+	"OS" : "LINUX",	
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x1"],
+			"ValueNames":["FMM-C-5-ECTR"],
+			"DefaultValue": "0x1",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x39"],
+			"ValueNames":["FMMC5"],
+			"DefaultValue": "0x39",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x39",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FMMC5",
+			"Values":["FMMC5"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "N/A",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FMM-C-5-ECTR"],
+			"DefaultValue": "FMM-C-5-ECTR",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FMM_C_5_ECTR"],
+			"DefaultValue": "FMM_C_5_ECTR",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"FMMC12",
+	"BackupName":"FMMC12",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "LINUX",	
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x1"],
+			"ValueNames":["FMM-C-12-ECTR"],
+			"DefaultValue": "0x1",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x3B"],
+			"ValueNames":["FMMC12"],
+			"DefaultValue": "0x3B",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0x3B",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FMMC12",
+			"Values":["FMMC12"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "N/A",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FMM-C-12-ECTR"],
+			"DefaultValue": "FMM-C-12-ECTR",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FMM-C-12-ECTR"],
+			"DefaultValue": "FMM-C-12-ECTR",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"FMMF250",
+	"BackupName":"FMMF250",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",	
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["FMM-F250-19-EC"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x28"],
+			"ValueNames":["FMMF250"],
+			"DefaultValue": "0x28",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xCC",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FMMF250",
+			"Values":["FMMF250"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FMM-F250-19-EC"],
+			"DefaultValue": "FMM-F250-19-EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FMM_F250_19_EC"],
+			"DefaultValue": "FMM_F250_19_EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"FSM",
+	"BackupName":"FSM",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"512",
+	"MemRsv":"128",
+	"MemLimit":"512",
+	"OS" : "QNX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["FSM-CDC-8D-12-EC"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"Values":["0x29"],
+			"ValueNames":["FSM"],
+			"DefaultValue": "0x29",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xCA",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},	
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "FSM",
+			"Values":["FSM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["FSM-CDC-8D-12-EC"],
+			"DefaultValue": "FSM-CDC-8D-12-EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["FSM_CDC_8D_12_EC"],
+			"DefaultValue": "FSM_CDC_8D_12_EC",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+		{
+			"EntryName": "Sim_FSE",
+			"Editable": "True",
+			"DefaultValue": "None",
+			"Values": ["0x01"],
+			"ValueNames": ["FSE_4D_EC"],
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "True"
+		}
+	]
+},
+{
+	"Category":"OTDM",
+	"BackupName":"OTDM",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",	
+	"OS" : "QNX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01","0x02"],
+			"ValueNames":["OTDM-4D","OTDM-4D-L"],
+			"DefaultValue": "0x01",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x55",
+			"Values":["0x55"],
+			"ValueNames":["OTDM"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xD0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "OTDM",
+			"Values":["OTDM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["OTDM-4D"],
+			"DefaultValue": "OTDM-4D",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["OTDM_4D"],
+			"DefaultValue": "OTDM_4D",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"OPSM",
+	"BackupName":"OPSM",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"512",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0x0a",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01","0x02"],
+			"ValueNames":["OPSM-1","OPSM-2"],
+			"DefaultValue": "0x02",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "True",
+			"DefaultValue": "0x37",
+			"Values":["0x37"],
+			"ValueNames":["OPSM"],
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpBoardType",
+			"Editable": "False",
+			"DefaultValue": "0xD4",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "True",
+			"DefaultValue": "OPSM",
+			"Values":["OPSM"],
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC_16",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "M6.1.0.4498",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PonDescription",
+			"Editable": "True",
+			"Values":["OPSM-1", "OPSM-2"],
+			"DefaultValue": "OPSM-2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OpSimCardConfig",
+			"Editable": "True",
+			"Values":["OPSM_1", "OPSM_2"],
+			"DefaultValue": "OPSM_2",
+			"Flag": "I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        }
+	]
+},
+{
+	"Category":"IMM",
+	"BackupName":"IMM_NC",
+	"Flag":"CM",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"1024",
+	"MemRsv":"512",
+	"MemLimit":"1024",
+	"OS" : "QNX",
+	"Entries":
+	[
+		{
+			"EntryName": "AuthenticationPolicy",
+			"Editable": "False",
+			"DefaultValue": "LOCAL",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackplaneId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0xa",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x00", "0x01"],
+			"ValueNames":["IMM-P1", "IMM-P2"],
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "False",
+			"DefaultValue": "0xc9",
+			"Values":["0xc9"],
+			"ValueNames":["IMM"],
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BottomDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BottomPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "False",
+			"DefaultValue": "IMM",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ChassisType",
+			"Editable": "True",
+			"Values": ["ITC_16"],
+			"DefaultValue": "ITC_16",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CraftIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnDestination",
+			"Editable": "False",
+			"DefaultValue": "10.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnGateway",
+			"Editable": "True",
+			"DefaultValue": "0.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIf",
+			"Editable": "False",
+			"DefaultValue": "en0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIp",
+			"Editable": "True",
+			"DefaultValue": "0.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIpNetMask",
+			"Editable": "True",
+			"DefaultValue": "255.255.255.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnPrefixLen",
+			"Editable": "False",
+			"DefaultValue": "0x8",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "DefaultRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "gatewayProxyEnabled",
+			"Editable": "False",
+			"DefaultValue": "True",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "IoPanelId",
+			"Editable": "False",
+			"DefaultValue": "IOP123456789",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmActive",
+			"Editable": "False",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmBackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmBrand",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "............",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f01017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyPeerIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f04017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NeType",
+			"Editable": "False",
+			"DefaultValue": "DON",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeCtrl",
+			"Editable": "True",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OscIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PeerMcmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PrimaryDb",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "RouterId",
+			"Editable": "True",
+			"DefaultValue": "100.10.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x7a",
+			"Flag": "NR.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "TelnetSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TL1SecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TopDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "TopPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "VmChassisNum",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmChassisPrefix",
+			"Editable": "False",
+			"DefaultValue": "1-A-",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmSupervisorIP",
+			"Editable": "False",
+			"DefaultValue": "127.11.254.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XFRSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XMLSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ZiplBldInfo",
+			"Editable": "False",
+			"DefaultValue": "Z",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		}
+	]
+},
+{
+	"Category":"IMM",
+	"BackupName":"IMM_SC",
+	"Flag":"CM",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"1024",
+	"MemRsv":"512",
+	"MemLimit":"1024",	
+	"OS" : "QNX",
+	"Entries":
+	[
+		{
+			"EntryName": "AuthenticationPolicy",
+			"Editable": "False",
+			"DefaultValue": "LOCAL",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackplaneId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0xa",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x00", "0x01"],
+			"ValueNames":["IMM-P1", "IMM-P2"],
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "False",
+			"DefaultValue": "0xc9",
+			"Values":["0xc9"],
+			"ValueNames":["IMM"],
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BottomDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BottomPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "False",
+			"DefaultValue": "IMM",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ChassisType",
+			"Editable": "True",
+			"Values": ["ITC_16"],
+			"DefaultValue": "ITC_16",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CraftIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "DcnIf",
+			"Editable": "False",
+			"DefaultValue": "en0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DefaultRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "gatewayProxyEnabled",
+			"Editable": "False",
+			"DefaultValue": "True",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "IoPanelId",
+			"Editable": "False",
+			"DefaultValue": "IOP123456789",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmActive",
+			"Editable": "False",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmBackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmBrand",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "............",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f01017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyPeerIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f04017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeCtrl",
+			"Editable": "False",
+			"DefaultValue": "no",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OscIf",
+			"Editable": "False",
+			"DefaultValue": "en1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PeerMcmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PrimaryDb",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x7a",
+			"Flag": "NR.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "TelnetSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TL1SecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TopDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "TopPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "en3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "VmChassisNum",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmChassisPrefix",
+			"Editable": "False",
+			"DefaultValue": "1-A-",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmSupervisorIP",
+			"Editable": "False",
+			"DefaultValue": "127.11.254.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XFRSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XMLSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ZiplBldInfo",
+			"Editable": "False",
+			"DefaultValue": "Z",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		}
+	]
+},
+{
+	"Category":"IMMB",
+	"BackupName":"IMMB_NC",
+	"Flag":"CM",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"1024",
+	"MemRsv":"512",
+	"MemLimit":"1024",	
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "AuthenticationPolicy",
+			"Editable": "False",
+			"DefaultValue": "LOCAL",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackplaneId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0xa",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":[ "0x01"],
+			"ValueNames":["IMMB-P1"],
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "False",
+			"DefaultValue": "0x54",
+			"Values":["0x54"],
+			"ValueNames":["IMMB"],
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BottomDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BottomPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "eth3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "False",
+			"DefaultValue": "IMM",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ChassisType",
+			"Editable": "True",
+			"Values": ["MTC_9"],
+			"DefaultValue": "MTC_9",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "CraftIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnDestination",
+			"Editable": "False",
+			"DefaultValue": "10.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnGateway",
+			"Editable": "True",
+			"DefaultValue": "0.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIf",
+			"Editable": "False",
+			"DefaultValue": "eth0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIp",
+			"Editable": "True",
+			"DefaultValue": "0.0.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnIpNetMask",
+			"Editable": "True",
+			"DefaultValue": "255.255.255.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DcnPrefixLen",
+			"Editable": "False",
+			"DefaultValue": "0x8",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "DefaultRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "gatewayProxyEnabled",
+			"Editable": "False",
+			"DefaultValue": "True",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "IoPanelId",
+			"Editable": "False",
+			"DefaultValue": "IOP123456789",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmActive",
+			"Editable": "False",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmBackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmBrand",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "............",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f01017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyPeerIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f04017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NeType",
+			"Editable": "False",
+			"DefaultValue": "DON",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeCtrl",
+			"Editable": "True",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OscIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PeerMcmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PrimaryDb",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "RouterId",
+			"Editable": "True",
+			"DefaultValue": "100.10.0.0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x7a",
+			"Flag": "NR.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "TelnetSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TL1SecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TopDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "TopPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "eth3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "VmChassisNum",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmChassisPrefix",
+			"Editable": "False",
+			"DefaultValue": "1-A-",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmSupervisorIP",
+			"Editable": "False",
+			"DefaultValue": "127.11.254.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XFRSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XMLSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ZiplBldInfo",
+			"Editable": "False",
+			"DefaultValue": "Z",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		}
+	]
+},
+{
+	"Category":"IMMB",
+	"BackupName":"IMMB_SC",
+	"Flag":"CM",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"1024",
+	"MemRsv":"512",
+	"MemLimit":"1024",	
+	"OS" : "LINUX",
+	"Entries":
+	[
+		{
+			"EntryName": "AuthenticationPolicy",
+			"Editable": "False",
+			"DefaultValue": "LOCAL",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackplaneId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "BackPlaneVid",
+			"Editable": "False",
+			"DefaultValue": "0xa",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardSubType",
+			"Editable": "True",
+			"Values":["0x01"],
+			"ValueNames":["IMMB-P1"],
+			"DefaultValue": "0x01",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BoardType",
+			"Editable": "False",
+			"DefaultValue": "0x54",
+			"Values":["0x54"],
+			"ValueNames":["IMMB"],
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "BottomDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "BottomPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "eth3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CardType",
+			"Editable": "False",
+			"DefaultValue": "IMM",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ChassisType",
+			"Editable": "True",
+			"Values": ["MTC_9"],
+			"DefaultValue": "MTC_9",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CraftIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "CurrentRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "DcnIf",
+			"Editable": "False",
+			"DefaultValue": "eth0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "DefaultRls",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "gatewayProxyEnabled",
+			"Editable": "False",
+			"DefaultValue": "True",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "HostId",
+			"Editable": "False",
+			"DefaultValue": "0x12345678",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "IoPanelId",
+			"Editable": "False",
+			"DefaultValue": "IOP123456789",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmActive",
+			"Editable": "False",
+			"Values": ["yes", "no"],
+			"DefaultValue": "yes",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmBackPlaneIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "McmBrand",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "McmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "............",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f01017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "MyPeerIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f04017a",
+			"Flag": "I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "NeName",
+			"Editable": "False",
+			"DefaultValue": "NONAME",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeCtrl",
+			"Editable": "False",
+			"DefaultValue": "no",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "NodeId",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "OscIf",
+			"Editable": "False",
+			"DefaultValue": "eth1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PeerMcmSerialNum",
+			"Editable": "False",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "PrimaryDb",
+			"Editable": "False",
+			"DefaultValue": "NOTASSIGNED0",
+			"Flag": "I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "SlotId",
+			"Editable": "False",
+			"DefaultValue": "0x7a",
+			"Flag": "NR.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "TelnetSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TL1SecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "TopDcnVid",
+			"Editable": "False",
+			"DefaultValue": "0x0",
+			"Flag": "R.I",
+			"Type": "uint32"
+		},
+		{
+			"EntryName": "TopPeerMcmIf",
+			"Editable": "False",
+			"DefaultValue": "eth3",
+			"Flag": "NR.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "VmChassisNum",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmChassisPrefix",
+			"Editable": "False",
+			"DefaultValue": "1-A-",
+			"Flag": "R.I",
+			"Type": "str",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName": "VmSupervisorIP",
+			"Editable": "False",
+			"DefaultValue": "127.11.254.1",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XFRSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "XMLSecurityEnforced",
+			"Editable": "False",
+			"DefaultValue": "False",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "ZiplBldInfo",
+			"Editable": "False",
+			"DefaultValue": "Z",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeId",
+			"Editable": "True",
+			"DefaultValue": "badbadbadbad",
+			"Flag": "R.I",
+			"Type": "str"
+		},
+		{
+			"EntryName": "EepromNodeIdFlag",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32"
+		}
+	]
+},
+{
+	"Category":"XSM16",
+	"BackupName":"XSM16",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",
+	"OS" : "QNX",
+	"Entries":[
+		{
+			"EntryName":"BackPlaneIf",
+			"Editable":"False",
+			"DefaultValue":"en0",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"BackPlaneVid",
+			"Editable":"False",
+			"DefaultValue":"0x0a",
+			"Flag":"R.I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName":"BoardSubType",
+			"Editable":"True",
+			"DefaultValue":"0x0",
+			"Values":["0x0"],
+			"ValueNames":["XSM-P1"],
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName":"BoardType",
+			"Editable":"False",
+			"DefaultValue":"0xD1",
+			"Values":["0xD1"],
+			"ValueNames":["XSM16"],
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName":"BootpBoardType",
+			"Editable":"False",
+			"DefaultValue":"0xD1",
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName":"CardType",
+			"Editable":"False",
+			"DefaultValue":"XSM16",
+			"Flag":"I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"ITC",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"CurrentRls",
+			"Editable":"False",
+			"DefaultValue":"NOTSET",
+			"Flag":"I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"HostId",
+			"Editable":"False",
+			"DefaultValue":"0x12345678",
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName":"SlotId",
+			"Editable":"False",
+			"DefaultValue":"0x64",
+			"Flag":"I",
+			"Type":"uint32",
+			"AllowOverride":"False"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+		{
+			"EntryName":"Sim_PEM1",
+			"Editable":"True",
+			"DefaultValue":"ITC16_PEM",
+			"Values":["ITC16_PEM"],
+			"ValueNames":["ITC16_PEM"],
+			"Flag":"R.I",
+			"Type":"str",
+			"AllowOverride":"True"
+		},
+		{
+			"EntryName":"Sim_PEM2",
+			"Editable":"True",
+			"DefaultValue":"ITC16_PEM",
+			"Values":["ITC16_PEM"],
+			"ValueNames":["ITC16_PEM"],
+			"Flag":"R.I",
+			"Type":"str",
+			"AllowOverride":"True"
+		},
+		{
+			"EntryName":"Sim_FAN_TRAY1",
+			"Editable":"True",
+			"DefaultValue":"ITC16_FAN",
+			"Values":["ITC16_FAN"],
+			"ValueNames":["ITC16_FAN"],
+			"Flag":"R.I",
+			"Type":"str",
+			"AllowOverride":"True"
+		},
+		{
+			"EntryName":"Sim_FAN_TRAY2",
+			"Editable":"True",
+			"DefaultValue":"ITC16_FAN",
+			"Values":["ITC16_FAN"],
+			"ValueNames":["ITC16_FAN"],
+			"Flag":"R.I",
+			"Type":"str",
+			"AllowOverride":"True"
+		}
+	]
+},
+{
+	"Category":"XSM9",
+	"BackupName":"XSM9",
+	"Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",	
+	"OS" : "QNX",
+	"Entries":[
+		{
+			"EntryName":"BackPlaneIf",
+			"Editable":"False",
+			"DefaultValue":"en0",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"BackPlaneVid",
+			"Editable":"False",
+			"DefaultValue":"0x0a",
+			"Flag":"R.I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName":"BoardSubType",
+			"Editable":"True",
+			"DefaultValue":"0x0",
+			"Values":["0x0"],
+			"ValueNames":["XSM-P1"],
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName":"BoardType",
+			"Editable":"False",
+			"DefaultValue":"0xD1",
+			"Values":["0xD1"],
+			"ValueNames":["XSM9"],
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName":"BootpBoardType",
+			"Editable":"False",
+			"DefaultValue":"0xD1",
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName": "BootpsPort",
+			"Editable": "False",
+			"DefaultValue": "0x1a90",
+			"Flag": "I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName":"CardType",
+			"Editable":"False",
+			"DefaultValue":"XSM9",
+			"Flag":"I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"ChassisType",
+			"Editable":"False",
+			"DefaultValue":"MTC9",
+			"Flag":"R.I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"CurrentRls",
+			"Editable":"False",
+			"DefaultValue":"NOTSET",
+			"Flag":"I",
+			"Type":"str"
+		},
+		{
+			"EntryName":"HostId",
+			"Editable":"False",
+			"DefaultValue":"0x12345678",
+			"Flag":"I",
+			"Type":"uint32"
+		},
+		{
+			"EntryName": "MyIpAddr",
+			"Editable": "False",
+			"DefaultValue": "0x7f010101",
+			"Flag": "I",
+			"Type": "uint32"	
+		},
+		{
+			"EntryName": "ShelfId",
+			"Editable": "False",
+			"DefaultValue": "0x1",
+			"Flag": "R.I",
+			"Type": "uint32",
+			"AllowOverride": "False"
+		},
+		{
+			"EntryName":"SlotId",
+			"Editable":"False",
+			"DefaultValue":"0x64",
+			"Flag":"I",
+			"Type":"uint32",
+			"AllowOverride":"False"
+		},
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+		{
+			"EntryName":"Sim_PEM1",
+			"Editable":"True",
+			"DefaultValue":"ITC16_PEM",
+			"Values":["ITC16_PEM"],
+			"ValueNames":["ITC16_PEM"],
+			"Flag":"R.I",
+			"Type":"str",
+			"AllowOverride":"True"
+		},
+		{
+			"EntryName":"Sim_PEM2",
+			"Editable":"True",
+			"DefaultValue":"ITC16_PEM",
+			"Values":["ITC16_PEM"],
+			"ValueNames":["ITC16_PEM"],
+			"Flag":"R.I",
+			"Type":"str",
+			"AllowOverride":"True"
+		},
+		{
+			"EntryName":"Sim_FAN_TRAY1",
+			"Editable":"True",
+			"DefaultValue":"ITC16_FAN",
+			"Values":["ITC16_FAN"],
+			"ValueNames":["ITC16_FAN"],
+			"Flag":"R.I",
+			"Type":"str",
+			"AllowOverride":"True"
+		},
+		  {
+                        "EntryName":"USB_PORT1_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x57", "0x58", "0x69"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["FBM"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["FBM"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                }
+	]
+},
+{
+        "Category":"XSM6",
+        "BackupName":"XSM6",
+        "Flag":"Template",
+	"CpuRsv":"64",
+	"CpuLimit":"1024",
+	"MemSize":"256",
+	"MemRsv":"128",
+	"MemLimit":"256",	
+	"OS" : "QNX",
+        "Entries":[
+                {
+                        "EntryName":"BackPlaneIf",
+                        "Editable":"False",
+                        "DefaultValue":"en0",
+                        "Flag":"R.I",
+                        "Type":"str"
+                },
+                {
+                        "EntryName":"BackPlaneVid",
+                        "Editable":"False",
+                        "DefaultValue":"0x0a",
+                        "Flag":"R.I",
+                        "Type":"uint32"
+                },
+                {
+                        "EntryName":"BoardSubType",
+                        "Editable":"True",
+                        "DefaultValue":"0x0",
+                        "Values":["0x0"],
+                        "ValueNames":["XSM-P1"],
+                        "Flag":"I",
+                        "Type":"uint32"
+                },
+                {
+                        "EntryName":"BoardType",
+                        "Editable":"False",
+                        "DefaultValue":"0xD1",
+                        "Values":["0xD1"],
+                        "ValueNames":["XSM6"],
+                        "Flag":"I",
+                        "Type":"uint32"
+                },
+                {
+                        "EntryName":"BootpBoardType",
+                        "Editable":"False",
+                        "DefaultValue":"0xD1",
+                        "Flag":"I",
+                        "Type":"uint32"
+                },
+                {
+                        "EntryName": "BootpsPort",
+                        "Editable": "False",
+                        "DefaultValue": "0x1a90",
+                        "Flag": "I",
+                        "Type": "uint32",
+                        "AllowOverride": "False"
+                },
+                {
+                        "EntryName":"CardType",
+                        "Editable":"False",
+                        "DefaultValue":"XSM6",
+                        "Flag":"I",
+                        "Type":"str"
+                },
+                {
+                        "EntryName":"ChassisType",
+                        "Editable":"False",
+                        "DefaultValue":"MTC6",
+                        "Flag":"R.I",
+                        "Type":"str"
+                },
+                {
+                        "EntryName":"CurrentRls",
+                        "Editable":"False",
+                        "DefaultValue":"NOTSET",
+                        "Flag":"I",
+                        "Type":"str"
+                },
+                {
+                        "EntryName":"HostId",
+                        "Editable":"False",
+                        "DefaultValue":"0x12345678",
+                        "Flag":"I",
+                        "Type":"uint32"
+                },
+                {
+                        "EntryName": "MyIpAddr",
+                        "Editable": "False",
+                        "DefaultValue": "0x7f010101",
+                        "Flag": "I",
+                        "Type": "uint32"
+                },
+                {
+                        "EntryName": "ShelfId",
+                        "Editable": "False",
+                        "DefaultValue": "0x1",
+                        "Flag": "R.I",
+                        "Type": "uint32",
+                        "AllowOverride": "False"
+                },
+                {
+                        "EntryName":"SlotId",
+                        "Editable":"False",
+                        "DefaultValue":"0x64",
+                        "Flag":"I",
+                        "Type":"uint32",
+                        "AllowOverride":"False"
+                },
+                {
+                    "EntryName": "RelSlot",
+                    "Editable": "False",
+                    "DefaultValue": "0x0",
+                    "Flag": "I",
+                    "Type": "uint32"
+                },
+                {
+                        "EntryName":"Sim_PEM1",
+                        "Editable":"True",
+                        "DefaultValue":"ITC16_PEM",
+                        "Values":["ITC16_PEM"],
+                        "ValueNames":["ITC16_PEM"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"Sim_PEM2",
+                        "Editable":"True",
+                        "DefaultValue":"ITC16_PEM",
+                        "Values":["ITC16_PEM"],
+                        "ValueNames":["ITC16_PEM"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"Sim_FAN_TRAY1",
+                        "Editable":"True",
+                        "DefaultValue":"ITC16_FAN",
+                        "Values":["ITC16_FAN"],
+                        "ValueNames":["ITC16_FAN"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_1",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_2",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_3",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_1SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_2SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_3SN",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT1_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT2_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT3_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_1SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_2SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                },
+                {
+                        "EntryName":"USB_PORT4_3SlotID",
+                        "Editable":"True",
+                        "DefaultValue":"NULL",
+                        "Values":["0x5901", "0x5902", "0x5903", "0x5904", "0x5905", "0x5906"],
+                        "ValueNames":["FBM_SLCDC_2_8_U", "FBM_SLCDC_4_8_U", "FBM_SLCDC_4_4_U","FBM_SLCDC_8_2_U", "FBM_SLCDC_8_4_U", "FBM_SLCDC_8_8_U"],
+                        "Flag":"R.I",
+                        "Type":"str",
+                        "AllowOverride":"True"
+                 }
+        ]
+}
+]

@@ -1,0 +1,102 @@
+[
+   {
+      "Category": "XTC4", 
+      "BackupName": "XTC4 Chassis", 
+      "Flag": "XTC_4", 
+      "Boards": [
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "10", 
+            "slot_id": "10", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "10", 
+            "slot_id": "10", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "11", 
+            "slot_id": "11", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "11", 
+            "slot_id": "11", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "12", 
+            "slot_id": "12", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "12", 
+            "slot_id": "12", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "13", 
+            "slot_id": "13", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "13", 
+            "slot_id": "13", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "XCM_NC", 
+            "slot_num": "42", 
+            "slot_id": "42", 
+            "is_mandatory": "True", 
+            "present_bit": "100000", 
+            "aid": "A-5A"
+         }, 
+         {
+            "board_spec_name": "XCM_SC", 
+            "slot_num": "42", 
+            "slot_id": "42", 
+            "is_mandatory": "True", 
+            "present_bit": "100000", 
+            "aid": "A-5A"
+         }, 
+         {
+            "board_spec_name": "XCM_NC", 
+            "slot_num": "43", 
+            "slot_id": "43", 
+            "present_bit": "200000", 
+            "aid": "A-5B"
+         }, 
+         {
+            "board_spec_name": "XCM_SC", 
+            "slot_num": "43", 
+            "slot_id": "43", 
+            "present_bit": "200000", 
+            "aid": "A-5B"
+         }, 
+         {
+            "board_spec_name": "XSM4", 
+            "slot_num": "64", 
+            "slot_id": "64", 
+            "is_mandatory": "True", 
+            "aid": "A-64"
+         }
+      ]
+   }
+]

@@ -1,0 +1,28 @@
+[
+   {
+      "Category": "PX-1", 
+      "BackupName": "PX-1 Chassis", 
+      "Flag": "PX_1", 
+      "OsType" : "LINUX",
+      "DefaultOS" : "LINUX",
+      "HelpInfo" : "CX_500S,CX_100E_500S,CX_100E_500F,XT_500F_100",
+      "TarDir" : "SIM/XT",
+      "Boards": [
+         {
+            "board_spec_name": "XMM_NC", 
+            "slot_num": "1", 
+            "slot_id": "1", 
+            "is_mandatory": "True", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "XMM_SC", 
+            "slot_num": "1", 
+            "slot_id": "1", 
+            "is_mandatory": "True", 
+            "aid": "A-1"
+         }
+      ]
+   }
+]
+

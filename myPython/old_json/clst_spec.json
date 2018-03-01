@@ -1,0 +1,28 @@
+[
+{
+	"Category":"CLS-T",
+	"BackupName":"CLS-T Chassis",
+	"Flag": "CLS-T", 
+	"OsType" : "LINUX",
+	"DefaultOS" : "LINUX",
+	"HelpInfo" : "CLS-T",
+	"TarDir" : ".",
+	"Boards": [
+	{
+		"board_spec_name":"CLMM_NC",
+		"slot_num":"1",
+		"slot_id": "1", 
+		"is_mandatory": "True", 
+		"aid": "A-1"
+	},
+	{
+		"board_spec_name":"CLMM_SC",
+		"slot_num":"1",
+		"slot_id": "1", 
+		"is_mandatory": "True", 
+		"aid": "A-1"
+	}
+	]
+}
+]
+

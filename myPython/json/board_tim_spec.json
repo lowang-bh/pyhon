@@ -1,0 +1,198 @@
+[
+    {
+        "Category":"OTM",
+        "SubSlotNums":"10",
+        "shelf":["A","B"],
+        "TimGroup":
+        [ 
+            {
+                "group":["TIM16x25GM"],
+                "logicSlot":["1","3","5","7","9"],
+                "width":"2",
+                "activeSlot":"1",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5",
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10"},
+                 "B":{"1": "TIM9", "2": "TIM10","3": "TIM7", "4": "TIM8","5": "TIM5",
+                      "6": "TIM6","7": "TIM3", "8": "TIM4","9": "TIM1", "10": "TIM2"}
+                }
+            },            
+            {
+                "group":["TIM1x40GM", 
+                         "TIM1x100GE", "TIM1x100GE_Q", "TIM2_1x100GE", "TIM1Bx100GE","LIM1x100GE", "TIM1x100G", 
+                         "TIM1x100GM","TIM1x100GX","TIM1Bx100GM","LIM1x100GM","TIM1Bx100GX","LIM1x100GX"],
+                "logicSlot":["1","3","5","7","9"],
+                "width":"2",
+                "activeSlot":"2",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5",
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10"},
+                 "B":{"1": "TIM9", "2": "TIM10","3": "TIM7", "4": "TIM8","5": "TIM5",
+                      "6": "TIM6","7": "TIM3", "8": "TIM4","9": "TIM1", "10": "TIM2"}
+                }
+            },
+            {
+                "group":["TIM1x40GE", "TIM1x40G", "TIM5x10G", "TIM5x10GM", "TIM5Bx10GM","TIM5x10GX", "XICM5x10GM"],
+                "logicSlot":["1","2","3","4","5","6","7","8","9","10"],
+                "width":"1",
+                "activeSlot":"1",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5", 
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10"},
+                 "B":{"1": "TIM10", "2": "TIM9", "3": "TIM8","4": "TIM7", "5": "TIM6",
+                      "6": "TIM5","7": "TIM4", "8": "TIM3", "9": "TIM2","10": "TIM1"}                   
+                }
+            },
+            {   
+                "group": ["PXM16x10GE", "PXM1x100GE"],
+                "logicSlot": ["1","7"],
+                "width": "4",
+                "activeSlot": "1",
+                "slotMap":
+                {"A": {"1":"TIM2", "7":"TIM8"},
+                 "B": {"1":"TIM8", "7":"TIM2"}
+                }
+                
+            },
+            {
+                "group":["AOFX_100_T32_1_C3","AOFX_100_T32_2_C3","AOFX_100_T32_3_C3", 
+                         "AOFX_100_T32_1_C6","AOFX_100_T32_2_C6","AOFX_100_T32_3_C6", 
+                         "AOFX_100_T32_1_C8","AOFX_100_T32_2_C8","AOFX_100_T32_3_C8", 
+                         "AOFM_100_T32_1_C3","AOFM_100_T32_2_C3", "AOFM_100_T32_3_C3", 
+                         "AOFM_100_T32_1_C6","AOFM_100_T32_2_C6", "AOFM_100_T32_3_C6", 
+                         "AOFM_100_T32_1_C8", "AOFM_100_T32_2_C8","AOFM_100_T32_3_C8", 
+                         "SOFX_100_T32_1_C12","SOFX_100_T32_2_C12","SOFX_100_T32_3_C12", 
+                         "SOFX_100_T32_1_C13","SOFX_100_T32_2_C13", "SOFX_100_T32_3_C13"
+                        ],
+                "logicSlot":["1","3","5","7","9"],
+                "width":"2",
+                "activeSlot":"2",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5",
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10"},
+                 "B":{"1": "TIM9", "2": "TIM10","3": "TIM7", "4": "TIM8","5": "TIM5",
+                      "6": "TIM6","7": "TIM3", "8": "TIM4","9": "TIM1", "10": "TIM2"}
+                }                        
+            },
+            {
+                "group":["TIM2-2-100GM","TIM2-2-100GX","TIM2-18-10GM","TIM2-18-10GX","TIM2-20-10GE"],
+                "logicSlot":["1","2","3","4","5","6"],
+                "width":"1",
+                "activeSlot":"1",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5", 
+                      "6": "TIM6"},
+                 "B":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5",
+                      "6": "TIM6"}                   
+                }
+            }
+        ]
+    },
+    {
+        "Category":"OTXM",
+        "SubSlotNums":"12",
+        "shelf":["A"],
+        "TimGroup":
+        [ 
+            {
+                "group":["TIM16x25GM"],
+                "logicSlot":["1","3","5","7","9","11"],
+                "width":"2",
+                "activeSlot":"1",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5",
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10","11": "TIM11", "12": "TIM12"}
+                }
+            },        
+            {
+                "group":["TIM1x40GM", 
+                         "TIM1x100GE", "TIM1x100GE_Q", "TIM2_1x100GE", "TIM1Bx100GE","LIM1x100GE", "TIM1x100G", 
+                         "TIM1x100GM","TIM1x100GX","TIM1Bx100GM","LIM1x100GM","TIM1Bx100GX","LIM1x100GX"],
+                "logicSlot":["1","3","5","7","9","11"],
+                "width":"2",
+                "activeSlot":"2",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5",
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10","11": "TIM11", "12": "TIM12"}
+                }
+            },
+            {
+                "group":["TIM1x40GE", "TIM1x40G", "TIM5x10G", "TIM5x10GM", "TIM5Bx10GM","TIM5x10GX", "XICM5x10GM"],
+                "logicSlot":["1","2","3","4","5","6","7","8","9","10","11","12"],
+                "width":"1",
+                "activeSlot":"1",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5", 
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10","11": "TIM11", "12": "TIM12"}
+                }
+            },
+            {   
+                "group": ["PXM16x10GE", "PXM1x100GE"],
+                "logicSlot": ["3","9"],
+                "width": "4",
+                "activeSlot": "1",
+                "slotMap":
+                {"A": {"1":"TIM2", "3":"TIM4", "7":"TIM8", "9":"TIM10"}
+                }
+                
+            },
+            {
+                "group":["AOFX_100_T32_1_C3","AOFX_100_T32_2_C3","AOFX_100_T32_3_C3", 
+                         "AOFX_100_T32_1_C6","AOFX_100_T32_2_C6","AOFX_100_T32_3_C6", 
+                         "AOFX_100_T32_1_C8","AOFX_100_T32_2_C8","AOFX_100_T32_3_C8", 
+                         "AOFM_100_T32_1_C3","AOFM_100_T32_2_C3", "AOFM_100_T32_3_C3", 
+                         "AOFM_100_T32_1_C6","AOFM_100_T32_2_C6", "AOFM_100_T32_3_C6", 
+                         "AOFM_100_T32_1_C8", "AOFM_100_T32_2_C8","AOFM_100_T32_3_C8", 
+                         "SOFX_100_T32_1_C12","SOFX_100_T32_2_C12","SOFX_100_T32_3_C12", 
+                         "SOFX_100_T32_1_C13","SOFX_100_T32_2_C13", "SOFX_100_T32_3_C13"
+                        ],
+                "logicSlot":["1","3","5","7","9","11"],
+                "width":"2",
+                "activeSlot":"2",
+                "slotMap":
+                {"A":{"1": "TIM1", "2": "TIM2", "3": "TIM3","4": "TIM4", "5": "TIM5",
+                      "6": "TIM6","7": "TIM7", "8": "TIM8", "9": "TIM9","10": "TIM10","11": "TIM11", "12": "TIM12"}
+                }                        
+            }
+        ]
+    },
+    {
+        "Category":"DLM",
+        "SubSlotNums":"5",
+        "shelf":["A"],
+        "TimGroup":
+        [ 
+            {
+                "group":["TAM-2-10G","TAM-2-10GR","TAM-2-10GT","TAM-2-10GM","DICM-2-10GT","DICM-2-10GM",
+                         "TAM-1-40G","TAM-1-40GE","TAM-1-40GR","TAM-1-100G-DEMO","TAM-1-100GE","TAM-1-100GR",
+                         "TAM-4-25G","TAM-8-1G","TAM-8-25GM"
+                        ],
+                "logicSlot":["1","2","3","4","5"],
+                "width":"1",
+                "activeSlot":"1",
+                "slotMap":
+                {
+                    "A":{"1": "1", "2": "2", "3": "3","4": "4", "5": "5"}
+                }
+            }
+        ]
+    },
+    {
+        "Category":"MXP",
+        "SubSlotNums":"100",
+        "shelf":["A"],
+        "TimGroup":
+        [ 
+            {
+                "group":["XTIM_C","XTIM_L"],
+                "logicSlot":["2","3"],
+                "width":"1",
+                "activeSlot":"1",
+                "slotMap":
+                {
+                    "A":{"2": "TIM2","3": "TIM3"}
+                }
+            }
+        ]
+    }  
+]

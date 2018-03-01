@@ -1,0 +1,95 @@
+[
+   {
+      "Category": "DTC", 
+      "BackupName": "DTC Chassis", 
+      "Flag": "DTC_B", 
+      "Boards": [
+         {
+            "board_spec_name": "BMM", 
+            "slot_num": "1", 
+            "slot_id": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "BMM", 
+            "slot_num": "2", 
+            "slot_id": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "DLM", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "CMMD", 
+            "slot_num": "3", 
+            "slot_id": "3", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "DLM", 
+            "slot_num": "4", 
+            "slot_id": "4", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "CMMD", 
+            "slot_num": "4", 
+            "slot_id": "4", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "DLM", 
+            "slot_num": "5", 
+            "slot_id": "5", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "CMMD", 
+            "slot_num": "5", 
+            "slot_id": "5", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "DLM", 
+            "slot_num": "6", 
+            "slot_id": "6", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "CMMD", 
+            "slot_num": "6", 
+            "slot_id": "6", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "MCM_NC", 
+            "slot_num": "7A", 
+            "slot_id": "7A", 
+            "is_mandatory": "True", 
+            "aid": "A-7A"
+         }, 
+         {
+            "board_spec_name": "MCM_SC", 
+            "slot_num": "7A", 
+            "slot_id": "7A", 
+            "is_mandatory": "True", 
+            "aid": "A-7A"
+         }, 
+         {
+            "board_spec_name": "MCM_NC", 
+            "slot_num": "7B", 
+            "slot_id": "7B", 
+            "aid": "A-7B"
+         }, 
+         {
+            "board_spec_name": "MCM_SC", 
+            "slot_num": "7B", 
+            "slot_id": "7B", 
+            "aid": "A-7B"
+         }
+      ]
+   }
+]

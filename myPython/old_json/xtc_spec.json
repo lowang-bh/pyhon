@@ -1,0 +1,211 @@
+[
+   {
+      "Category": "XTC", 
+      "BackupName": "XTC Chassis", 
+      "Flag": "XTC_10", 
+      "OsType" : "QNX63|QNX65",
+      "DefaultOS" : "QNX65",
+      "HelpInfo" : "XTC",
+      "TarDir" : "SIM/DTNX",
+      "Boards": [
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "10", 
+            "slot_id": "10", 
+            "rel_slot": "10", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "10", 
+            "slot_id": "10", 
+            "rel_slot": "10", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "11", 
+            "slot_id": "11", 
+            "rel_slot": "11", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "11", 
+            "slot_id": "11", 
+            "rel_slot": "11", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "12", 
+            "slot_id": "12", 
+            "rel_slot": "12", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "12", 
+            "slot_id": "12", 
+            "rel_slot": "12", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "13", 
+            "slot_id": "13", 
+            "rel_slot": "13", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "13", 
+            "slot_id": "13", 
+            "rel_slot": "13", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "14", 
+            "slot_id": "14", 
+            "rel_slot": "14", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "14", 
+            "slot_id": "14", 
+            "rel_slot": "14", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "15", 
+            "slot_id": "15", 
+            "rel_slot": "15", 
+            "present_bit": "20", 
+            "aid": "B-1"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "15", 
+            "slot_id": "15", 
+            "rel_slot": "15", 
+            "present_bit": "20", 
+            "aid": "B-1"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "16", 
+            "slot_id": "16", 
+            "rel_slot": "16", 
+            "present_bit": "40", 
+            "aid": "B-2"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "16", 
+            "slot_id": "16", 
+            "rel_slot": "16", 
+            "present_bit": "40", 
+            "aid": "B-2"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "17", 
+            "slot_id": "17", 
+            "rel_slot": "17", 
+            "present_bit": "80", 
+            "aid": "B-3"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "17", 
+            "slot_id": "17", 
+            "rel_slot": "17", 
+            "present_bit": "80", 
+            "aid": "B-3"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "18", 
+            "slot_id": "18", 
+            "rel_slot": "18", 
+            "present_bit": "100", 
+            "aid": "B-4"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "18", 
+            "slot_id": "18", 
+            "rel_slot": "18", 
+            "present_bit": "100", 
+            "aid": "B-4"
+         }, 
+         {
+            "board_spec_name": "OTM", 
+            "slot_num": "19", 
+            "slot_id": "19", 
+            "rel_slot": "19", 
+            "present_bit": "200", 
+            "aid": "B-5"
+         }, 
+         {
+            "board_spec_name": "OLM", 
+            "slot_num": "19", 
+            "slot_id": "19", 
+            "rel_slot": "19", 
+            "present_bit": "200", 
+            "aid": "B-5"
+         }, 
+         {
+            "board_spec_name": "XCM_NC", 
+            "slot_num": "40", 
+            "slot_id": "40", 
+            "is_mandatory": "True", 
+            "present_bit": "100000", 
+            "aid": "A-6B"
+         }, 
+         {
+            "board_spec_name": "XCM_SC", 
+            "slot_num": "40", 
+            "slot_id": "40", 
+            "is_mandatory": "True", 
+            "present_bit": "100000", 
+            "aid": "A-6B"
+         }, 
+         {
+            "board_spec_name": "XCM_NC", 
+            "slot_num": "41", 
+            "slot_id": "41", 
+            "present_bit": "200000", 
+            "aid": "B-6B"
+         }, 
+         {
+            "board_spec_name": "XCM_SC", 
+            "slot_num": "41", 
+            "slot_id": "41", 
+            "present_bit": "200000", 
+            "aid": "B-6B"
+         }, 
+         {
+            "board_spec_name": "XSM", 
+            "slot_num": "64", 
+            "slot_id": "64", 
+            "rel_slot": "64", 
+            "is_mandatory": "True", 
+            "aid": "A-64"
+         }
+      ]
+   }
+]

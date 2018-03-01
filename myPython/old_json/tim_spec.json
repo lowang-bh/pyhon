@@ -1,0 +1,835 @@
+[
+    {
+        "Category":"TIM16x25GM",
+        "minorValue":"0x09",
+        "majorValue":"0x45",
+        "maxPortNum":"16",
+        "portMap":
+            {
+                "A":{
+                    "1": "TOM12", "2": "TOM13", "3": "TOM14",
+                    "4": "TOM15", "5": "TOM16", "6": "TOM7",
+                    "7": "TOM8", "8": "TOM9", "9": "TOM10",
+                    "10": "TOM11", "11": "TOM1", "12": "TOM2",
+                    "13": "TOM3", "14": "TOM4", "15": "TOM5", "16": "TOM6"
+                    },
+                "B":{
+                    "1": "TOM6", "2": "TOM5", "3": "TOM4",
+                    "4": "TOM3", "5": "TOM2", "6": "TOM1",
+                    "7": "TOM11", "8": "TOM10", "9": "TOM9",
+                    "10": "TOM8", "11": "TOM7", "12": "TOM16",
+                    "13": "TOM15", "14": "TOM14", "15": "TOM13", "16": "TOM12"
+                    }
+            },
+        "TomGroup":
+            ["SFP_2_5G_SR_1", "SFP_2_5G_IR_2",
+             "SFP_2_5G_LR_2", "SFP_1000BaseSX", "SFP_1000BaseLX",
+             "SFP_2_5G_MR_IR_1", "SFP_1G_ZX", "SFP_MR_DWDM_LR2",
+             "SFP_MR_CWDM_LR2", "SFP_2_5_GMR_SR1", "SFP_8G_SM_LC_L", 
+             "SFP_1485HD_RX", "SFP_1485HD_TX", "SFP_14835HD_RX",
+             "SFP_14835HD_TX"]
+    },
+    {
+        "Category":"PXM16x10GE",
+        "minorValue":"0x0D",
+        "majorValue":"0x45",
+        "maxPortNum":"16",
+        "portMap":
+            {
+                "A":{
+                    "1": "TOM1", "2": "TOM2", "3": "TOM3",
+                    "4": "TOM4", "5": "TOM5", "6": "TOM6",
+                    "7": "TOM7", "8": "TOM8"
+                    },
+                "B":{
+                    "9": "TOM8", "10": "TOM7", "11": "TOM6",
+                    "12": "TOM5", "13": "TOM4", "14": "TOM3",
+                    "15": "TOM2", "16": "TOM1"
+                    }
+            },
+        "TomGroup":
+            ["TOM_10G_SFPP_SR0", "TOM_10G_SFPP_SR1",
+             "TOM_10G_SFPP_IR2", "TOM_10G_SFPP_LR2", "TOM_10G_SFPP_DT"]
+    },
+    {
+        "Category":"TIM1x40GM",
+        "minorValue":"0x0C",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["TOM_40GMR_FR"]
+    },
+    {
+        "Category":"TIM1x40GE",
+        "minorValue":"0x01",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup": ["CFP40GLR4", "CFP40GSR4","TOM_40GMR_ER4","TOM_40GMR_FR", "TOM_40GMR_LR4"]
+    },
+    {
+        "Category":"TIM1x40G",
+        "minorValue":"0x06",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup": ["CFP40GLR4", "CFP40GSR4", "TOM_40GMR_LR4", "TOM_40GMR_FR", "TOM_40GMR_ER4"]
+    },
+    {
+        "Category":"TIM2_1x100GE",
+        "minorValue":"0x02",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["TOM2_100G_LR4", "TOM2_100G_SR4"]
+    },
+    {
+        "Category":"TIM2-2-100GM",
+        "minorValue":"0x0F",
+        "majorValue":"0x45",
+        "maxPortNum":"2",
+        "portMap":
+            {
+                "A": {"1": "TOM1","2": "TOM2"},
+                "B": {"1": "TOM1","2": "TOM2"}
+            },        
+        "TomGroup":["TOM_100G_Q_LR4", "TOM_100G_Q_SR4","TOM-100G-Q-CWDM4","TOM-100GMR-Q-LR4", "TOM-100GMR-Q-SR4","TOM_100G_Q_CLR4"]
+    },
+    {
+        "Category":"TIM2-2-100GX",
+        "minorValue":"0x10",
+        "majorValue":"0x45",
+        "maxPortNum":"2",
+        "portMap":
+            {
+                "A": {"1": "TOM1","2": "TOM2"},
+                "B": {"1": "TOM1","2": "TOM2"}
+            },        
+        "TomGroup":["TOM_100G_Q_LR4", "TOM_100G_Q_SR4","TOM-100G-Q-CWDM4","TOM-100GMR-Q-LR4", "TOM-100GMR-Q-SR4","TOM_100G_Q_CLR4"]
+    },
+    {
+        "Category":"TIM2-18-10GM",
+        "minorValue":"0x11",
+        "majorValue":"0x45",
+        "maxPortNum":"18",
+        "portMap":
+            {
+                "A": {
+                       "1": "TOM1","2": "TOM2","3": "TOM3","4": "TOM4","5": "TOM5","6": "TOM6",
+                       "7": "TOM7","8": "TOM8","9": "TOM9","10": "TOM10","11": "TOM11","12": "TOM12",
+                       "13": "TOM13","14": "TOM14","15": "TOM15","16": "TOM16","17": "TOM17","18": "TOM18"
+                     },
+                "B": {
+                       "1": "TOM1","2": "TOM2","3": "TOM3","4": "TOM4","5": "TOM5","6": "TOM6",
+                       "7": "TOM7","8": "TOM8","9": "TOM9","10": "TOM10","11": "TOM11","12": "TOM12",
+                       "13": "TOM13","14": "TOM14","15": "TOM15","16": "TOM16","17": "TOM17","18": "TOM18"                     
+                     }
+            },        
+        "TomGroup":["TOM_10G_SFPP_SR1","TOM_10G_SFPP_IR2","TOM_10G_SFPP_LR2","TOM_10G_SFPP_SR0","TOM_10G_SFPP_DT","TOM-10GE-LRL"]
+    },
+    {
+        "Category":"TIM2-18-10GX",
+        "minorValue":"0x12",
+        "majorValue":"0x45",
+        "maxPortNum":"18",
+        "portMap":
+            {
+                "A": {
+                       "1": "TOM1","2": "TOM2","3": "TOM3","4": "TOM4","5": "TOM5","6": "TOM6",
+                       "7": "TOM7","8": "TOM8","9": "TOM9","10": "TOM10","11": "TOM11","12": "TOM12",
+                       "13": "TOM13","14": "TOM14","15": "TOM15","16": "TOM16","17": "TOM17","18": "TOM18"
+                     },
+                "B": {
+                       "1": "TOM1","2": "TOM2","3": "TOM3","4": "TOM4","5": "TOM5","6": "TOM6",
+                       "7": "TOM7","8": "TOM8","9": "TOM9","10": "TOM10","11": "TOM11","12": "TOM12",
+                       "13": "TOM13","14": "TOM14","15": "TOM15","16": "TOM16","17": "TOM17","18": "TOM18"                     
+                     }
+            },        
+        "TomGroup":["TOM_10G_SFPP_SR1","TOM_10G_SFPP_IR2","TOM_10G_SFPP_LR2","TOM_10G_SFPP_SR0","TOM_10G_SFPP_DT","TOM-10GE-LRL"]
+    },
+    {
+        "Category":"TIM2-20-10GE",
+        "minorValue":"0x13",
+        "majorValue":"0x45",
+        "maxPortNum":"5",
+        "portMap":
+            {
+                "A": {"1": "TOM1","2": "TOM2","3": "TOM3","4": "TOM4","5": "TOM5"},
+                "B": {"1": "TOM1","2": "TOM2","3": "TOM3","4": "TOM4","5": "TOM5"}
+            },        
+        "TomGroup":["TOM_40G_Q_LR4","TOM_40G_Q_SR4","TOM_40G_Q_SR4E","TOM_40G_Q_LRL","TOM_40G"]
+    },
+
+    {
+        "Category":"TIM1x100GE",
+        "minorValue":"0x02",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["CFP100GLR4", "CFP100GSR10","CFP100GL10X", "CFP100GS10X"]
+    },
+    {
+        "Category":"TIM1x100GE_Q",
+        "minorValue":"0x02",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["TOM_100G_Q_CLR4", "TOM_100G_Q_LR4","TOM_100G_Q_SR4"]
+    },
+    {
+        "Category":"TIM1Bx100GE",
+        "minorValue":"0x02",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["CFP100GLR4", "CFP100GSR10","CFP100GL10X", "CFP100GS10X"]
+    },    
+    {
+        "Category":"LIM1x100GE",
+        "minorValue":"0x02",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["TOM_100G_CFP_DT"]
+    }, 
+    {
+        "Category":"LIM1x100GM",
+        "minorValue":"0x02",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["TOM_100G_CFP_DT"]
+    },
+    {
+        "Category":"LIM1x100GX",
+        "minorValue":"0x02",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":["TOM_100G_CFP_DT"]
+    },    
+    {
+        "Category":"TIM1x100G",
+        "minorValue":"0x07",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":
+            ["CFP100GSR10", "CFP100GL10X","CFP100GS10X",
+             "TOM_100GMR_LR4","TOM_100GMR_L10X", "TOM_100GMR_ER4"]
+    },
+    {
+        "Category":"TIM1x100GM",
+        "minorValue":"0x0A",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":
+            ["CFP100GSR10", "CFP100GL10X","CFP100GS10X", 
+             "TOM_100GMR_LR4","TOM_100GMR_L10X", "TOM_100GMR_ER4"]
+    },
+    {
+        "Category":"TIM1x100GX",
+        "minorValue":"0x0B",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },         
+        "TomGroup":
+            ["CFP100GSR10", "CFP100GL10X", "CFP100GS10X", 
+             "TOM_100GMR_LR4","TOM_100GMR_L10X", "TOM_100GMR_ER4"]
+    },
+    {
+        "Category":"TIM1Bx100GM",
+        "minorValue":"0x0B",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":
+            ["CFP100GSR10", "CFP100GL10X","CFP100GS10X", 
+             "TOM_100GMR_LR4", "TOM_100GMR_L10X", "TOM_100GMR_ER4"]
+    },
+    {
+        "Category":"TIM1Bx100GX",
+        "minorValue":"0x0B",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },        
+        "TomGroup":
+            ["CFP100GSR10", "CFP100GL10X", "CFP100GS10X",
+             "TOM_100GMR_LR4","TOM_100GMR_L10X", "TOM_100GMR_ER4"]
+    },
+    {
+        "Category":"PXM1x100GE",
+        "minorValue":"0x0E",
+        "majorValue":"0x45",
+        "maxPortNum":"1",
+        "portMap":
+            {
+                "A": {"1": "TOM1"},
+                "B": {"1": "TOM1"}
+            },
+        "TomGroup":
+            ["CFP100GLR4", "CFP100GSR10","CFP100GL10X", "CFP100GS10X", "TOM_100GMR_ER4"]
+    }, 
+    {
+        "Category":"TIM5x10G",
+        "minorValue":"0x03",
+        "majorValue":"0x45",
+        "maxPortNum":"5",
+        "portMap":
+            {
+                "A":{"1": "TOM1", "2": "TOM2", "3": "TOM3", "4": "TOM4", "5": "TOM5"},
+                "B":{"1": "TOM5", "2": "TOM4", "3": "TOM3", "4": "TOM2", "5": "TOM1"}
+            },        
+        "TomGroup":
+            ["TOM_10G_SFPP_SR1", "TOM_10G_SFPP_IR2", "TOM_10G_SFPP_LR2"]
+    },
+    {
+        "Category":"XICM5x10GM",
+        "minorValue":"0x04",
+        "majorValue":"0x45",
+        "maxPortNum":"5",
+        "portMap":
+            {
+                "A":{"1": "TOM1", "2": "TOM2", "3": "TOM3", "4": "TOM4", "5": "TOM5"},
+                "B":{"1": "TOM5", "2": "TOM4", "3": "TOM3", "4": "TOM2", "5": "TOM1"}
+            },       
+        "TomGroup":
+           ["TOM_10G_SFPP_SR1", "TOM_10G_SFPP_IR2", "TOM_10G_SFPP_LR2"]
+    },
+    {
+        "Category":"TIM5x10GM",
+        "minorValue":"0x04",
+        "majorValue":"0x45",
+        "maxPortNum":"5",
+        "portMap":
+            {
+                "A":{"1": "TOM1", "2": "TOM2", "3": "TOM3", "4": "TOM4", "5": "TOM5"},
+                "B":{"1": "TOM5", "2": "TOM4", "3": "TOM3", "4": "TOM2", "5": "TOM1"}
+            },        
+        "TomGroup":
+           ["TOM_10G_SFPP_SR1", "TOM_10G_SFPP_IR2", "TOM_10G_SFPP_LR2", "TOM_10G_SFPP_SR0"]
+    },
+    {
+        "Category":"TIM5Bx10GM",
+        "minorValue":"0x04",
+        "majorValue":"0x45",
+        "maxPortNum":"5",
+        "portMap":
+            {
+                "A":{"1": "TOM1", "2": "TOM2", "3": "TOM3", "4": "TOM4", "5": "TOM5"},
+                "B":{"1": "TOM5", "2": "TOM4", "3": "TOM3", "4": "TOM2", "5": "TOM1"}
+            },
+        "TomGroup":
+           ["TOM_10G_SFPP_SR1", "TOM_10G_SFPP_IR2", "TOM_10G_SFPP_LR2", "TOM_10G_SFPP_SR0"]
+    },
+    {
+        "Category":"TIM5x10GX",
+        "minorValue":"0x05",
+        "majorValue":"0x45",
+        "maxPortNum":"5",
+        "portMap":
+            {
+                "A":{"1": "TOM1", "2": "TOM2", "3": "TOM3", "4": "TOM4", "5": "TOM5"},
+                "B":{"1": "TOM5", "2": "TOM4", "3": "TOM3", "4": "TOM2", "5": "TOM1"}
+            },
+        "TomGroup":
+           ["TOM_10G_SFPP_SR1", "TOM_10G_SFPP_IR2", "TOM_10G_SFPP_LR2", "TOM_10G_SFPP_SR0"]
+    },
+    {
+        "Category":"TAM-2-10G",
+        "minorValue":"0x01",
+        "majorValue":"0x13",
+        "tamPonVal":"1",
+        "maxPortNum":"2",
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2"}
+            },
+        "TomGroup":
+           ["TOM-10G-SR1", "TOM-10G-IR2", "TOM-10G-LR2", "TOM-10G-SR2","TOM-10G-SR0", "TOM-10G", "TOM-10G-WDM", 
+            "XFP_10GDL48_LR2", "XFP_10GDQ48_LR2", "XFP_10GDL00_LR2", "XFP_10GDQ00_LR2", "XFP_10GDC01_LR2",
+            "XFP_10GDH01_LR2", "XFP_10GDH61_LR2", "TOM-10G-DWDM-LR2", "TOM-10G-DWA-LR2", "TOM-10G-CWDM-LR2", 
+            "XFP_8G",  "XFP_10G_DT_LR2", "XFP_10G_DT_LR2E" 
+            ]
+    },
+    {
+        "Category":"TAM-2-10GR",
+        "minorValue":"0x07",
+        "majorValue":"0x13",
+        "maxPortNum":"2",
+        "tamPonVal":"7",        
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2"}
+            },
+        "TomGroup":
+           ["TOM-10G-SR1", "TOM-10G-IR2", "TOM-10G-LR2", "TOM-10G-SR2","TOM-10G-SR0", "TOM-10G", "TOM-10G-WDM", 
+            "XFP_10GDL48_LR2", "XFP_10GDQ48_LR2", "XFP_10GDL00_LR2", "XFP_10GDQ00_LR2", "XFP_10GDC01_LR2",
+            "XFP_10GDH01_LR2", "XFP_10GDH61_LR2", "TOM-10G-DWDM-LR2", "TOM-10G-DWA-LR2", "TOM-10G-CWDM-LR2", 
+            "XFP_8G",  "XFP_10G_DT_LR2", "XFP_10G_DT_LR2E" 
+            ]
+    },
+    {
+        "Category":"TAM-2-10GT",
+        "minorValue":"0x08",
+        "majorValue":"0x13",
+        "maxPortNum":"2",
+        "tamPonVal":"8",        
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2"}
+            },
+        "TomGroup":
+           ["TOM-10G-SR1", "TOM-10G-IR2", "TOM-10G-LR2", "TOM-10G-SR2","TOM-10G-SR0", "TOM-10G", "TOM-10G-WDM", 
+            "XFP_10GDL48_LR2", "XFP_10GDQ48_LR2", "XFP_10GDL00_LR2", "XFP_10GDQ00_LR2", "XFP_10GDC01_LR2",
+            "XFP_10GDH01_LR2", "XFP_10GDH61_LR2", "TOM-10G-DWDM-LR2", "TOM-10G-DWA-LR2", "TOM-10G-CWDM-LR2", 
+            "XFP_8G",  "XFP_10G_DT_LR2", "XFP_10G_DT_LR2E" 
+            ]
+    },
+    {
+        "Category":"TAM-2-10GM",
+        "minorValue":"0x09",
+        "majorValue":"0x13",
+        "maxPortNum":"2",
+        "tamPonVal":"9",        
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2"}
+            },
+        "TomGroup":
+           ["TOM-10G-SR1", "TOM-10G-IR2", "TOM-10G-LR2", "TOM-10G-SR2","TOM-10G-SR0", "TOM-10G", "TOM-10G-WDM", 
+            "XFP_10GDL48_LR2", "XFP_10GDQ48_LR2", "XFP_10GDL00_LR2", "XFP_10GDQ00_LR2", "XFP_10GDC01_LR2",
+            "XFP_10GDH01_LR2", "XFP_10GDH61_LR2", "TOM-10G-DWDM-LR2", "TOM-10G-DWA-LR2", "TOM-10G-CWDM-LR2", 
+            "XFP_8G",  "XFP_10G_DT_LR2", "XFP_10G_DT_LR2E" 
+            ]
+    },    
+    {
+        "Category":"DICM-2-10GT",
+        "minorValue":"0xFF",
+        "maxPortNum":"2",
+        "tamPonVal":"108",
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2"}
+            },
+        "TomGroup":
+           ["TOM-10G-SR1", "TOM-10G-IR2", "TOM-10G-LR2", "TOM-10G-SR2","TOM-10G-SR0", "TOM-10G", "TOM-10G-WDM", 
+            "XFP_10GDL48_LR2", "XFP_10GDQ48_LR2", "XFP_10GDL00_LR2", "XFP_10GDQ00_LR2", "XFP_10GDC01_LR2",
+            "XFP_10GDH01_LR2", "XFP_10GDH61_LR2", "TOM-10G-DWDM-LR2", "TOM-10G-DWA-LR2", "TOM-10G-CWDM-LR2", 
+            "XFP_8G",  "XFP_10G_DT_LR2", "XFP_10G_DT_LR2E" 
+            ]
+    },    
+    {
+        "Category":"DICM-2-10GM",
+        "minorValue":"0x09",
+        "maxPortNum":"2",
+        "tamPonVal":"109",
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2"}
+            },
+        "TomGroup":
+           ["TOM-10G-SR1", "TOM-10G-IR2", "TOM-10G-LR2", "TOM-10G-SR2","TOM-10G-SR0", "TOM-10G", "TOM-10G-WDM", 
+            "XFP_10GDL48_LR2", "XFP_10GDQ48_LR2", "XFP_10GDL00_LR2", "XFP_10GDQ00_LR2", "XFP_10GDC01_LR2",
+            "XFP_10GDH01_LR2", "XFP_10GDH61_LR2", "TOM-10G-DWDM-LR2", "TOM-10G-DWA-LR2", "TOM-10G-CWDM-LR2", 
+            "XFP_8G",  "XFP_10G_DT_LR2", "XFP_10G_DT_LR2E" 
+            ]
+    },
+    {
+        "Category":"TAM-1-40G",
+        "minorValue":"0x06",
+        "majorValue":"0x13",
+        "maxPortNum":"1",
+        "tamPonVal":"6",
+        "portMap":
+            {
+                "A":{"1": "1"}
+            },
+        "TomGroup":
+            [ "CFP_40G_SR4", "CFP_40G_LR4", "CFP_100G_LR4", "CFP_100G_SR10", "CFP_100G_LR10","TOM-100G-S10X", 
+              "TOM-100G", "TOM_40GMR_FR", "TOM_100GMR_LR4", "TOM_100GMR_L10X", "TOM_40GMR_LR4", "TOM_40GMR_ER4",
+              "TOM_100GMR_ER4", "TOM2-100G-LR4" ,"TOM2-100G-SR4","TOM-100G-CFP-DT"            
+            ]
+    },  
+    {
+        "Category":"TAM-1-40GE",
+        "minorValue":"0x0C",
+        "majorValue":"0x13",
+        "maxPortNum":"1",
+        "tamPonVal":"12",
+        "portMap":
+            {
+                "A":{"1": "1"}
+            },
+        "TomGroup":
+            [ "CFP_40G_SR4", "CFP_40G_LR4", "CFP_100G_LR4", "CFP_100G_SR10", "CFP_100G_LR10","TOM-100G-S10X", 
+              "TOM-100G", "TOM_40GMR_FR", "TOM_100GMR_LR4", "TOM_100GMR_L10X", "TOM_40GMR_LR4", "TOM_40GMR_ER4",
+              "TOM_100GMR_ER4", "TOM2-100G-LR4" ,"TOM2-100G-SR4","TOM-100G-CFP-DT"            
+            ]
+    },
+    {
+        "Category":"TAM-1-40GR",
+        "minorValue":"0x0D",
+        "majorValue":"0x13",
+        "maxPortNum":"1",
+        "tamPonVal":"13",
+        "portMap":
+            {
+                "A":{"1": "1"}
+            },
+        "TomGroup":
+            [ "CFP_40G_SR4", "CFP_40G_LR4", "CFP_100G_LR4", "CFP_100G_SR10", "CFP_100G_LR10","TOM-100G-S10X", 
+              "TOM-100G", "TOM_40GMR_FR", "TOM_100GMR_LR4", "TOM_100GMR_L10X", "TOM_40GMR_LR4", "TOM_40GMR_ER4",
+              "TOM_100GMR_ER4", "TOM2-100G-LR4" ,"TOM2-100G-SR4","TOM-100G-CFP-DT"            
+            ]
+    },
+    {
+        "Category":"TAM-1-100G-DEMO",
+        "minorValue":"0x0B",
+        "majorValue":"0x13",
+        "maxPortNum":"1",
+        "tamPonVal":"11",
+        "portMap":
+            {
+                "A":{"1": "1"}
+            },
+        "TomGroup":
+            [ "CFP_40G_SR4", "CFP_40G_LR4", "CFP_100G_LR4", "CFP_100G_SR10", "CFP_100G_LR10","TOM-100G-S10X", 
+              "TOM-100G", "TOM_40GMR_FR", "TOM_100GMR_LR4", "TOM_100GMR_L10X", "TOM_40GMR_LR4", "TOM_40GMR_ER4",
+              "TOM_100GMR_ER4", "TOM2-100G-LR4" ,"TOM2-100G-SR4","TOM-100G-CFP-DT"            
+            ]
+    },   
+    {
+        "Category":"TAM-1-100GE",
+        "minorValue":"0x0E",
+        "majorValue":"0x13",
+        "maxPortNum":"1",
+        "tamPonVal":"14",
+        "portMap":
+            {
+                "A":{"1": "1"}
+            },
+        "TomGroup":
+            [ "CFP_40G_SR4", "CFP_40G_LR4", "CFP_100G_LR4", "CFP_100G_SR10", "CFP_100G_LR10","TOM-100G-S10X", 
+              "TOM-100G", "TOM_40GMR_FR", "TOM_100GMR_LR4", "TOM_100GMR_L10X", "TOM_40GMR_LR4", "TOM_40GMR_ER4",
+              "TOM_100GMR_ER4", "TOM2-100G-LR4" ,"TOM2-100G-SR4","TOM-100G-CFP-DT"            
+            ]
+    },  
+    {
+        "Category":"TAM-1-100GR",
+        "minorValue":"0x0F",
+        "majorValue":"0x13",
+        "maxPortNum":"1",
+        "tamPonVal":"15",
+        "portMap":
+            {
+                "A":{"1": "1"}
+            },
+        "TomGroup":
+            [ "CFP_40G_SR4", "CFP_40G_LR4", "CFP_100G_LR4", "CFP_100G_SR10", "CFP_100G_LR10","TOM-100G-S10X", 
+              "TOM-100G", "TOM_40GMR_FR", "TOM_100GMR_LR4", "TOM_100GMR_L10X", "TOM_40GMR_LR4", "TOM_40GMR_ER4",
+              "TOM_100GMR_ER4", "TOM2-100G-LR4" ,"TOM2-100G-SR4","TOM-100G-CFP-DT"            
+            ]
+    },
+    {
+        "Category":"TAM-4-25G",
+        "minorValue":"0x02",
+        "majorValue":"0x13",
+        "maxPortNum":"4",
+        "tamPonVal":"2",
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2","3": "3", "4": "4"}
+            },
+        "TomGroup":
+            ["TOM-25G-SR1", "TOM-25G-IR1",  "TOM-25G-IR2",  "TOM-25G-LR2",  "TOM-1G-SX",  "TOM-1G-LX",  "SFP_155M_LR_2", 
+             "SFP_622M_LR_2",  "TOM-25GMR-IR1",  "TOM-1G-ZX",  "SFP_2_5G_MRC47_LR2", "SFP_2_5G_MRC49_LR2", "SFP_2_5G_MRC51_LR2",
+             "SFP_2_5G_MRC53_LR2", "SFP_2_5G_MRC55_LR2", "SFP_2_5G_MRC57_LR2", "SFP_2_5G_MRC59_LR2", "SFP_2_5G_MRC61_LR2", "TOM_25G", 
+             "TOM-25GMR", "SFP_1G",  "SFP_622M",  "SFP_622M155",  "SFP_155M",  "TOM-MR-DWDM-LR2", "TOM-MR-CWDM-LR2", "TOM-25GMR-SR1", 
+             "TOM-8G-SM-LC-L",  "TOM-1485HD-RX",  "TOM-1485HD-TX",  "TOM-14835HD-RX",  "TOM-14835HD-TX",  "TOM-8G",   "TOM-4G",   
+             "TOM-10G-SFPP-SR1", "TOM-10G-SFPP-IR2", "TOM-10G-SFPP-LR2", "TOM-2.5GMR-LR1" ,  "TOM-10G-SFPP-DT",  "TOM-10G-SFPP-SR0", "TOM-10GE-LRL"
+             ]
+    }, 
+    {
+        "Category":"TAM-8-1G",
+        "minorValue":"0x04",
+        "majorValue":"0x13",
+        "maxPortNum":"8",
+        "tamPonVal":"4",
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2","3": "3", "4": "4",
+                     "5": "5", "6": "6","7": "7", "8": "8"}
+            },
+        "TomGroup":
+            ["TOM-25G-SR1", "TOM-25G-IR1",  "TOM-25G-IR2",  "TOM-25G-LR2",  "TOM-1G-SX",  "TOM-1G-LX",  "SFP_155M_LR_2", 
+             "SFP_622M_LR_2",  "TOM-25GMR-IR1",  "TOM-1G-ZX",  "SFP_2_5G_MRC47_LR2", "SFP_2_5G_MRC49_LR2", "SFP_2_5G_MRC51_LR2",
+             "SFP_2_5G_MRC53_LR2", "SFP_2_5G_MRC55_LR2", "SFP_2_5G_MRC57_LR2", "SFP_2_5G_MRC59_LR2", "SFP_2_5G_MRC61_LR2", "TOM_25G", 
+             "TOM-25GMR", "SFP_1G",  "SFP_622M",  "SFP_622M155",  "SFP_155M",  "TOM-MR-DWDM-LR2", "TOM-MR-CWDM-LR2", "TOM-25GMR-SR1", 
+             "TOM-8G-SM-LC-L",  "TOM-1485HD-RX",  "TOM-1485HD-TX",  "TOM-14835HD-RX",  "TOM-14835HD-TX",  "TOM-8G",   "TOM-4G",   
+             "TOM-10G-SFPP-SR1", "TOM-10G-SFPP-IR2", "TOM-10G-SFPP-LR2", "TOM-2.5GMR-LR1" ,  "TOM-10G-SFPP-DT",  "TOM-10G-SFPP-SR0", "TOM-10GE-LRL"
+             ]
+    }, 
+    {
+        "Category":"TAM-8-25GM",
+        "minorValue":"0x0A",
+        "majorValue":"0x13",
+        "maxPortNum":"8",
+        "tamPonVal":"10",
+        "portMap":
+            {
+                "A":{"1": "1", "2": "2","3": "3", "4": "4",
+                     "5": "5", "6": "6","7": "7", "8": "8"}
+            },
+        "TomGroup":
+            ["TOM-25G-SR1", "TOM-25G-IR1",  "TOM-25G-IR2",  "TOM-25G-LR2",  "TOM-1G-SX",  "TOM-1G-LX",  "SFP_155M_LR_2", 
+             "SFP_622M_LR_2",  "TOM-25GMR-IR1",  "TOM-1G-ZX",  "SFP_2_5G_MRC47_LR2", "SFP_2_5G_MRC49_LR2", "SFP_2_5G_MRC51_LR2",
+             "SFP_2_5G_MRC53_LR2", "SFP_2_5G_MRC55_LR2", "SFP_2_5G_MRC57_LR2", "SFP_2_5G_MRC59_LR2", "SFP_2_5G_MRC61_LR2", "TOM_25G", 
+             "TOM-25GMR", "SFP_1G",  "SFP_622M",  "SFP_622M155",  "SFP_155M",  "TOM-MR-DWDM-LR2", "TOM-MR-CWDM-LR2", "TOM-25GMR-SR1", 
+             "TOM-8G-SM-LC-L",  "TOM-1485HD-RX",  "TOM-1485HD-TX",  "TOM-14835HD-RX",  "TOM-14835HD-TX",  "TOM-8G",   "TOM-4G",   
+             "TOM-10G-SFPP-SR1", "TOM-10G-SFPP-IR2", "TOM-10G-SFPP-LR2", "TOM-2.5GMR-LR1" ,  "TOM-10G-SFPP-DT",  "TOM-10G-SFPP-SR0", "TOM-10GE-LRL"
+             ]
+    },    
+    {
+        "Category":"AOFX_100_T32_1_C3",
+        "minorValue":"0x01",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category":"AOFX_100_T32_2_C3",
+        "minorValue":"0x02",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {   
+        "Category":"AOFX_100_T32_3_C3",
+        "minorValue":"0x03",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "AOFX_100_T32_1_C6",
+        "minorValue":"0x07",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category":"AOFX_100_T32_2_C6",
+        "minorValue":"0x08",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category":"AOFX_100_T32_3_C6",
+        "minorValue":"0x09",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },        
+    {
+        "Category": "AOFX_100_T32_1_C8",
+        "minorValue":"0x0D",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },        
+    {
+        "Category":"AOFX_100_T32_2_C8",
+        "minorValue":"0x0E",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },        
+    {
+        "Category":"AOFX_100_T32_3_C8",
+        "minorValue":"0x0F",
+          "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },        
+    {
+        "Category": "AOFM_100_T32_1_C3",
+        "minorValue":"0x04",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {    
+        "Category": "AOFM_100_T32_2_C3",
+        "minorValue":"0x05",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "AOFM_100_T32_3_C3",
+        "minorValue":"0x06",
+         "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },        
+    {
+        "Category": "AOFM_100_T32_1_C6",
+        "minorValue":"0x0A",
+         "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "AOFM_100_T32_2_C6",
+        "minorValue":"0x0B",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "AOFM_100_T32_3_C6",
+        "minorValue":"0x0C",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "AOFM_100_T32_1_C8",
+        "minorValue":"0x10",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "AOFM_100_T32_2_C8",
+        "minorValue":"0x11",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "AOFM_100_T32_3_C8",
+        "minorValue":"0x12",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "SOFX_100_T32_1_C12",
+        "minorValue":"0x13",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "SOFX_100_T32_2_C12",
+        "minorValue":"0x14",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "SOFX_100_T32_3_C12",
+        "minorValue":"0x15",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "SOFX_100_T32_1_C13",
+        "minorValue":"0x17",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category":"SOFX_100_T32_2_C13",
+        "minorValue":"0x18",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category": "SOFX_100_T32_3_C13",
+        "minorValue":"0x19",
+        "majorValue":"0x4C",
+        "maxPortNum":"0"
+    },
+    {
+        "Category":"XTIM_C",
+        "minorValue":"0x01",
+        "majorValue":"0xFF",
+        "maxPortNum":"26",
+        "portMap":
+            {
+               "A": {
+                       "1": "TOM1","2": "TOM2","3": "TOM3","4": "TOM4","5": "TOM5","6": "TOM6",
+                       "7": "TOM7","8": "TOM8","9": "TOM9","10": "TOM10","11": "TOM11","12": "TOM12",
+                       "13": "TOM13","14": "TOM14","15": "TOM15","16": "TOM16","17": "TOM17","18": "TOM18",
+                       "19": "TOM19","20": "TOM20","21": "TOM21","22": "TOM22","23": "TOM23","24": "TOM24",
+                       "25": "TOM25","26": "TOM26"
+                     }
+            },
+        "TomGroup":
+           [
+            "TOM_10G_SFPP_SR1","TOM_10G_SFPP_IR2","TOM_10G_SFPP_LR2","TOM_10G_SFPP_SR0","TOM_10G_SFPP_DT",
+            "TOM-10GE-LRL","TOM_40G_Q_LR4", "TOM_40G_Q_SR4", "TOM_40G_Q_SR4E", "TOM_40G_Q_LRL","TOM_100G_Q_LR4", 
+            "TOM_100G_Q_SR4","TOM-100G-Q-CWDM4","TOM-100GMR-Q-LR4", "TOM-100GMR-Q-SR4","TOM_100G_Q_CLR4"
+           ]
+    },
+    {
+        "Category":"XTIM_L",
+        "minorValue":"0x02",
+        "majorValue":"0xFF",
+        "maxPortNum":"28",
+        "portMap":
+            {
+               "A": {
+                       "27": "LOM27","28": "LOM28"
+                    }
+            },
+        "TomGroup":
+           ["TOM-200G-A-CFP2"]
+    }
+        
+]

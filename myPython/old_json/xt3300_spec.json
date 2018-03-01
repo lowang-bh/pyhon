@@ -1,0 +1,28 @@
+[
+{
+	"Category":"XT3300",
+	"BackupName":"XT3300 Chassis",
+	"Flag": "XT3300", 
+	"OsType" : "LINUX",
+	"DefaultOS" : "LINUX",
+	"HelpInfo": "XT3303,XT3306,XT3309,XT3312",
+	"TarDir" : "SIM/GenX",
+	"Boards": [
+	 {
+		"board_spec_name": "XTMM_NC", 
+		"slot_num": "1", 
+		"slot_id": "1", 
+		"is_mandatory": "True", 
+		"aid": "A-1"
+	 }, 
+	 {
+		"board_spec_name": "XTMM_SC", 
+		"slot_num": "1", 
+		"slot_id": "1", 
+		"is_mandatory": "True", 
+		"aid": "A-1"
+	 }
+	]
+}
+]
+

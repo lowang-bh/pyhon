@@ -1,0 +1,28 @@
+[
+{
+	"Category":"CX1200",
+	"BackupName":"CX1200 Chassis",
+	"Flag": "CX1200", 
+	"OsType" : "LINUX",
+	"DefaultOS" : "LINUX",
+	"HelpInfo" : "CX_100E_1200F",
+	"TarDir" : ".",
+	"Boards": [
+	{
+			"board_spec_name":"XMM2_NC",
+		"slot_num":"1",
+		"slot_id": "1", 
+		"is_mandatory": "True", 
+		"aid": "A-1"
+	},
+	{
+			"board_spec_name":"XMM2_SC",
+		"slot_num":"1",
+		"slot_id": "1", 
+		"is_mandatory": "True", 
+		"aid": "A-1"
+	}
+	]
+}
+]
+

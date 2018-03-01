@@ -1,0 +1,41 @@
+[
+{
+	"Category": "XT3600",
+	"BackupName": "XT3600 Chassis",
+	"Flag": "XT3600",
+	"OsType": "LINUX",
+	"DefaultOS": "LINUX",
+	"HelpInfo": "XT3612H,XT3618,XT3624",
+	"TarDir" : "SIM/GenX",
+	"Boards": 
+	[
+	{
+		"board_spec_name": "XTMM_NC",
+		"slot_num": "1A",
+		"slot_id": "1",
+		"is_mandatory": "True",
+		"aid": "A-1A"
+	},
+	{
+		"board_spec_name": "XTMM_SC",
+		"slot_num": "1A",
+		"slot_id": "1",
+		"is_mandatory": "True",
+		"aid": "A-1A"
+	},
+	{
+		"board_spec_name": "XTMM_NC",
+		"slot_num": "1B",
+		"slot_id": "2",
+		"aid": "A-1B"
+	},
+	{
+		"board_spec_name": "XTMM_SC",
+		"slot_num": "1B",
+		"slot_id": "2",
+		"aid": "A-1B"
+	}
+	]
+}
+]
+

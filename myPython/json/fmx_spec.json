@@ -1,0 +1,23 @@
+[
+   {
+      "Category": "PX-1", 
+      "BackupName": "PX-1 Chassis", 
+      "Flag": "PX_1", 
+      "Boards": [
+         {
+            "board_spec_name": "XMM_NC", 
+            "slot_num": "1", 
+            "slot_id": "1", 
+            "is_mandatory": "True", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "XMM_SC", 
+            "slot_num": "1", 
+            "slot_id": "1", 
+            "is_mandatory": "True", 
+            "aid": "A-1"
+         }
+      ]
+   }
+]

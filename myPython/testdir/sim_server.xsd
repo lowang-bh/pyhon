@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="sim_server">
+        <xsd:complexType>
+            <!--A server may contain an unlimited number of NEs-->
+            <xsd:sequence>
+                <xsd:element name="NE" type="NEType" maxOccurs="unbounded"/>
+                <xsd:element name="connection" type="ConnType" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <!--NE Type Definition-->
+    <xsd:complexType name="NEType">
+        <!--An NE may contain an unlimited number of Chassis-->
+        <xsd:complexContent>
+            <xsd:extension base="ELEMType">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" name="Chassis" type="ChassisType"/>
+                </xsd:sequence>
+                <xsd:attribute name="NeType" type="xsd:string" use="required"/>
+                <xsd:attribute name="Sne" type="xsd:boolean" use="required"/>
+                <xsd:attribute name="NESwVersion" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="DcnIp" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="DcnNetMask" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="DcnGateway" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="RouterId" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="AuxIp" type="xsd:string" use="optional" default="x.x.x.x"/>
+                <xsd:attribute name="AuxMask" type="xsd:string" use="optional" default="255.255.255.0"/>
+                <xsd:attribute name="CraftIp" type="xsd:string" use="optional" default="x.x.x.x"/>
+                <xsd:attribute name="CraftMask" type="xsd:string" use="optional" default="255.255.255.0"/>
+                <xsd:attribute name="PrimaryGneIp" type="xsd:string" use="optional" default="255.255.255.0"/>
+                <xsd:attribute name="SecondaryGneIp" type="xsd:string" use="optional" default="0.0.0.0"/>
+                <xsd:attribute name="nodeid" type="xsd:int" use="required"/>
+                <xsd:attribute name="BootpOffset" type="xsd:int" use="optional" default="0"/>
+                <xsd:attribute name="DcnIp6" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="DcnIp6NetMask" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DcnGateway6" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="DcnDestination6" type="xsd:string" use="optional" default=""/>
+                <xsd:attribute name="DcnDest6PrefixLen" type="xsd:int" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--Chassis Type Definition-->
+    <xsd:complexType name="ChassisType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:choice>
+                    <xsd:element name="DTC" type="DTCType"/>
+                    <xsd:element name="OTC" type="OTCType"/>
+                    <xsd:element name="XTC" type="XTC10Type"/>
+                    <xsd:element name="XTC4" type="XTC4Type"/>
+                    <xsd:element name="XTC2" type="XTC2Type"/>
+                    <xsd:element name="XTC2E" type="XTC2EType"/>
+                    <xsd:element name="ITC" type="ITC16Type"/>
+                    <xsd:element name="MTC9" type="MTC9Type"/>
+                    <xsd:element name="PX-1" type="PX1Type"/>
+                </xsd:choice>
+                <xsd:attribute name="NodeCtrl" type="xsd:boolean" use="required"/>
+                <xsd:attribute name="Os" type="xsd:string"/>
+                <xsd:attribute name="CHASSERNO" type="xsd:int"/>
+                <xsd:attribute name="CHASSISTYPE" type="xsd:string"/>
+                <xsd:attribute name="SerialNo"  type="xsd:string"  use="optional" default=""/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--DTC Chassis Type Definition-->
+    <xsd:complexType name="DTCType">
+        <xsd:sequence>
+            <xsd:element name="MCM" type="MCMType" minOccurs="1" maxOccurs="2"/>
+            <xsd:element name="BMM" type="BMMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="DLM" type="DLMType" minOccurs="0" maxOccurs="4"/>
+            <xsd:element name="CMMD" type="CMMDType" minOccurs="0" maxOccurs="4"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--XTC10 Chassis Type Definition-->
+    <xsd:complexType name="XTC10Type">
+        <xsd:sequence>
+            <xsd:element name="XCM" type="XCMType" minOccurs="1" maxOccurs="2"/>
+            <xsd:element name="OTM" type="OTMType" minOccurs="0" maxOccurs="10"/>
+            <xsd:element name="OLM" type="OLMType" minOccurs="0" maxOccurs="10"/>
+            <xsd:element name="XSM" type="XSMType" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--XTC4 Chassis Type Definition-->
+    <xsd:complexType name="XTC4Type">
+        <xsd:sequence>
+            <xsd:element name="XCM" type="XCMType" minOccurs="1" maxOccurs="2"/>
+            <xsd:element name="OTM" type="OTMType" minOccurs="0" maxOccurs="4"/>
+            <xsd:element name="OLM" type="OLMType" minOccurs="0" maxOccurs="4"/>
+            <xsd:element name="XSM4" type="XSM4Type" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--XTC2 Chassis Type Definition-->
+    <xsd:complexType name="XTC2Type">
+        <xsd:sequence>
+            <xsd:element name="XCMH" type="XCMHType" minOccurs="1" maxOccurs="2"/>
+            <xsd:element name="OTXM" type="OTXMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="XSM2" type="XSM2Type" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--XTC2E Chassis Type Definition-->
+    <xsd:complexType name="XTC2EType">
+        <xsd:sequence>
+            <xsd:element name="XCMH" type="XCMHType" minOccurs="1" maxOccurs="2"/>
+            <xsd:element name="OTXM" type="OTXMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="IOMD" type="IOMDType" minOccurs="0" maxOccurs="6"/>
+            <xsd:element name="IAM1" type="IAM1Type" minOccurs="0" maxOccurs="6"/>
+            <xsd:element name="FMMC5" type="FMMC5Type" minOccurs="0" maxOccurs="6"/>
+            <xsd:element name="IAM" type="IAMType" minOccurs="0" maxOccurs="3"/>
+            <xsd:element name="IRM" type="IRMType" minOccurs="0" maxOccurs="3"/>
+            <xsd:element name="FRM4D" type="FRM4DType" minOccurs="0" maxOccurs="3"/>
+            <xsd:element name="XSM2E" type="XSM2EType" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--OTC Chassis Type Definition-->
+    <xsd:complexType name="OTCType">
+        <xsd:sequence>
+            <xsd:element name="OMM" type="OMMType" minOccurs="1" maxOccurs="2"/>
+            <xsd:element name="OAM" type="OAMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="ORM" type="ORMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="DSE" type="DSEType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="BMM2C" type="BMMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="SCM" type="SCMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="RAM" type="RAMType" minOccurs="0" maxOccurs="2"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--ITC16 Chassis Type Definition-->
+    <xsd:complexType name="ITC16Type">
+        <xsd:sequence>
+            <xsd:element name="IMM" type="IMMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="IMMB" type="IMMBType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="IAM" type="IAMType" minOccurs="0" maxOccurs="7"/>
+            <xsd:element name="IRM" type="IRMType" minOccurs="0" maxOccurs="5"/>
+            <xsd:element name="FRM" type="FRMType" minOccurs="0" maxOccurs="5"/>
+            <xsd:element name="FSM" type="FSMType" minOccurs="0" maxOccurs="5"/>
+            <xsd:element name="FMMF250" type="FMMF250Type" minOccurs="0" maxOccurs="7"/>
+            <xsd:element name="FRM4D" type="FRM4DType" minOccurs="0" maxOccurs="7"/>
+            <xsd:element name="FMMC5" type="FMMC5Type" minOccurs="0" maxOccurs="14"/>
+            <xsd:element name="IAM1" type="IAM1Type" minOccurs="0" maxOccurs="14"/>
+            <xsd:element name="OPSM" type="OPSMType" minOccurs="0" maxOccurs="14"/>
+            <xsd:element name="OTDM" type="OTDMType" minOccurs="0" maxOccurs="14"/>
+            <xsd:element name="XSM16" type="XSM16Type" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--MTC9 Chassis Type Definition-->
+    <xsd:complexType name="MTC9Type">
+        <xsd:sequence>
+            <xsd:element name="IMM" type="IMMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="IMMB" type="IMMBType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="IAM" type="IAMType" minOccurs="0" maxOccurs="4"/>
+            <xsd:element name="IRM" type="IRMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="FRM" type="FRMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="FSM" type="FSMType" minOccurs="0" maxOccurs="2"/>
+            <xsd:element name="FMMF250" type="FMMF250Type" minOccurs="0" maxOccurs="4"/>
+            <xsd:element name="FRM4D" type="FRM4DType" minOccurs="0" maxOccurs="4"/>
+            <xsd:element name="FMMC5" type="FMMC5Type" minOccurs="0" maxOccurs="7"/>
+            <xsd:element name="IAM1" type="IAM1Type" minOccurs="0" maxOccurs="7"/>
+            <xsd:element name="OPSM" type="OPSMType" minOccurs="0" maxOccurs="7"/>
+            <xsd:element name="OTDM" type="OTDMType" minOccurs="0" maxOccurs="7"/>
+            <xsd:element name="XSM9" type="XSM9Type" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--PX-1 Chassis Type Definition-->
+    <xsd:complexType name="PX1Type">
+        <xsd:sequence>
+            <xsd:element name="XMM" type="XMMType" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!--BMM Type Definition-->
+    <xsd:complexType name="BMMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="OSCIP" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCAid" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCNetMask" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OTSAid" type="xsd:string" use="optional"/>
+                <xsd:attribute name="LinePort" type="xsd:string" use="optional"/>
+                <xsd:attribute name="RXASSOCIATEDOTS" type="xsd:string" use="optional"/>        
+                <xsd:attribute name="Tl1User" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1Passwd" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCCost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="TECost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="HelloInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DeadInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="NeighborNE" type="xsd:string" use="optional"/>
+                <xsd:attribute name="NeighborBmmOrOam" type="xsd:string" use="optional"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OAM Type Definition-->
+    <xsd:complexType name="OAMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="OSCIP" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCAid" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCNetMask" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1User" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1Passwd" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCCost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="TECost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="HelloInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DeadInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="NeighborNE" type="xsd:string" use="optional"/>
+                <xsd:attribute name="NeighborBmmOrOam" type="xsd:string" use="optional"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--ORM Type Definition-->
+    <xsd:complexType name="ORMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="OSCIP" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCAid" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCNetMask" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1User" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1Passwd" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCCost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="TECost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="HelloInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DeadInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="NeighborNE" type="xsd:string" use="optional"/>
+                <xsd:attribute name="NeighborBmmOrOam" type="xsd:string" use="optional"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--DSE Type Definition-->
+    <xsd:complexType name="DSEType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="OSCIP" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCAid" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCNetMask" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1User" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1Passwd" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCCost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="TECost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="HelloInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DeadInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="NeighborNE" type="xsd:string" use="optional"/>
+                <xsd:attribute name="NeighborBmmOrOam" type="xsd:string" use="optional"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--SCM Type Definition-->
+    <xsd:complexType name="SCMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--RAM Type Definition-->
+    <xsd:complexType name="RAMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--DLM Type Definition-->
+    <xsd:complexType name="DLMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="TAM" type="TAMType" minOccurs="0" maxOccurs="5"/>
+                </xsd:sequence>
+                <xsd:attribute name="bmmOcg" type="xsd:string"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--CMMD Type Definition-->
+    <xsd:complexType name="CMMDType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OTM Type Definition-->
+    <xsd:complexType name="OTMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="TIM" type="TIMType" minOccurs="0" maxOccurs="10"/>
+                </xsd:sequence>
+                <xsd:attribute name="memSize" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OTXM Type Definition-->
+    <xsd:complexType name="OTXMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="TIM" type="TIMType" minOccurs="0" maxOccurs="12"/>
+                </xsd:sequence>
+                <xsd:attribute name="memSize" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OLM Type Definition-->
+    <xsd:complexType name="OLMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="SerialNo" type="xsd:string" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--MCM Type Definition-->
+    <xsd:complexType name="MCMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="SERNO" type="xsd:int"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+                <xsd:attribute name="RedundancyAct" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OMM Type Definition-->
+    <xsd:complexType name="OMMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="SERNO" type="xsd:int"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+                <xsd:attribute name="RedundancyAct" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--XCM Type Definition-->
+    <xsd:complexType name="XCMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="SERNO" type="xsd:int"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+                <xsd:attribute name="RedundancyAct" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--XCMH Type Definition-->
+    <xsd:complexType name="XCMHType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="SERNO" type="xsd:int"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+                <xsd:attribute name="RedundancyAct" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--XSM Type Definition-->
+    <xsd:complexType name="XSMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="PEM" type="PEMType" minOccurs="0" maxOccurs="6"/>
+                    <xsd:element name="FAN" type="FANType" minOccurs="0" maxOccurs="4"/>
+                    <xsd:element name="OXM" type="OXMType" minOccurs="0" maxOccurs="10"/>
+                    <xsd:element name="TSM" type="TSMType" minOccurs="0" maxOccurs="2"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--XSM2 Type Definition-->
+    <xsd:complexType name="XSM2Type">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="PEM" type="PEMType" minOccurs="0" maxOccurs="4"/>
+                    <xsd:element name="FAN" type="FANType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--XSM2E Type Definition-->
+    <xsd:complexType name="XSM2EType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="PEM" type="PEMType" minOccurs="0" maxOccurs="4"/>
+                    <xsd:element name="FAN" type="FANType" minOccurs="0" maxOccurs="2"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--XSM4 Type Definition-->
+    <xsd:complexType name="XSM4Type">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="PEM" type="PEMType" minOccurs="0" maxOccurs="4"/>
+                    <xsd:element name="FAN" type="FANType" minOccurs="0" maxOccurs="2"/>
+                    <xsd:element name="OXM" type="OXMType" minOccurs="0" maxOccurs="5"/>
+                    <xsd:element name="TSM" type="TSMType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="XSM9Type">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="PEM" type="PEMType" minOccurs="0" maxOccurs="2"/>
+                    <xsd:element name="FAN" type="FANType" minOccurs="0" maxOccurs="1"/>
+                    <xsd:element name="IOP" type="IOPType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="XSM16Type">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="PEM" type="PEMType" minOccurs="0" maxOccurs="2"/>
+                    <xsd:element name="FAN" type="FANType" minOccurs="0" maxOccurs="2"/>
+                    <xsd:element name="IOP" type="IOPType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--TAM Type Definition-->
+    <xsd:complexType name="TAMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="TOM" type="TOMType" minOccurs="0" maxOccurs="8"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--TIM Type Definition-->
+    <xsd:complexType name="TIMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="TOM" type="TOMType" minOccurs="0" maxOccurs="16"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--TOM Type Definition-->
+    <xsd:complexType name="TOMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="PayloadList" type="xsd:string"/>
+                <xsd:attribute name="TSName" type="xsd:string"/>
+                <xsd:attribute name="TomRate" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--PEM Type Definition-->
+    <xsd:complexType name="PEMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--FAN Type Definition-->
+    <xsd:complexType name="FANType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="IOPType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OXM Type Definition-->
+    <xsd:complexType name="OXMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--TSM Type Definition-->
+    <xsd:complexType name="TSMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--IMM Type Definition-->
+    <xsd:complexType name="IMMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+                <xsd:attribute name="RedundancyAct" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--IMMB Type Definition-->
+    <xsd:complexType name="IMMBType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+                <xsd:attribute name="RedundancyAct" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--IAM Type Definition-->
+    <xsd:complexType name="IAMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="OSCIP" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCNetMask" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1User" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1Passwd" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCCost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="TECost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="HelloInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DeadInterval" type="xsd:int" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--IAM1 Type Definition-->
+    <xsd:complexType name="IAM1Type">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="OSCIP" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCNetMask" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1User" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1Passwd" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCCost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="TECost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="HelloInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DeadInterval" type="xsd:int" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--IRM Type Definition-->
+    <xsd:complexType name="IRMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="OSCIP" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCNetMask" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1User" type="xsd:string" use="optional"/>
+                <xsd:attribute name="Tl1Passwd" type="xsd:string" use="optional"/>
+                <xsd:attribute name="OSCCost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="TECost" type="xsd:int" use="optional"/>
+                <xsd:attribute name="HelloInterval" type="xsd:int" use="optional"/>
+                <xsd:attribute name="DeadInterval" type="xsd:int" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--FRM Type Definition-->
+    <xsd:complexType name="FRMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--FRM4D Type Definition-->
+    <xsd:complexType name="FRM4DType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--FSM Type Definition-->
+    <xsd:complexType name="FSMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:sequence>
+                    <xsd:element name="FSE" type="FSEType" minOccurs="0" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OTDM Type Definition-->
+    <xsd:complexType name="OTDMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--OPSM Type Definition-->
+    <xsd:complexType name="OPSMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--IOMD Type Definition-->
+    <xsd:complexType name="IOMDType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--FMMC5 Type Definition-->
+    <xsd:complexType name="FMMC5Type">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--FMMF250 Type Definition-->
+    <xsd:complexType name="FMMF250Type">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--FSE Type Definition-->
+    <xsd:complexType name="FSEType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--XMM Type Definition-->
+    <xsd:complexType name="XMMType">
+        <xsd:complexContent>
+            <xsd:extension base="INFType">
+                <xsd:attribute name="SERNO" type="xsd:int"/>
+                <xsd:attribute name="bpipaddr" type="xsd:string"/>
+                <xsd:attribute name="RedundancyAct" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--Base class for Chassis and Boards-->
+    <xsd:complexType name="INFType">
+        <xsd:complexContent>
+            <xsd:extension base="ELEMType">
+                <xsd:attribute name="aid" type="xsd:string" use="required"/>
+                <xsd:attribute name="PON" type="xsd:string" use="required"/>
+                <!-- Any Chassis or Board can be left in Config Mode or Powered Off -->
+                <xsd:attribute name="ConfigMode" type="xsd:boolean" use="optional"/>
+                <xsd:attribute name="Unplugged" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!--Base class for all Elements-->
+    <xsd:complexType name="ELEMType">
+        <!--Everything must have a unique name, called a Value-->
+        <xsd:attribute name="Value" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    <!--Connection Type Definition-->
+    <xsd:complexType name="ConnType">
+        <xsd:choice>
+            <!--OSC Connection-->
+            <xsd:element name="OSC" type="OSCConn"/>
+            <!--IGCC Connection-->
+            <xsd:element name="IGCC" type="IGCCConn"/>
+            <!--NCT Connection-->
+            <xsd:element name="NCT" type="NCTConn"/>
+            <!--OCG Optical Connection-->
+            <xsd:element name="OCG" type="OCGConn"/>
+            <!--OCH Optical Connection-->
+            <xsd:element name="OCH" type="OCHConn"/>
+            <!--OTS Optical Connection-->
+            <xsd:element name="OTS" type="OTSConn"/>
+            <!--SCG Optical Connection-->
+            <xsd:element name="SCG" type="SCGConn"/>
+            <!--RBG Optical Connection-->
+            <xsd:element name="RBP" type="RBPConn"/>     
+            <!--BPP Optical Connection-->
+            <xsd:element name="BPP" type="BPPConn"/>
+            <!--FMPC Optical Connection-->
+            <xsd:element name="FMPC" type="FMPCConn"/>  			
+        </xsd:choice>
+    </xsd:complexType>
+    <!--OSC Connection Definition-->
+    <xsd:complexType name="OSCConn">
+        <xsd:sequence>
+            <xsd:element name="PointA" type="ConnId"/>
+            <xsd:element name="PointB">
+                <xsd:complexType>
+                    <!--Point B can either be a NIC or another board-->
+                    <xsd:choice>
+                        <xsd:element name="NIC" type="xsd:string"/>
+                        <xsd:element name="Board" type="ConnId"/>
+                    </xsd:choice>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="TRUNK-VLAN" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--IGCC Connection Definition-->
+    <xsd:complexType name="IGCCConn">
+        <xsd:sequence>
+            <xsd:element name="PointA">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="SubSlot" type="xsd:string" use="optional"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name="PointB">
+                <xsd:complexType>
+                    <!--Point B can either be a NIC or another board-->
+                    <xsd:choice>
+                        <xsd:element name="NIC" type="xsd:string"/>
+                        <xsd:element name="Board">
+                            <xsd:complexType>
+                                <xsd:complexContent>
+                                    <xsd:extension base="ConnId">
+                                        <xsd:attribute name="SubSlot" type="xsd:string" use="optional"/>
+                                    </xsd:extension>
+                                </xsd:complexContent>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:choice>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="TRUNK-VLAN" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>  
+    <!--NCT Connection Definition-->
+    <xsd:complexType name="NCTConn">
+        <xsd:attribute name="NE" type="xsd:string" use="required"/>
+        <xsd:attribute name="NIC" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    <!--OCG Optical Connection Definition-->
+    <xsd:complexType name="OCGConn">
+        <xsd:sequence>
+            <!--Point A of an OCG connection is NE,Chassis,Board[:port]-->
+            <xsd:element name="PointA">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="optional"/>
+                            <xsd:attribute name="shelf" type="xsd:string" use="optional"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+            <!--Point B of an OCG connection is NE,Chassis,Board[:port]-->
+            <xsd:element name="PointB">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="optional"/>
+                            <xsd:attribute name="shelf" type="xsd:string" use="optional"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--OCH Optical Connection Definition-->
+    <xsd:complexType name="OCHConn">
+        <xsd:sequence>
+            <!--Point A of an OCH connection is NE,Chassis,Board:row[:port]-->
+            <xsd:element name="PointA">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="optional"/>
+                            <xsd:attribute name="row" type="xsd:string" use="required"/>
+                            <xsd:attribute name="shelf" type="xsd:string" use="optional"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+            <!--Point B of an OCH connection is NE,Chassis,Board:row[:port]-->
+            <xsd:element name="PointB">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="optional"/>
+                            <xsd:attribute name="row" type="xsd:string" use="required"/>
+                            <xsd:attribute name="shelf" type="xsd:string" use="optional"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--OTS Optical Connection Definition-->
+    <xsd:complexType name="OTSConn">
+        <xsd:sequence>
+            <!--Local side  of an OTS connection is NE,Chassis,Board-->
+            <xsd:element name="local">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+            <!--Remote side of an OTS connection is NE,Chassis,Board-->
+            <xsd:element name="remote">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--SCG Optical Connection Definition-->
+    <xsd:complexType name="SCGConn">
+        <xsd:sequence>
+            <!--Local side  of an SCG connection is NE,Chassis,Board-->
+            <xsd:element name="local">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="optional"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+            <!--Remote side of an SCG connection is NE,Chassis,Board-->
+            <xsd:element name="remote">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="optional"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <!--RBP Optical Connection Definition-->
+    <xsd:complexType name="RBPConn">
+        <xsd:sequence>
+            <!--Local side  of an RBP connection is NE,Chassis,Board-->
+            <xsd:element name="local" type="ConnId"/>
+            <!--Remote side of an RBP connection is NE,Chassis,Board-->
+            <xsd:element name="remote">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="required"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+            <!--Filter type only accepts 'B' (stands for blue) or 'R' (stands for red) -->
+            <xsd:element name="rbp" type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>  
+	
+    <!--BPP Optical Connection Definition-->
+    <xsd:complexType name="BPPConn">
+        <xsd:sequence>
+            <!--Local side  of an BPP connection is NE,Chassis,Board-->
+            <xsd:element name="local" type="ConnId"/>
+            <!--Remote side of an BPP connection is NE,Chassis,Board-->
+            <xsd:element name="remote">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="required"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>  	
+
+    <!--FMPC Optical Connection Definition-->
+    <xsd:complexType name="FMPCConn">
+        <xsd:sequence>
+            <!--Local side  of an FMPC connection is NE,Chassis,Board-->
+            <xsd:element name="local" type="ConnId"/>
+            <!--Remote side of an FMPC connection is NE,Chassis,Board-->
+            <xsd:element name="remote">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="ConnId">
+                            <xsd:attribute name="port" type="xsd:string" use="required"/>
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+            <!--FMPC tx port -->
+            <xsd:element name="fmpcport" type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>  	
+	
+    <!--Data structure for uniquely identifying a board-->
+    <xsd:complexType name="ConnId">
+        <xsd:attribute name="NE" type="xsd:string" use="required"/>
+        <xsd:attribute name="Chassis" type="xsd:string" use="required"/>
+        <xsd:attribute name="Board" type="xsd:string" use="required"/>
+    </xsd:complexType>
+</xsd:schema>
+

@@ -1,0 +1,1313 @@
+[
+{
+    "Category":"BMM",
+    "BackupName":"BMM",
+    "Flag":"OA",
+    "CpuRsv":"64",
+    "CpuLimit":"512",
+    "MemSize":"256",
+    "MemRsv":"128",
+    "MemLimit":"256",
+    "OS" : "QNX",
+    "Entries":
+    [
+        {
+            "EntryName": "BackPlaneIf",
+            "Editable": "False",
+            "DefaultValue": "en0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "BackPlaneVid",
+            "Editable": "False",
+            "DefaultValue": "0x0a",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardSubType",
+            "Editable": "True",
+            "DefaultValue": "0x2",
+            "BoardSubType":{"BMM": { "Values": ["0x2", "0x4", "0x6", "0x8", "0xa", "0x10", "0x11", "0x12", "0x13", 
+                                                "0x14", "0x15", "0x16", "0x17", "0x18", "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e"],
+                                     "ValueNames":["BMM-4-C1",
+                                                   "BMM-4-C2",
+                                                   "BMM-4-C3",
+                                                   "BMM-4-C2-MS",
+                                                   "BMM-4-C3-MS",
+                                                   "BMM-4-C1-B",
+                                                   "BMM-4-C2-MS-B",
+                                                   "BMM-4-C3-MS-B",
+                                                   "BMM-4-C1-C",
+                                                   "BMM-4-C2-MS-C",
+                                                   "BMM-4-C3-MS-C",
+                                                   "BMM-8-C1-I",
+                                                   "BMM-8-C2-MS-I",
+                                                   "BMM-8-C3-MS-I", 
+                                                   "BMM-8-CXH1 / BMM-8-C1-A",
+                                                   "BMM-8-CXH2-MS",
+                                                   "BMM-8-CXH3-MS / BMM-8-C2-MS-A",
+                                                   "BMM-4-CX1-A",
+                                                   "BMM-4-CX2-MS-A",
+                                                   "BMM-4-CX3-MS-A"]
+                                    },
+                            "BMMH": { "Values": ["0x2"],
+                                      "ValueNames":["BMM1H-CX2"]
+                                    },
+                            "BMM2": { "Values": ["0x1", "0x2", "0x3", "0x4", "0x5"],
+                                      "ValueNames":["BMM2-8-CXH2-MS / BMM2-8-CXH2-MS-C", 
+                                                    "BMM2-8-CH3-MS / BMM2-8-CH3-MS-C", 
+                                                    "BMM2-8-CEH3 / BMM2-8-CEH3-C", 
+                                                    "BMM2P-8-CH1-MS / BMM2P-8-CH1-MS-C", 
+                                                    "BMM2P-8-CEH1 / BMM2P-8-CEH1-C"]
+                                    },
+                            "BMM2H": { "Values":["0x3", "0x4"],
+                                       "ValueNames":["BMM2H-4-R3-MS", "BMM2H-4-B3"]
+                                     }
+                           },
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardType",
+            "Editable": "True",
+            "DefaultValue": "0x8",
+            "Values":["0x3", "0x7", "0x8", "0xe"],
+            "ValueNames":["BMM", "BMMH", "BMM2", "BMM2H"],
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BootpBoardType",
+            "Editable": "False",
+            "DefaultValue": "0x77",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "uint32",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "CardType",
+            "Editable": "True",
+            "DefaultValue": "BMM",
+            "Values":["BMM"],
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CurrentRls",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "HostId",
+            "Editable": "False",
+            "DefaultValue": "0x12345678",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010101",
+            "Flag": "I",
+            "Type": "uint32"    
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimCardConfig",
+            "Editable": "True",
+            "Values":["BMM2_8_CXH2_MS", "BMM2_8_CH3_MS", "BMM2_8_CEH3", "BMM2P_8_CH1_MS", "BMM2P_8_CEH1", "BMM_4_C2_MS", "BMM_4_C1", "BMM1H_4_CX2", "BMM_8_C1_A", "BMM_4_CX3_MS_A", "BMM_8_C3_MS_A", "BMM_8_C2_MS_A", "BMM_4_CX2_MS_A", "BMM_4_CX1_A"],
+            "DefaultValue": "BMM2_8_CH3_MS",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimConfig_IsLineTxSplit",
+            "Editable": "True",
+            "DefaultValue": "false",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimConfig_IsLineRxSplit",
+            "Editable": "True",
+            "DefaultValue": "false",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimMode",
+            "Editable": "False",
+            "DefaultValue": "sim",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "SlotId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+         }
+      ]
+   }, 
+   {
+      "Category": "DLM", 
+      "BackupName": "DLM", 
+      "Flag": "Template", 
+      "CpuRsv": "64", 
+      "CpuLimit": "512", 
+      "MemSize": "256", 
+      "MemRsv": "128", 
+      "MemLimit": "256", 
+      "OS": "QNX", 
+      "Entries": [
+         {
+            "EntryName": "BackPlaneIf", 
+            "Editable": "False", 
+            "DefaultValue": "en0", 
+            "Flag": "R.I", 
+            "Type": "str"
+        },
+        {
+            "EntryName": "BackPlaneVid",
+            "Editable": "False",
+            "DefaultValue": "0x0a",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardFeature",
+            "Editable": "True",
+            "DefaultValue": "0x00000000",
+            "Flag": "I",
+            "Bits": "32",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardSubType",
+            "Editable": "True",
+            "BoardSubType": {"DLM":{"Values":["0x1","0x2","0x3","0x4", "0x5", "0x6", "0x7", "0x8"],
+                                    "ValueNames":["DLM-1-C1", "DLM-2-C1", "DLM-3-C1", "DLM-4-C1",
+                                                  "DLM-5-C1", "DLM-6-C1", "DLM-7-C1", "DLM-8-C1"]
+                                   },
+                             "XLM":{"Values":["0x1","0x2","0x3","0x4", "0x5", "0x6", "0x7", "0x8"],
+                                    "ValueNames":["XLM-1-C2", "XLM-2-C2", "XLM-3-C2", "XLM-4-C2",
+                                                  "XLM-5-C2", "XLM-6-C2", "XLM-7-C2", "XLM-8-C2"]
+                                   },
+                             "AXLM":{"Values":["0x1","0x2","0x3","0x4", "0x5", "0x6", "0x7", "0x8", "0x9", "0xa", "0xb", "0xc", 
+                                               "0xd", "0xe", "0xf", "0x10", "0x11", "0x12", "0x13", "0x14", "0x15", "0x16", "0x17", "0x18",
+                                               "0x19", "0x1a", "0x1b", "0x1c", "0x1d", "0x1e", "0x1f", "0x20", "0x21", "0x22", "0x23", "0x24"
+                                              ],
+                                     "ValueNames":["AXLM_T4_1_C4", "AXLM_T4_3_C4", "AXLM_T4_5_C4", "AXLM_T4_7_C4",
+                                                   "ADLM_T4_1_C4", "ADLM_T4_3_C4", "ADLM_T4_5_C4", "ADLM_T4_7_C4",
+                                                   "AXLM_T4_1_C5", "AXLM_T4_3_C5", "AXLM_T4_5_C5", "AXLM_T4_7_C5",
+                                                   "ADLM_T4_1_C5", "ADLM_T4_3_C5", "ADLM_T4_5_C5", "ADLM_T4_7_C5",
+                                                   "AXLM_T4_1_C2", "AXLM_T4_3_C2", "AXLM_T4_5_C2", "AXLM_T4_7_C2",
+                                                   "ADLM_T4_1_C2", "ADLM_T4_3_C2", "ADLM_T4_5_C2", "ADLM_T4_7_C2",
+                                                   "SLM_T4_1_C3",  "SLM_T4_3_C3",  "SLM_T4_5_C3",  "SLM_T4_7_C3",
+                                                   "SLM_T4_1_C4",  "SLM_T4_3_C4",  "SLM_T4_5_C4",  "SLM_T4_7_C4",
+                                                   "SLM_T4_1_C5",  "SLM_T4_3_C5",  "SLM_T4_5_C5",  "SLM_T4_7_C5"
+                                                  ]
+                                    },
+                             "AXLM-80":{"Values":["0x1","0x2","0x3"],
+                                        "ValueNames":["ADLM80_T1_C5", "AXLM80_T1_C5", "SLM80_T1_C5"]
+                                       }                                
+                            },
+            "DefaultValue": "0x1",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardType",
+            "Editable": "True",
+            "Values":["0x2", "0x6", "0xa", "0x22"],
+            "ValueNames":["DLM", "XLM", "AXLM", "AXLM-80"],
+            "DefaultValue": "0x2",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BootpBoardType",
+            "Editable": "False",
+            "DefaultValue": "0x66",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a36",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "CardType",
+            "Editable": "True",
+            "Values":["DLM", "XLM", "AXLM", "ADLM"],
+            "DefaultValue": "DLM",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CurOcgNum",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "CurrentRls",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "HostId",
+            "Editable": "False",
+            "DefaultValue": "0x12345678",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010103",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimMode",
+            "Editable": "False",
+            "DefaultValue": "sim",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "SimTam1",
+            "Editable": "True",
+            "DefaultValue": "0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "SimTam2",
+            "Editable": "True",
+            "DefaultValue": "0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "SimTam3",
+            "Editable": "True",
+            "DefaultValue": "0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "SimTam4",
+            "Editable": "True",
+            "DefaultValue": "0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "SimTam5",
+            "Editable": "True",
+            "DefaultValue": "0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "SimTamFeature1",
+            "Editable": "True",
+            "DefaultValue": "0x00000000",
+            "Flag": "I",
+            "Bits": "32",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "SlotId",
+            "Editable": "False",
+            "DefaultValue": "0x3",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+         }
+      ]
+   }, 
+   {
+      "Category": "CMMD", 
+      "BackupName": "CMMD", 
+      "Flag": "Template", 
+      "CpuRsv": "64", 
+      "CpuLimit": "512", 
+      "MemSize": "256", 
+      "MemRsv": "128", 
+      "MemLimit": "256", 
+      "OS": "QNX", 
+      "Entries": [
+         {
+            "EntryName": "BackPlaneIf", 
+            "Editable": "False", 
+            "DefaultValue": "en0", 
+            "Flag": "R.I", 
+            "Type": "str"
+        },
+        {
+            "EntryName": "BackPlaneVid",
+            "Editable": "False",
+            "DefaultValue": "0x0a",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardType",
+            "Editable": "True",
+            "DefaultValue": "0x21",
+            "Values":["0x21"],
+            "ValueNames":["CMM"],
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardSubType",
+            "Editable": "True",
+            "BoardSubType":{ "CMM": {"Values":["0x1", "0x2", "0x3", "0x4", "0x5", "0x6"],
+                                     "ValueNames":["CMM1D-A-20-C1", "CMM1D-A-20-C2", "CMM1D-A-20-C5", "CMM1D-A-20-C6", "CMM1D-20-CR", "CMM1D-20-CB"]
+                                    }
+                           },
+            "DefaultValue": "0x1",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BootpBoardType",
+            "Editable": "False",
+            "DefaultValue": "0x7F",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a36",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "CurrentRls",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CardType",
+            "Editable": "True",
+            "DefaultValue": "CMM",
+            "Values":["CMM"],
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "HostId",
+            "Editable": "False",
+            "DefaultValue": "0x12345678",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f010103",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimCardConfig",
+            "Editable": "True",
+            "Values":["CMM1D_A_20_C1", "CMM1D_A_20_C2", "CMM1D_A_20_C5", "CMM1D_A_20_C6", "CMM1D_20_CR", "CMM1D_20_CB"],
+            "DefaultValue": "CMM1D_A_20_C2",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OpSimMode",
+            "Editable": "False",
+            "DefaultValue": "sim",
+            "Flag": "I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "SlotId",
+            "Editable": "False",
+            "DefaultValue": "0x3",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "RelSlot",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "I",
+            "Type": "uint32"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+        }
+    ]
+},
+{
+    "Category":"MCM",
+    "BackupName":"MCM_NC",
+    "Flag":"CM",
+    "CpuRsv":"64",
+    "CpuLimit":"1024",
+    "MemSize":"1024",
+    "MemRsv":"512",
+    "MemLimit":"1024",
+    "OS" : "QNX",
+    "Entries":
+    [
+        {
+            "EntryName": "AuthenticationPolicy",
+            "Editable": "False",
+            "DefaultValue": "LOCAL",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "BackplaneId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "BackPlaneIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "BackPlaneVid",
+            "Editable": "False",
+            "DefaultValue": "0xa",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardSubType",
+            "Editable": "True",
+            "Values":["0x0", "0x1", "0x2"],
+            "ValueNames":["MCM-A", "MCM-B", "MCM-C"],
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardType",
+            "Editable": "False",
+            "DefaultValue": "0x65",
+            "Values":["0x65"],
+            "ValueNames":["MCM"],
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a36",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "BottomDcnVid",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BottomPeerMcmIf",
+            "Editable": "False",
+            "DefaultValue": "en3",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CardType",
+            "Editable": "False",
+            "DefaultValue": "MCM",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ChassisType",
+            "Editable": "True",
+            "Values": ["DTC-A", "DTC-B", "MTC-A"],
+            "DefaultValue": "DTC_B",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CurrentRls",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "CraftIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "DcnDestination",
+            "Editable": "False",
+            "DefaultValue": "10.0.0.0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "DcnGateway",
+            "Editable": "True",
+            "DefaultValue": "0.0.0.0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "DcnIf",
+            "Editable": "False",
+            "DefaultValue": "en0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "DcnIp",
+            "Editable": "True",
+            "DefaultValue": "0.0.0.0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "DcnIpNetMask",
+            "Editable": "True",
+            "DefaultValue": "255.255.255.0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "DcnPrefixLen",
+            "Editable": "False",
+            "DefaultValue": "0x8",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "DefaultRls",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "gatewayProxyEnabled",
+            "Editable": "False",
+            "DefaultValue": "True",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "HostId",
+            "Editable": "False",
+            "DefaultValue": "0x12345678",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "IoPanelId",
+            "Editable": "False",
+            "DefaultValue": "IOP123456789",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "McmActive",
+            "Editable": "False",
+            "Values": ["yes", "no"],
+            "DefaultValue": "yes",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "McmBackPlaneIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "McmBrand",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "McmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "............",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f01017a",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "MyPeerIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f04017a",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NeType",
+            "Editable": "False",
+            "DefaultValue": "DON",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeCtrl",
+            "Editable": "True",
+            "Values": ["yes", "no"],
+            "DefaultValue": "yes",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OscIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PeerMcmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "badbadbadbad",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PrimaryDb",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "RouterId",
+            "Editable": "True",
+            "DefaultValue": "100.10.0.0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "SlotId",
+            "Editable": "False",
+            "DefaultValue": "0x7a",
+            "Flag": "NR.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "TelnetSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TL1SecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TopDcnVid",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "TopPeerMcmIf",
+            "Editable": "False",
+            "DefaultValue": "en3",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "VmChassisNum",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmChassisPrefix",
+            "Editable": "False",
+            "DefaultValue": "1-A-",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmSupervisorIP",
+            "Editable": "False",
+            "DefaultValue": "127.11.254.1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XFRSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XMLSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ZiplBldInfo",
+            "Editable": "False",
+            "DefaultValue": "Z",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "EepromNodeId",
+            "Editable": "True",
+            "DefaultValue": "badbadbadbad",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "EepromNodeIdFlag",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+         }
+      ]
+   }, 
+   {
+      "Category": "MCM", 
+      "BackupName": "MCM_SC", 
+      "Flag": "CM", 
+      "CpuRsv": "64", 
+      "CpuLimit": "1024", 
+      "MemSize": "1024", 
+      "MemRsv": "512", 
+      "MemLimit": "1024", 
+      "OS": "QNX", 
+      "Entries": [
+         {
+            "EntryName": "AuthenticationPolicy", 
+            "Editable": "False", 
+            "DefaultValue": "LOCAL", 
+            "Flag": "R.I", 
+            "Type": "str"
+        },
+        {
+            "EntryName": "BackplaneId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "BackPlaneIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "BackPlaneVid",
+            "Editable": "False",
+            "DefaultValue": "0xa",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardSubType",
+            "Editable": "True",
+            "Values":["0x0", "0x1", "0x2"],
+            "ValueNames":["MCM-A", "MCM-B", "MCM-C"],
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BoardType",
+            "Editable": "False",
+            "DefaultValue": "0x65",
+            "Values":["0x65"],
+            "ValueNames":["MCM"],
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "BootpsPort",
+            "Editable": "False",
+            "DefaultValue": "0x1a36",
+            "Flag": "I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "BottomDcnVid",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "BottomPeerMcmIf",
+            "Editable": "False",
+            "DefaultValue": "en3",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CardType",
+            "Editable": "False",
+            "DefaultValue": "MCM",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ChassisType",
+            "Editable": "True",
+            "Values": ["DTC_A", "DTC_B", "MTC"],
+            "DefaultValue": "DTC_B",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CraftIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "CurrentRls",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "DcnIf",
+            "Editable": "False",
+            "DefaultValue": "en0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "DefaultRls",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "gatewayProxyEnabled",
+            "Editable": "False",
+            "DefaultValue": "True",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "HostId",
+            "Editable": "False",
+            "DefaultValue": "0x12345678",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "IoPanelId",
+            "Editable": "False",
+            "DefaultValue": "IOP123456789",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "McmActive",
+            "Editable": "False",
+            "Values": ["yes", "no"],
+            "DefaultValue": "yes",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "McmBackPlaneIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "McmBrand",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "McmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "............",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "MyIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f01017a",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "MyPeerIpAddr",
+            "Editable": "False",
+            "DefaultValue": "0x7f04017a",
+            "Flag": "I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "NeName",
+            "Editable": "False",
+            "DefaultValue": "NONAME",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeCtrl",
+            "Editable": "False",
+            "DefaultValue": "no",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "NodeId",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "OscIf",
+            "Editable": "False",
+            "DefaultValue": "en1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PeerMcmSerialNum",
+            "Editable": "False",
+            "DefaultValue": "badbadbadbad",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "PrimaryDb",
+            "Editable": "False",
+            "DefaultValue": "NOTASSIGNED0",
+            "Flag": "I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "ShelfId",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "SlotId",
+            "Editable": "False",
+            "DefaultValue": "0x7a",
+            "Flag": "NR.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "TelnetSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TL1SecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "TopDcnVid",
+            "Editable": "False",
+            "DefaultValue": "0x0",
+            "Flag": "R.I",
+            "Type": "uint32"
+        },
+        {
+            "EntryName": "TopPeerMcmIf",
+            "Editable": "False",
+            "DefaultValue": "en3",
+            "Flag": "NR.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "VmChassisNum",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmChassisPrefix",
+            "Editable": "False",
+            "DefaultValue": "1-A-",
+            "Flag": "R.I",
+            "Type": "str",
+            "AllowOverride": "False"
+        },
+        {
+            "EntryName": "VmSupervisorIP",
+            "Editable": "False",
+            "DefaultValue": "127.11.254.1",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XFRSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "XMLSecurityEnforced",
+            "Editable": "False",
+            "DefaultValue": "False",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "ZiplBldInfo",
+            "Editable": "False",
+            "DefaultValue": "Z",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "EepromNodeId",
+            "Editable": "True",
+            "DefaultValue": "badbadbadbad",
+            "Flag": "R.I",
+            "Type": "str"
+        },
+        {
+            "EntryName": "EepromNodeIdFlag",
+            "Editable": "False",
+            "DefaultValue": "0x1",
+            "Flag": "R.I",
+            "Type": "uint32"
+         }, 
+         {
+            "EntryName": "VIBoot", 
+            "Editable": "True", 
+            "DefaultValue": "none", 
+            "Flag": "R.I", 
+            "Type": "str"
+         }
+      ]
+   }
+]

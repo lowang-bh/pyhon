@@ -1,0 +1,1178 @@
+[
+   {
+      "Category": "ITC", 
+      "BackupName": "ITC Chassis", 
+      "Flag": "ITC_16", 
+      "Boards": [
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "1", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "1", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "1", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "1", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "1", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "1", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "1", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "1", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "1", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "1", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "1", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "1", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "1", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "54", 
+            "slot_id": "e", 
+            "no_of_slots": "1", 
+            "present_bit": "2000", 
+            "aid": "A-14"
+         }, 
+         {
+            "board_spec_name": "OTDM", 
+            "slot_num": "55", 
+            "slot_id": "f", 
+            "no_of_slots": "1", 
+            "present_bit": "100000", 
+            "aid": "A-15"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "2", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "2", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "2", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "2", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "2", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "2", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "2", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "2", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "2", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "2", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "2", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "2", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "2", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "IAM", 
+            "slot_num": "54", 
+            "slot_id": "e", 
+            "no_of_slots": "2", 
+            "present_bit": "2000", 
+            "aid": "A-14"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "3", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "3", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "3", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "3", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "3", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "3", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "3", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "3", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "3", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "3", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "3", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "3", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "IRM", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "3", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "3", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "3", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "3", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "3", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "3", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "3", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "3", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "3", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "3", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "3", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "3", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "3", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "FRM", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "3", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "3", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "3", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "3", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "3", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "3", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "3", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "3", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "3", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "3", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "3", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "3", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "3", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "FSM", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "3", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "1", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "1", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "1", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "1", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "1", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "1", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "1", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "1", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "1", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "1", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "1", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "1", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "1", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "54", 
+            "slot_id": "e", 
+            "no_of_slots": "1", 
+            "present_bit": "2000", 
+            "aid": "A-14"
+         }, 
+         {
+            "board_spec_name": "IAM1", 
+            "slot_num": "55", 
+            "slot_id": "f", 
+            "no_of_slots": "1", 
+            "present_bit": "100000", 
+            "aid": "A-15"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "1", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "1", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "1", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "1", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "1", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "1", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "1", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "1", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "1", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "1", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "1", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "1", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "1", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "54", 
+            "slot_id": "e", 
+            "no_of_slots": "1", 
+            "present_bit": "2000", 
+            "aid": "A-14"
+         }, 
+         {
+            "board_spec_name": "OPSM", 
+            "slot_num": "55", 
+            "slot_id": "f", 
+            "no_of_slots": "1", 
+            "present_bit": "100000", 
+            "aid": "A-15"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "2", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "2", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "2", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "2", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "2", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "2", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "2", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "2", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "2", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "2", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "2", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "2", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "2", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "FRM4D", 
+            "slot_num": "54", 
+            "slot_id": "e", 
+            "no_of_slots": "2", 
+            "present_bit": "2000", 
+            "aid": "A-14"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "2", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "2", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "2", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "2", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "2", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "2", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "2", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "2", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "2", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "2", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "2", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "2", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "2", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "47", 
+            "slot_id": "1", 
+            "no_of_slots": "1", 
+            "present_bit": "1", 
+            "aid": "A-1"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "48", 
+            "slot_id": "2", 
+            "no_of_slots": "1", 
+            "present_bit": "2", 
+            "aid": "A-2"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "49", 
+            "slot_id": "3", 
+            "no_of_slots": "1", 
+            "present_bit": "4", 
+            "aid": "A-3"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "4A", 
+            "slot_id": "4", 
+            "no_of_slots": "1", 
+            "present_bit": "8", 
+            "aid": "A-4"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "4B", 
+            "slot_id": "5", 
+            "no_of_slots": "1", 
+            "present_bit": "10", 
+            "aid": "A-5"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "4C", 
+            "slot_id": "6", 
+            "no_of_slots": "1", 
+            "present_bit": "20", 
+            "aid": "A-6"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "4D", 
+            "slot_id": "7", 
+            "no_of_slots": "1", 
+            "present_bit": "40", 
+            "aid": "A-7"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "4E", 
+            "slot_id": "8", 
+            "no_of_slots": "1", 
+            "present_bit": "80", 
+            "aid": "A-8"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "4F", 
+            "slot_id": "9", 
+            "no_of_slots": "1", 
+            "present_bit": "100", 
+            "aid": "A-9"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "50", 
+            "slot_id": "a", 
+            "no_of_slots": "1", 
+            "present_bit": "200", 
+            "aid": "A-10"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "51", 
+            "slot_id": "b", 
+            "no_of_slots": "1", 
+            "present_bit": "400", 
+            "aid": "A-11"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "52", 
+            "slot_id": "c", 
+            "no_of_slots": "1", 
+            "present_bit": "800", 
+            "aid": "A-12"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "53", 
+            "slot_id": "d", 
+            "no_of_slots": "1", 
+            "present_bit": "1000", 
+            "aid": "A-13"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "54", 
+            "slot_id": "e", 
+            "no_of_slots": "1", 
+            "present_bit": "2000", 
+            "aid": "A-14"
+         }, 
+         {
+            "board_spec_name": "FMMC5", 
+            "slot_num": "55", 
+            "slot_id": "f", 
+            "no_of_slots": "1", 
+            "present_bit": "100000", 
+            "aid": "A-15"
+         }, 
+         {
+            "board_spec_name": "FMMF250", 
+            "slot_num": "54", 
+            "slot_id": "e", 
+            "no_of_slots": "2", 
+            "present_bit": "2000", 
+            "aid": "A-14"
+         }, 
+         {
+            "board_spec_name": "IMM_NC", 
+            "slot_num": "55", 
+            "slot_id": "f", 
+            "no_of_slots": "1", 
+            "present_bit": "100000", 
+            "aid": "A-15"
+         }, 
+         {
+            "board_spec_name": "IMM_SC", 
+            "slot_num": "55", 
+            "slot_id": "f", 
+            "no_of_slots": "1", 
+            "present_bit": "100000", 
+            "aid": "A-15"
+         }, 
+         {
+            "board_spec_name": "IMM_NC", 
+            "slot_num": "56", 
+            "slot_id": "10", 
+            "no_of_slots": "1", 
+            "is_mandatory": "True", 
+            "present_bit": "200000", 
+            "aid": "A-16"
+         }, 
+         {
+            "board_spec_name": "IMM_SC", 
+            "slot_num": "56", 
+            "slot_id": "10", 
+            "no_of_slots": "1", 
+            "is_mandatory": "True", 
+            "present_bit": "200000", 
+            "aid": "A-16"
+         }, 
+         {
+            "board_spec_name": "XSM16", 
+            "slot_num": "64", 
+            "slot_id": "64", 
+            "is_mandatory": "True", 
+            "aid": "A-64"
+         }
+      ]
+   }
+]
