@@ -10,7 +10,7 @@ if m:
 	print m.group(0)
 else:
 	print "not match"
-	
+
 m = re.search(patten,text)
 if m:
 	print m.group(0),m.groups()
@@ -38,7 +38,7 @@ for ne in neInfo:
 		print "start process"
 		index = 0
 
-		
+
 import random
 def func(ok):
 	if ok:
@@ -63,13 +63,14 @@ def myenumerate(sequence):
 l = ['a', 'b', 'c', 'd', 'e']
 for k, v in myenumerate(l):
 	print "index=%s,value=%s" % (k, v)
-class X(object):pass
-class Y(X):pass
-class Z(object):pass
+
+class X(object): pass
+class Y(X): pass
+class Z(object): pass
 
 
 
-class A(Y,Z):
+class A(Y, Z):
 	def test(self):
 		print "test in A"
 class B(A):
@@ -80,20 +81,27 @@ class C(A):
 class D(B, C):
 	def test(self):
 		super(D, self).test()
+class BC(B, C):
+	pass
 class Bb(B):pass
 class E(Bb, C):
 	def test(self):
 		super(E, self).test()
+
+a = A()
+print A.__mro__
 e = E()
 e.test()
 print E.__mro__
 d = D()
 print D.__mro__
+bc = BC()
+print BC.__mro__
 d.test()
 class T(object):
 	x = 100
 	def __new__(cls, *args, **kwargs):
-		print args, kwargs
+		print "in __new__", args, kwargs
 		obj = object.__new__(cls, *args, **kwargs)
 		print id(obj)
 		return obj
@@ -104,6 +112,7 @@ class T(object):
 	def info(cls):
 		print cls
 	def __get__(self, ins, cls):
+		print "in __get__"
 		print self, ins, cls
 
 t1 = T(100, 90)
@@ -112,3 +121,18 @@ t2 = T(10, 2)
 t2.info()
 print t2.x
 
+
+print "test get attribute"
+
+class testAttribute(T):
+	def __init__(self, *args, **kwargs):
+		super(testAttribute, self).__init__(*args, **kwargs)
+		self.name = "wang"
+
+	def __getattr__(self, item):
+		print "In __getattr__: get %s" %item
+
+t = testAttribute()
+print t.name
+print "access the non exist attribute"
+print t.age
