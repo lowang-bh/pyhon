@@ -14,6 +14,11 @@ except ImportError:
         import logging
         # logging.basicConfig(level='INFO')
         log = logging.Logger('root')
+        # getLogger will get the default root logger as its parent, which is different from logging.Logger
+
+        # log = logging.getLogger("test")
+        # log.setLevel(logging.DEBUG)
+        #log = logging.Logger('test')
         handler = logging.StreamHandler(sys.stdout)
         handler.setLevel(logging.INFO)
         handler.setFormatter(logging.Formatter("%(asctime)s,%(lineno)4d : %(message)s"))
@@ -168,7 +173,7 @@ class Person(mySingleton):
         self.age = age
 
     def __getattr__(self, item):
-        log.info("In getattr: item")
+        log.info("In getattr: %s" %item)
         log.info("If property or __getattribute__ raise AttributeError, __getattr__ WILL called")
 
     @property
@@ -222,6 +227,46 @@ class SkipObject:
     def __iter__(self):
         return SkipIterator(self.wrapped)
 
+class Privacy:
+    def __setattr__(self, key, value):
+        if key in self.privates:
+            raise Exception("private attr")
+        else:
+            self.__dict__[key] = value
+
+
+class TestPrivacy(Privacy):
+    privates = ['age']
+    # def __init__(self):
+    #     self.privates =['age'] # can not use self.privates because privates is not in attr __dict__
+
+
+class Complex(object):
+    def __init__(self, real, image):
+        self.real = real
+        self.image = image
+    def __repr__(self):
+        return "%s + %si" % (self.real, self.image)
+
+    def __add__(self, other):
+        log.info("Using __add__: self=%s, other=%s", self, other)
+        if isinstance(other, Complex):
+            return Complex(self.real + other.real, self.image + other.image)
+        else:
+            return self
+    def __iadd__(self, other):
+        log.info("Using __iadd__;if no __iadd__, will use __add__:")
+        self.real, self.image = (self.real + other.real, self.image + other.image)
+        return self
+
+    def __radd__(self, other):
+        log.info("Using __radd__: self=%s, other=%s", self, other)
+        if isinstance(other, Complex):
+            return Complex(self.real + other.real, self.image + other.image)
+        else:
+            return self
+
+
 if __name__ == "__main__":
     xsm = XsmCard()
     print isinstance(xsm, Card)
@@ -258,7 +303,7 @@ if __name__ == "__main__":
     log.info("attribute: %s", person.att)
     log.info(sorted(dir(Person)))
     log.info(sorted(dir(testPerson)))
-    log.info("name=%s, age=%s", person.name, person.age)
+    log.info("person:name=%s, age=%s, p2:name=%s, age=%s", person.name, person.age, p2.name, p2.age)
     log.info("name, age: %s, %s", p3.name, p3.age)
 
     contern = Container(1,5)
@@ -270,3 +315,13 @@ if __name__ == "__main__":
     for i in contain:
         for j in contain:
             print i, j, '  ',
+    print ""
+    test = TestPrivacy()
+    # test.age = 100
+
+    c1 = Complex(1, 2)
+    c2 = Complex(2, 3)
+    print c1 + 2
+    c1 += c2
+    print  2 + c2
+
