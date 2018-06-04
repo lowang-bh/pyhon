@@ -3,3 +3,9 @@ tags
 nohup.out
 *.log
 .idea
+.DS_Store
+*/.DS_Store
+code.jpg
+*/.ipynb_checkpoints/*
+.ipynb_checkpoints
+
