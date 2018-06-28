@@ -21,7 +21,7 @@ except ImportError:
         #log = logging.Logger('test')
         handler = logging.StreamHandler(sys.stdout)
         handler.setLevel(logging.INFO)
-        handler.setFormatter(logging.Formatter("%(asctime)s,%(lineno)4d : %(message)s"))
+        handler.setFormatter(logging.Formatter("%(asctime)s,%(lineno)4d : %(message)s","%d/%b/%Y:%H:%M:%S %z"))
         log.addHandler(handler)
         logging = log
 logging.info("OK")
