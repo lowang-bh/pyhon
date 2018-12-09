@@ -3,6 +3,7 @@ from bs4 import *
 import requests
 import urllib2, re, urllib
 import re
+import cookielib
 
 class Crawler(object):
     '''
@@ -19,7 +20,7 @@ class Crawler(object):
         def one_xlat(match):
             return adict[match.group(0)]
         return rx.sub(one_xlat, text)
-        
+
     def get_image_list(self, html_text, re_reg=None):
         '''
         return the image url in a html
@@ -36,7 +37,7 @@ class Crawler(object):
         for image in image_list:
             image_dict.setdefault(image[1], image[0])
         return image_dict
-    
+
     def download_images(self, url_list, file_path):
         '''
         '''
@@ -115,4 +116,11 @@ for time in times:
     print time.name, time.text
 print counts
 
-
+#url="https://login.cluepoints.com/#/analysis/5b3c748fe41f0619b096862e/grouping?critical=false&nonSignal=false&issue=false"
+url="https://login.cluepoints.com/#/analysis/5b3c748fe41f0619b096862e/grouping?critical=false&nonSignal=false&issue=false&variableId=5b3c6cb9e41f0619b0962200&location=3480010&metaFilterId=5ae4bc92e41f066fb050b27b"
+mycookie = cookielib.CookieJar()
+handler = urllib2.HTTPCookieProcessor(mycookie)
+openner = urllib2.build_opener(handler)
+response = openner.open(url)
+#soup = download_homepage(url, False)
+print response
