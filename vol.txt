@@ -1,0 +1,27 @@
+<volume type='file'>
+  <name>template.qcow2</name>
+  <key>/data/kvm/template.qcow2</key>
+  <source>
+  </source>
+  <capacity unit='bytes'>42949672960</capacity>
+  <allocation unit='bytes'>2560888832</allocation>
+  <physical unit='bytes'>2560884801</physical>
+  <target>
+    <path>/data/kvm/template.qcow2</path>
+    <format type='qcow2'/>
+    <permissions>
+      <mode>0600</mode>
+      <owner>107</owner>
+      <group>107</group>
+    </permissions>
+    <timestamps>
+      <atime>1545795674.672163183</atime>
+      <mtime>1545380541.651393756</mtime>
+      <ctime>1545380541.651393756</ctime>
+    </timestamps>
+    <compat>1.1</compat>
+    <features>
+      <lazy_refcounts/>
+    </features>
+  </target>
+</volume>
