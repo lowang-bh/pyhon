@@ -1,6 +1,6 @@
 #!/usr/local/env python
 #coding=utf-8
-from tensorflow.python.grappler import item
+#from tensorflow.python.grappler import item
 
 class TreeNode(object):
     """tree node"""

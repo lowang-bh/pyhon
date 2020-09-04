@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 import logging
-import time
 import sys
 from logging import handlers
 
 log = logging.Logger('test')
 log.setLevel(logging.INFO)
-handler = handlers.RotatingFileHandler('/var/log/test.log', 'a', 10 * 1024 * 1024, 2)
 handler = logging.StreamHandler(sys.stdout)
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(logging.Formatter("[%(levelname)s] %(asctime)s,%(lineno)4d,%(filename)s : %(message)s", '%Y-%m-%d %H:%M:%S'))
 log.addHandler(handler)
+file_handler = handlers.RotatingFileHandler('test.log', 'a', 10 * 1024 * 1024, 2)
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(logging.Formatter("[%(levelname)s] %(asctime)s,%(lineno)4d,%(filename)s : %(message)s", '%Y-%m-%d %H:%M:%S'))
+log.addHandler(file_handler)
 
 print(log, id(log), logging.getLogger("test"), id(logging.getLogger("test")))
 print(logging.getLogger("test").level)
@@ -26,7 +28,6 @@ log.info("hello world")
 log.debug(d)
 log.debug("This is test log for filebeat on c1-app113")
 
-import json
 import pprint
 stuff = ['spam', 'eggs', 'lumberjack', 'knights', 'ni']
 stuff.insert(0, stuff[:])

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding=UTF-8
+import os
 import re
+
 
 print "python 中文测试"
 text = "Goo is a handsome boy, he is cool, clever, and so on..."
@@ -170,3 +172,15 @@ t = testAttribute()
 print t.name
 print "access the non exist attribute"
 print t.age
+
+
+platform=os.getenv("PLATFORM")
+print("before os.setenv", platform)
+
+os.putenv("PLATFORM", "testEnv")
+platform=os.getenv("PLATFORM")
+print(platform)
+
+
+os.environ["PLATFORM"]="testEnv"
+print(os.getenv("PLATFORM"))

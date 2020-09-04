@@ -6,9 +6,12 @@
  Created Time: 2018-03-24 22:18:06
 """
 
+import functools
+import signal
 import sys
-import time
 import threading
+import time
+
 
 class KThread(threading.Thread):
     """A subclass of threading.Thread, with a kill()
@@ -89,7 +92,7 @@ def timeout(seconds):
     return timeout_decorator
 
 
-import signal,functools #下面会用到的两个库
+#下面会用到的两个库
 class TimeoutError(Exception): pass #定义一个Exception，后面超时抛出
 
 def time_out(seconds, error_message = 'Function call timed out', default_ret=None):
@@ -97,7 +100,7 @@ def time_out(seconds, error_message = 'Function call timed out', default_ret=Non
         def _handle_timeout(signum, frame):
             raise TimeoutError(error_message)
         def wrapper(*args, **kwargs):
-            signal.signal(signal.SIGALRM, _handle_timeout)
+            old_handler = signal.signal(signal.SIGALRM, _handle_timeout)
             signal.alarm(seconds)
             result= default_ret
             try:
@@ -106,12 +109,12 @@ def time_out(seconds, error_message = 'Function call timed out', default_ret=Non
                 print "Timeout :", seconds
             finally:
                 signal.alarm(0)
+                signal.signal(signal.SIGALRM, old_handler)
             return result
         return functools.wraps(func)(wrapper)
     return decorated
 
 
-import functools
 #不需要编写wrapper.__name__ = func.__name__这样的代码，Python内置的functools.wraps就是干这个事
 
 def log(func):
@@ -121,7 +124,6 @@ def log(func):
         return func(*args, **kw)
     return wrapper
 
-import functools
 
 #或者针对带参数的decorator：
 def log(text):
@@ -133,6 +135,11 @@ def log(text):
         return wrapper
     return decorator
 
+
+def hello(msg=None):
+    print "hello, world: %s" %(msg)
+
+
 @timeout(2)
 def methodtimeout(seconds, text):
     print 'start', seconds, text
@@ -140,7 +147,7 @@ def methodtimeout(seconds, text):
     print 'finish', seconds, text
     return seconds
 
-@time_out(3)
+@time_out(3, default_ret=0)
 def method_timeout(seconds, text):
     print 'start', seconds, text
     time.sleep(seconds)
@@ -148,6 +155,9 @@ def method_timeout(seconds, text):
     return seconds
 
 if __name__ == '__main__':
+    t = threading.Timer(4.0, hello, kwargs={"msg":"timer ticker arrive, print this msg"})
+    t.start()  # after 4 seconds, "hello, world" will be printed
+
     for sec in range(1, 5):
         try:
             print '*' * 20, method_timeout.__name__

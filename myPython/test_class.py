@@ -352,4 +352,5 @@ if __name__ == "__main__":
     c2 = Complex(2, 3)
     print(c1 + 2)
     c1 += c2
+    print(c1)
     print(2 + c2)

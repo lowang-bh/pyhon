@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from DataStructure import MyQueue
+from lib.DataStructure import MyQueue
 def get_ugly_num(k):
     if k <= 0:
         return 0
